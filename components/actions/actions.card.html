@@ -1,0 +1,25 @@
+<!-- @dsCard group="Components" viewport="700x200" name="Actions" subtitle="Pill buttons — primary, dark, ghost, outline, small" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--ink-50);font-family:var(--font-body)}#root{padding:20px 22px}.lbl{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink-400);margin:0}.col{display:flex;flex-direction:column;gap:.5rem}.row{display:flex;flex-wrap:wrap;gap:1.25rem;align-items:flex-start}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { Button } = window.JourneyChurchDesignSystem_84738d;
+function Card(){return <div className="col" style={{gap:'1.1rem'}}>
+<div className="row" style={{alignItems:'center'}}>
+<Button>Request a graphic</Button>
+<Button variant="dark">Plan a visit</Button>
+<Button variant="outline">Download</Button>
+<Button size="sm">Give</Button>
+<Button size="sm" variant="outline" arrow>Series page</Button>
+</div>
+<div className="row" style={{alignItems:'center',background:'var(--ink-800)',padding:'1rem 1.1rem',gap:'.9rem'}}>
+<Button>Request a graphic</Button>
+<Button variant="ghost">Download assets</Button>
+<Button variant="ghost" size="sm" arrow>All versions</Button>
+</div>
+</div>}
+ReactDOM.createRoot(document.getElementById('root')).render(<Card/>);
+</script></body></html>

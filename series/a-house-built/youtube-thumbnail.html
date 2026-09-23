@@ -1,0 +1,33 @@
+<!-- @dsCard group="Series · A House Built for His Presence" viewport="1280x720" name="YouTube thumbnail" subtitle="1280 × 720. Logo top-left, type left, speaker right" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script src="../../assets/js/frames.js"></script>
+<style>html,body{margin:0;background:#050505}#root{width:100%}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { Logo } = window.JourneyChurchDesignSystem_84738d;
+const A='../../assets';
+function Thumb(){
+  return (<div className="fr" style={{'--w':1280,'--h':720}}><div className="art" style={{padding:0}}>
+    <div className="sbg" style={{backgroundImage:`url('${A}/series/collage-a.png')`,backgroundPosition:'50% 38%'}}/>
+    <span className="sbg" style={{background:'rgba(11,10,9,.88)',zIndex:1}}/>
+    <span style={{position:'absolute',right:0,top:0,bottom:0,width:660,zIndex:2,background:`url('${A}/photo/adam-stage-pointing.jpg') 56% 50%/cover`}}/>
+    <span style={{position:'absolute',right:260,top:0,bottom:0,width:440,zIndex:3,background:'linear-gradient(90deg,rgba(11,10,9,.88) 0%,rgba(11,10,9,.72) 40%,rgba(11,10,9,0) 100%)'}}/>
+    <span className="spine" style={{zIndex:4}}/>
+    <p className="big gw" style={{left:-60,bottom:-150,fontSize:400,zIndex:2,WebkitTextStrokeColor:'rgba(255,255,255,.1)'}}>PRESENCE</p>
+    <div style={{position:'absolute',left:64,top:52,zIndex:5}}><Logo base={A+'/logo'} on="photo" width={196}/></div>
+    <div style={{position:'absolute',left:64,top:176,zIndex:5,display:'flex',flexDirection:'column',gap:16}}>
+      <p style={{margin:0,font:"800 24px/1 'Inter Tight',sans-serif",letterSpacing:'.2em',textTransform:'uppercase',color:'#ff3a3a'}}>A House Built for His Presence</p>
+      <div style={{display:'flex',flexDirection:'column',gap:10,filter:'drop-shadow(0 6px 30px rgba(0,0,0,.6))'}}>
+        <p className="big out" style={{fontSize:84,WebkitTextStrokeWidth:3}}>Rooms He</p>
+        <p className="big out" style={{fontSize:84,WebkitTextStrokeWidth:3}}>Hasn't Been</p>
+        <p className="big" style={{fontSize:110}}>Given</p>
+      </div>
+    </div>
+    <p style={{position:'absolute',left:64,bottom:56,zIndex:5,margin:0,font:"800 24px/1 'Inter Tight',sans-serif",letterSpacing:'.16em',textTransform:'uppercase',color:'#f7f4f0',whiteSpace:'nowrap'}}>Pastor <span style={{color:'#ff3a3a'}}>Adam Hardegree</span></p>
+  </div></div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Thumb/>);
+</script></body></html>

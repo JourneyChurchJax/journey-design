@@ -1,0 +1,5 @@
+# Not part of the shared design system
+uploads/
+screenshots/
+.DS_Store
+Thumbs.db

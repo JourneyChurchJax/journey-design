@@ -1,0 +1,30 @@
+<!-- @dsCard group="Social" viewport="1080x1350" name="Carousel — teaching slide" subtitle="Eight-segment tracker, Roman numeral, graded landscape, lockup bottom-left at 280" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../_ds_bundle.js"></script>
+<style>html,body{margin:0;background:#050505}#root{width:100%}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { ArtFrame, Logo } = window.JourneyChurchDesignSystem_84738d;
+const A='../assets';
+
+function Tracker({at}){return (<div style={{position:'absolute',left:80,right:80,top:80,display:'flex',gap:8}}>{[0,1,2,3,4,5,6,7].map(i=><span key={i} style={{flex:1,height:10,background:i===at?'#ff3a3a':'#5a1a12'}}/>)}</div>);}
+function Board(){
+  return (<ArtFrame width={1080} height={1350} ground="dark">
+    <div style={{position:'absolute',inset:0,background:'#1a1614'}}>
+      <span style={{position:'absolute',inset:0,background:'radial-gradient(ellipse at center,rgba(10,10,10,0) 40%,rgba(10,10,10,.75) 100%)'}}/>
+      <span className="grain" style={{position:'absolute',inset:0}}/>
+      <p style={{position:'absolute',left:80,bottom:410,margin:0,font:"600 22px/1.4 'Inter',sans-serif",letterSpacing:'.14em',textTransform:'uppercase',color:'var(--ink-300)',maxWidth:600}}>Landscape plate goes here. Graded once, applied to all eight. No people. None of the eight house photographs is a landscape, so this slot is left open on purpose.</p>
+    </div>
+    <Tracker at={2}/>
+    <div style={{position:'absolute',left:80,right:80,top:400,display:'flex',flexDirection:'column',gap:36}}>
+      <p style={{margin:0,font:"800 120px/.9 'Inter Tight',sans-serif",letterSpacing:'-.04em',color:'#ff3a3a'}}>II</p>
+      <p className="a-h" style={{'--h1':'92px',maxWidth:920,color:'#f7f4f0'}}>The room you furnish for guests.</p>
+      <p className="a-body" style={{'--body':'36px',maxWidth:'26ch',color:'#d8d1c5'}}>Everything visible is arranged. It is the rooms with the doors shut that tell you who actually lives here.</p>
+    </div>
+    <Logo base={A+'/logo'} on="photo" width={280} corner="bottom-left"/>
+  </ArtFrame>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Board/>);
+</script></body></html>

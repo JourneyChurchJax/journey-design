@@ -1,0 +1,8 @@
+/* Journey Church — webfonts.
+   Four families, four jobs. Production (journeychurch.org) SELF-HOSTS Inter and
+   Inter Tight as BLOCKING woff2 from /fonts. Never make that load non-blocking:
+   the one time it was, CLS went 0 -> 1.0.
+   No woff2 binaries were included in the Brand Guide handoff, so this system loads
+   the same four families from Google Fonts. Swap the @import for @font-face rules
+   pointing at /fonts when the binaries surface. */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800&family=Inter:wght@300;400;500;600;700&family=Archivo:wdth,wght@125,900&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,500&display=swap");

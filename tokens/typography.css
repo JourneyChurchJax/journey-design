@@ -1,0 +1,53 @@
+/* Journey Church — type. Four faces, four jobs.
+   Inter Tight 800 is the church's voice. Inter 400 is plain speech.
+   Newsreader is Scripture ONLY. Archivo Expanded Black is series art and stage ONLY. */
+:root{
+--font-display:'Inter Tight','Inter',ui-sans-serif,system-ui,sans-serif;
+--font-body:'Inter',ui-sans-serif,system-ui,sans-serif;
+--font-scripture:'Newsreader',Georgia,'Times New Roman',serif;
+--font-series:'Archivo','Big Shoulders Display','Inter Tight',sans-serif;
+--font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+
+/* Weights */
+--weight-display:800; /* @kind font */
+--weight-display-italic:700; /* @kind font */
+--weight-semibold:600; /* @kind font */
+--weight-medium:500; /* @kind font */
+--weight-body:400; /* @kind font */
+--weight-series:900; /* @kind font */
+
+/* Tracking */
+--track-display:-.035em; /* @kind font */
+--track-display-italic:-.03em; /* @kind font */
+--track-eyebrow:.22em; /* @kind font */
+--track-label:.18em; /* @kind font */
+
+/* Leading */
+--leading-display:.95; /* @kind font */
+--leading-series:.86; /* @kind font */
+--leading-scripture:1.32; /* @kind font */
+--leading-body:1.7; /* @kind font */
+--leading-lead:1.65; /* @kind font */
+
+/* Web scale — fluid, from css/journey.css */
+--size-hero:clamp(3.25rem,10.5vw,9.25rem);
+--size-display:clamp(2.25rem,5.5vw,4.75rem);
+--size-h2:clamp(1.875rem,3.5vw,3rem);
+--size-h3:clamp(1.25rem,1.8vw,1.75rem);
+--size-lead:clamp(1.0625rem,1.35vw,1.25rem);
+--size-body:1rem;
+--size-eyebrow:.78rem;
+--size-label:.72rem;
+--size-scripture:clamp(1.35rem,2.4vw,2rem);
+
+/* Graphic scale — px, because artboards are px. These are FLOORS, not suggestions. */
+--art-eyebrow-min:26px; /* @kind font */
+--art-headline-min:86px; /* @kind font */
+--art-body-min:34px; /* @kind font */
+--art-logistics-label:22px; /* @kind font */
+--art-logistics-value:36px; /* @kind font */
+/* Stage, 1920x1080: lyrics 100px, Scripture 80px, labels 30px */
+--stage-lyric-min:100px; /* @kind font */
+--stage-scripture-min:80px; /* @kind font */
+--stage-label-min:30px; /* @kind font */
+}

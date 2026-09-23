@@ -1,0 +1,31 @@
+<!-- @dsCard group="Series · A House Built for His Presence" viewport="1080x1080" name="Series announce card" subtitle="The feed post that launches a series. Date and times bottom-right" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script src="../../assets/js/frames.js"></script>
+<style>html,body{margin:0;background:#050505}#root{width:100%}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { ArtFrame, ArtText, ArtScripture, Logistics, Logo, LowerThird } = window.JourneyChurchDesignSystem_84738d;
+const A='../../assets';
+
+function fit(){document.querySelectorAll('.blk').forEach(b=>{const W=b.clientWidth,a=b.closest('.art');if(!a)return;const sc=parseFloat(getComputedStyle(a).transform.split(',')[0].replace('matrix(',''))||1;const fits=b.querySelectorAll('[data-fit]');fits.forEach(p=>{p.style.fontSize='100px';const w=p.getBoundingClientRect().width/sc;p.style.fontSize=(100*W/w).toFixed(1)+'px'});b.querySelectorAll('[data-size]').forEach(p=>{const s=fits[+p.dataset.size];if(s)p.style.fontSize=s.style.fontSize})})}
+function Slide(){
+  React.useEffect(()=>{const r=()=>{fit();setTimeout(fit,300)};if(document.fonts&&document.fonts.ready)document.fonts.ready.then(r);else r();window.addEventListener('resize',fit);},[]);
+  return (<div className="fr" style={{'--w':1080,'--h':1080}}><div className="art" style={{justifyContent:'space-between',padding:'80px 80px 80px 102px'}}>
+    <div className="sbg" style={{backgroundImage:`url('${A}/series/collage-a-sq.png')`}}/><span className="sbg" style={{background:'rgba(0,0,0,.62)',zIndex:1}}/><span className="spine" style={{width:18}}/>
+    <p className="big gw" style={{right:-110,top:-60,fontSize:330}}>Presence</p>
+    <div style={{position:'relative',zIndex:3}}>
+      <p style={{margin:0,font:"800 30px/1 'Inter Tight',sans-serif",letterSpacing:'.22em',textTransform:'uppercase',color:'#ff3a3a'}}>Our Culture, Vision, &amp; Values</p>
+      <p style={{margin:'12px 0 0',font:"600 24px/1 'Inter',sans-serif",letterSpacing:'.24em',textTransform:'uppercase',color:'rgba(255,255,255,.75)'}}>New series · Begins Sunday Oct 18</p></div>
+    <div className="blk" style={{width:880,gap:14,filter:'none'}}><p className="big out" data-fit>A House</p><p className="big out" data-fit>Built For</p>
+      <div className="ln" style={{gap:32}}><span className="rl" style={{height:12}}/><p className="big out" data-size="0">His</p></div>
+      <p className="big" data-fit>Presence</p></div>
+    <div style={{position:'relative',zIndex:3,display:'flex',justifyContent:'space-between',alignItems:'flex-end',gap:40}}>
+      <img src={A+'/logo/horizontal-ember_cream.png'} alt="Journey Church" style={{width:280}}/>
+      <p style={{margin:0,font:"400 30px/1.4 'Inter',sans-serif",color:'rgba(255,255,255,.85)',textAlign:'right'}}>Sundays<br/><b style={{color:'#fff'}}>9:00 &amp; 11:00 AM</b></p></div>
+  </div></div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Slide/>);
+</script></body></html>

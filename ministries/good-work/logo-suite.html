@@ -1,0 +1,27 @@
+<!-- @dsCard group="Ministry · Good Work" viewport="1920x1680" name="Logo suite" subtitle="Horizontal, stacked, wordmark and icon, on cream and black" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><script src="gw.js"></script>
+<style>html,body{margin:0;background:#fff}a{color:#0a0a0a}a:hover{color:#ff3a3a}
+.g{width:1920px;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.c{position:relative;display:grid;place-items:center;height:560px}
+.c i{position:absolute;left:28px;top:24px;font:600 16px/1 'Inter Tight',sans-serif;letter-spacing:.18em;font-style:normal}</style></head><body>
+<div class="g">
+<div class="c" style="grid-column:span 2;background:#f7f4f0"><i style="color:#5a574f">HORIZONTAL · PRIMARY</i><div id="a"></div></div>
+<div class="c" style="grid-column:span 2;background:#0a0a0a"><i style="color:#9a948a">HORIZONTAL · REVERSED</i><div id="b"></div></div>
+<div class="c" style="background:#f7f4f0"><i style="color:#5a574f">STACKED</i><div id="c"></div></div>
+<div class="c" style="background:#0a0a0a"><i style="color:#9a948a">STACKED · REVERSED</i><div id="d"></div></div>
+<div class="c" style="grid-column:span 2;background:#ece7df"><i style="color:#5a574f">WORDMARK ONLY</i><div id="e"></div></div>
+<div class="c" style="background:#f7f4f0"><i style="color:#5a574f">ICON</i><div id="f"></div></div>
+<div class="c" style="background:#0a0a0a"><i style="color:#9a948a">ICON · ON BLACK</i><div id="g"></div></div>
+<div class="c" style="background:#ff3a3a"><i style="color:#0a0a0a">ICON · ON RED</i><div id="h"></div></div>
+<div class="c" style="background:#f7f4f0"><i style="color:#5a574f">ICON · SMALL SIZES</i><div id="s" style="display:flex;align-items:center;gap:36px"></div></div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+$('a').innerHTML=gwHorizontal(1);$('b').innerHTML=gwHorizontal(1,'dark');
+$('c').innerHTML=gwStacked(.62);$('d').innerHTML=gwStacked(.62,'dark');
+$('e').innerHTML=gwWordmark(1.2);
+$('f').innerHTML=gwIcon(260);$('g').innerHTML=gwIcon(260,'#ff3a3a','#0a0a0a');
+$('h').innerHTML=gwIcon(260,'#0a0a0a','#f7f4f0');
+$('s').innerHTML=[120,64,32].map(s=>gwIcon(s)).join('');
+</script>
+</body></html>

@@ -1,0 +1,101 @@
+/* Journey Church — asset-level system, ported verbatim from the Brand Guide
+   (brand/css/journey-assets.css). Extends base/journey.css; never redefines its tokens.
+   Decided 19 Sep 2026. Everything here is for graphics (social, series, stage, print, email),
+   not the website body. Loads AFTER journey.css. */
+
+/* ---------- PATTERNS ---------- */
+/* Paper tooth — the cream counterpart to .grain. Ink dots at 5%, only on large cream fields. */
+.tooth{position:relative}
+.tooth::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(10,10,10,.055) 1px,transparent 1px);background-size:3px 3px;pointer-events:none;z-index:1}
+/* Photo treatment — natural color, slightly pulled saturation, bottom-weighted scrim, grain on top.
+   Never duotone, never a frame, never a blur. The photo is the room; the type is the voice. */
+.photo{position:absolute;inset:0;overflow:hidden;z-index:0}
+.photo img,.photo>span{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.85) contrast(1.05)}
+.photo>span{background-size:cover;background-position:center}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,5,5,.25) 0%,rgba(5,5,5,.5) 45%,rgba(5,5,5,.88) 100%)}
+.photo.scrim-top::after{background:linear-gradient(0deg,rgba(5,5,5,.25) 0%,rgba(5,5,5,.5) 45%,rgba(5,5,5,.88) 100%)}
+.photo.scrim-left::after{background:linear-gradient(90deg,rgba(5,5,5,.9) 0%,rgba(5,5,5,.55) 50%,rgba(5,5,5,.2) 100%)}
+.photo.scrim-flat::after{background:rgba(5,5,5,.55)}
+/* Hard split — two fields, no gradient. Cream over ink by default. */
+.split-h{display:grid;grid-template-rows:1fr 1fr}
+.split-v{display:grid;grid-template-columns:1fr 1fr}
+.field-cream{background:var(--ink-50);color:var(--ink-800)}
+.field-ink{background:var(--ink-800);color:var(--ink-50)}
+.field-deep{background:var(--ink-900);color:var(--ink-50)}
+.field-alt{background:var(--ink-100);color:var(--ink-800)}
+/* Ghost numeral or ghost word — the graphic element. Inter Tight 800 (or italic 700 for a word),
+   bleeds off an edge, 8% ink / 10% cream. */
+.ghost{position:absolute;font-family:'Inter Tight','Inter',sans-serif;font-weight:800;letter-spacing:-.06em;line-height:.75;color:var(--ink-800);opacity:.08;pointer-events:none;user-select:none;z-index:0}
+.field-ink .ghost,.field-deep .ghost,.on-dark .ghost,.art.dark .ghost,.art.deep .ghost{color:var(--ink-50);opacity:.1}
+/* The logo is never ghosted, cropped, or used as texture. Decided 19 Sep 2026. */
+/* Boxed field on cream — 1px ink-200, square corners, ember on focus. Underline stays on dark. */
+.field-box{width:100%;background:var(--ink-50);border:1px solid var(--ink-200);border-radius:0;padding:.85rem 1rem;color:var(--ink-800);font-size:1rem;font-family:'Inter',sans-serif}
+.field-box::placeholder{color:var(--ink-400)}
+.field-box:focus{outline:none;border-color:var(--ember)}
+/* Small button + outline on cream. Same pill, tighter. */
+.btn-sm{padding:.6rem 1.05rem!important;font-size:.875rem}
+.btn-outline{display:inline-flex;align-items:center;gap:.6rem;border-radius:999px;text-decoration:none;font-family:'Inter',sans-serif;cursor:pointer;background:transparent;color:var(--ink-800);border:1.5px solid var(--ink-800);padding:calc(.95rem - 1.5px) calc(1.5rem - 1.5px);font-weight:600;letter-spacing:.02em;transition:background .25s var(--curve),color .25s var(--curve),transform .25s var(--curve)}
+.btn-outline:hover{background:var(--ink-800);color:#fff;transform:translateY(-1px)}
+/* Iconography — decided: none. Arrows are typographic. */
+.arrow::after{content:"\2192";margin-left:.35em;font-family:'Inter',sans-serif}
+
+/* ---------- ASSET FRAMES (fixed-pixel artboards, scaled to fit by js/frames.js) ---------- */
+.fr{position:relative;width:100%;aspect-ratio:var(--w)/var(--h);overflow:hidden;background:var(--ink-100)}
+.fr>.art{position:absolute;left:0;top:0;width:calc(var(--w)*1px);height:calc(var(--h)*1px);transform-origin:0 0;overflow:hidden;background:var(--ink-50);color:var(--ink-800);font-family:'Inter',sans-serif;display:flex;flex-direction:column;justify-content:space-between}
+.art.pad{padding:var(--pad,72px)}
+.art>*{position:relative;z-index:2}
+.art>.photo,.art .ghost{position:absolute;z-index:0}
+.art.grid,.art.split-h,.art.split-v{display:grid;justify-content:stretch;justify-items:stretch;grid-template-columns:minmax(0,1fr)}
+.art.split-v{grid-template-columns:1fr 1fr}
+.art.dark{background:var(--ink-800);color:var(--ink-50)}
+.art.deep{background:var(--ink-900);color:var(--ink-50)}
+/* Type at asset scale — px, because the artboard is px */
+.a-eb{font-size:var(--eb,26px);letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin:0;color:var(--ember-small)}
+.dark .a-eb,.deep .a-eb,.on-photo .a-eb,.field-ink .a-eb,.field-deep .a-eb{color:var(--ember)}
+.a-h{font-family:'Inter Tight','Inter',sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.95;margin:0;font-size:var(--h1,120px);text-wrap:balance}
+.a-h em{font-style:italic;font-weight:700;letter-spacing:-.03em;color:var(--ember)}
+.dark .a-h em,.deep .a-h em,.on-photo .a-h em,.field-ink .a-h em,.field-deep .a-h em{color:#fff;opacity:.95}
+.a-body{font-size:var(--body,34px);line-height:1.45;margin:0;max-width:var(--measure-a,28ch)}
+.a-body.muted{color:var(--ink-400)}
+.dark .a-body.muted,.deep .a-body.muted,.on-photo .a-body.muted{color:var(--ink-300)}
+.a-series{font-family:var(--font-series);font-stretch:125%;font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:.005em;margin:0;font-size:var(--h1,200px)}
+.a-scripture{font-family:var(--font-scripture);font-weight:400;line-height:1.3;letter-spacing:-.005em;margin:0;font-size:var(--h1,72px);font-optical-sizing:auto;text-wrap:pretty}
+.a-scripture em{font-style:italic;font-weight:500}
+.a-logo{display:block;width:var(--logo,260px)}
+.a-logo.mk{width:var(--mark,96px)}
+/* Logistics block — the one thing that is set identically every time */
+.logi{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:36px;margin:0}
+.logi dt{font-size:22px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--ink-400);margin:0}
+.dark .logi dt,.deep .logi dt,.on-photo .logi dt{color:var(--ink-300)}
+.logi dd{margin:10px 0 0;font-family:'Inter Tight','Inter',sans-serif;font-weight:600;font-size:36px;letter-spacing:-.01em;line-height:1.2}
+/* Stage: lower third */
+.lower3{position:absolute;left:96px;bottom:96px;display:flex;align-items:stretch;gap:0}
+.lower3 .bar{width:12px;background:var(--ember)}
+.lower3 .txt{background:rgba(10,10,10,.92);color:var(--ink-50);padding:28px 44px 30px 40px;display:flex;flex-direction:column;gap:6px}
+.lower3 .name{font-family:'Inter Tight',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:52px;line-height:1;margin:0}
+.lower3 .role{font-size:22px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--ink-300);margin:0}
+/* Countdown */
+.count{font-family:'Inter Tight',sans-serif;font-weight:800;letter-spacing:-.05em;line-height:.85;font-size:520px;font-variant-numeric:tabular-nums;margin:0}
+/* Meter at asset scale */
+.a-meter{height:14px;background:rgba(10,10,10,.1);border-radius:999px;overflow:hidden}
+.dark .a-meter,.deep .a-meter{background:rgba(247,244,240,.14)}
+.a-meter>span{display:block;height:100%;background:var(--ember);border-radius:999px}
+/* Safe-zone overlay for specs */
+.safe{position:absolute;inset:var(--safe,72px);border:2px dashed rgba(255,58,58,.6);pointer-events:none;z-index:5}
+.safe-lbl{position:absolute;top:calc(var(--safe,72px) + 10px);left:calc(var(--safe,72px) + 12px);font:600 22px/1 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ember);z-index:6}
+
+/* ---------- SERIES ARTBOARD TYPE (from brand/css/brand.css) ----------
+   The series face: Archivo Expanded Black. Outline over solid, red rule, red spine. */
+.big{font-family:'Archivo','Inter Tight',sans-serif;font-stretch:125%;font-weight:900;text-transform:uppercase;color:#fff;line-height:.86;letter-spacing:-.01em;margin:0;white-space:nowrap}
+.big[data-fit]{align-self:flex-start;width:max-content}
+.big.out{color:transparent;-webkit-text-stroke:5px #fff}
+.blk{display:flex;flex-direction:column;gap:22px;width:1440px;position:relative;z-index:3;filter:drop-shadow(0 6px 40px rgba(0,0,0,.55))}
+.ln{display:flex;align-items:center;gap:48px}
+.ln .rl{flex:1;height:14px;background:var(--ember)}
+.gw{position:absolute;z-index:2;pointer-events:none;color:transparent;-webkit-text-stroke:3px rgba(255,255,255,.22)}
+.spine{position:absolute;left:0;top:0;bottom:0;width:22px;background:var(--ember);z-index:3}
+.eb{position:absolute;z-index:3;font:800 34px/1 'Inter Tight','Inter',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ember);margin:0;white-space:nowrap}
+.blk .eb{position:static;margin-bottom:26px;align-self:flex-start;background:rgba(0,0,0,.18);padding:14px 20px 12px}
+.sbg{position:absolute;inset:0;background:#0b0a09 center/cover;z-index:0}
+.sbg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.05) 40%,rgba(0,0,0,.4));z-index:1}
+.lgc{position:absolute;z-index:4}

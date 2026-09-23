@@ -1,0 +1,33 @@
+/* Journey Church — space, measure, and the fixed geometry of artboards. */
+:root{
+--section-y:clamp(3.5rem,7vw,7rem); /* @kind spacing */ /* vertical rhythm of a web section */
+--gutter:clamp(1.25rem,4vw,3rem); /* @kind spacing */ /* page inline padding */
+--measure:42rem;                      /* reading measure on the web */
+--measure-a:28ch;                     /* reading measure on an artboard */
+--container-max:84rem;
+
+--space-1:.35rem;
+--space-2:.6rem;
+--space-3:1rem;
+--space-4:1.5rem;
+--space-5:2rem;
+--space-6:2.5rem;
+--space-7:clamp(2rem,5vw,4rem);
+
+/* Radii — there are two. Pills, and square. Nothing in between. */
+--radius-pill:999px;
+--radius-square:0;
+
+/* Artboard geometry */
+--art-pad:80px;            /* 1080 square */
+--art-pad-wide:140px;      /* 1920 x 1080 */
+--safe-square:80px;
+--safe-story-y:250px;
+--safe-story-x:80px;
+--safe-action:96px;        /* screen, 1920 x 1080 */
+--safe-title:120px;
+/* The logo contract: bottom-right 360px on 1920 art, bottom-left 280px on 1080 squares */
+--logo-on-wide:360px;
+--logo-on-square:280px;
+--logo-mark:96px;
+}

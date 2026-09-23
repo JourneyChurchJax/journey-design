@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><script src="gw.js"></script>
+<style>html,body{margin:0;background:transparent}body{display:flex;flex-direction:column;gap:40px;padding:40px;align-items:flex-start}.x{display:grid;place-items:center;flex:none}</style></head><body>
+<div class="x" id="h-cream" style="width:1200px;height:500px;background:#f7f4f0"></div>
+<div class="x" id="h-black" style="width:1200px;height:500px;background:#0a0a0a"></div>
+<div class="x" id="h-ink-t" style="width:1000px;height:260px"></div>
+<div class="x" id="h-cream-t" style="width:1000px;height:260px;"></div>
+<div class="x" id="s-cream" style="width:900px;height:900px;background:#f7f4f0"></div>
+<div class="x" id="s-black" style="width:900px;height:900px;background:#0a0a0a"></div>
+<div class="x" id="i-t" style="width:1000px;height:1000px"></div>
+<div class="x" id="i-black-t" style="width:1000px;height:1000px"></div>
+<div class="x" id="avatar" style="width:1080px;height:1080px;background:#f7f4f0"></div>
+<script>
+const $=id=>document.getElementById(id);
+$('h-cream').innerHTML=gwHorizontal(1.1);$('h-black').innerHTML=gwHorizontal(1.1,'dark');
+$('h-ink-t').innerHTML=gwHorizontal(1.1);$('h-cream-t').innerHTML=gwHorizontal(1.1,'dark');
+$('s-cream').innerHTML=gwStacked(1);$('s-black').innerHTML=gwStacked(1,'dark');
+$('i-t').innerHTML=gwIcon(1000);$('i-black-t').innerHTML=gwIcon(1000,'#0a0a0a','#f7f4f0');
+$('avatar').innerHTML=gwIcon(720);
+</script>
+</body></html>

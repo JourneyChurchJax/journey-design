@@ -1,0 +1,72 @@
+/* Journey Command — /brand/ page chrome. Ported from Brand Guide brand/css/brand.css.
+   Loads after the design system's styles.css. The series-artboard type classes that
+   lived here (.big, .blk, .spine, .gw, .sbg, .lgc, .eb) moved into
+   base/journey-assets.css, because they are brand system, not page chrome. */
+.b-sect{padding-block:clamp(3rem,6vw,5.5rem);border-top:1px solid rgba(10,10,10,.12)}
+.b-sect:first-of-type{border-top:0}
+.b-head{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}
+.b-n{font-family:'Inter Tight',sans-serif;font-weight:800;font-size:clamp(2.5rem,6vw,4.5rem);line-height:.8;letter-spacing:-.04em;color:rgba(10,10,10,.12)}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:clamp(1.25rem,3vw,2.5rem);align-items:start}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:clamp(1rem,2.5vw,2rem);align-items:start}
+.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));gap:clamp(1rem,2vw,1.5rem);align-items:start}
+.ex{display:flex;flex-direction:column;gap:.75rem}
+.ex-l{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:1.05rem;letter-spacing:-.02em;margin:0}
+.ex-n{font-size:.875rem;line-height:1.55;color:var(--ink-400);margin:0}
+.spec{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.25rem;font-size:.85rem;line-height:1.5;margin:1.5rem 0 0;padding-top:1rem;border-top:1px solid rgba(10,10,10,.12)}
+.spec dt{font-weight:600;color:var(--ink-400);letter-spacing:.06em;text-transform:uppercase;font-size:.7rem;padding-top:.15rem}
+.spec dd{margin:0}
+.box{background:var(--ink-100);padding:clamp(1.25rem,2.5vw,1.8rem);display:flex;flex-direction:column;gap:.6rem}
+.box h4{font-family:'Inter Tight',sans-serif;font-weight:800;letter-spacing:-.025em;font-size:1.1rem;margin:0}
+.box p,.box li{margin:0;font-size:.9375rem;line-height:1.6}
+.box ul{margin:0;padding-left:1.1rem;display:flex;flex-direction:column;gap:.35rem}
+.sw{display:flex;flex-direction:column}
+.sw i{display:block;aspect-ratio:3/2}
+.sw b{font-family:'Inter Tight',sans-serif;font-weight:700;font-size:.95rem;margin-top:.5rem;letter-spacing:-.01em}
+.sw>span{font-size:.78rem;color:var(--ink-400);line-height:1.45}
+.dl{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.5rem}
+.dl a{font-size:.8rem;font-weight:600;text-decoration:none;color:var(--ink-500);border:1px solid var(--ink-200);border-radius:999px;padding:.35rem .8rem;transition:color .25s var(--curve),border-color .25s var(--curve)}
+.dl a:hover{color:var(--ember);border-color:var(--ember)}
+.toc{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.75rem 0 0;padding:0;list-style:none}
+.toc a{font-size:.85rem;font-weight:500;text-decoration:none;color:var(--ink-500);border:1px solid var(--ink-200);border-radius:999px;padding:.45rem .9rem}
+.on-deep .toc a,.on-dark .toc a{color:var(--ink-50);border-color:rgba(247,244,240,.3)}
+.on-deep .toc a:hover,.on-dark .toc a:hover{color:#fff;border-color:var(--ember)}
+.toc a:hover{color:var(--ember);border-color:var(--ember)}
+.logo-cell{display:flex;align-items:center;justify-content:center;padding:2rem;min-height:9rem}
+.logo-cell img{max-width:80%;display:block}
+.on-cream{background:var(--ink-50);border:1px solid var(--ink-200)}
+.on-ink{background:var(--ink-800)}.on-red{background:var(--ember)}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85em;background:rgba(10,10,10,.06);padding:.1em .35em}
+@media print{.b-sect{break-inside:avoid}}
+
+/* COMMAND CHROME — dark sidebar, cream content. Stand-in for Command's real workspace nav:
+   swap .cmd-side for Command's own markup when you have it. */
+.cmd-side{position:fixed;left:0;top:0;bottom:0;width:252px;background:#050505;color:var(--ink-50);z-index:60;overflow-y:auto;display:flex;flex-direction:column;gap:1.75rem;padding:1.6rem 1.35rem 2rem;border-right:1px solid rgba(247,244,240,.1)}
+.cmd-side .mk{width:1.9rem;display:block}
+.cmd-brand{display:flex;flex-direction:column;gap:.55rem;text-decoration:none}
+.cmd-brand b{font-family:'Inter Tight',sans-serif;font-weight:800;letter-spacing:-.02em;font-size:1.05rem;color:var(--ink-50)}
+.cmd-brand>span{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ink-300)}
+.cmd-side h5{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ink-300);margin:0 0 .6rem}
+.cmd-side ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.1rem}
+.cmd-side ul a{display:block;padding:.5rem .6rem;margin-left:-.6rem;font-size:.9rem;font-weight:500;text-decoration:none;color:var(--ink-50);border-radius:.3rem;transition:color .25s var(--curve),background .25s var(--curve)}
+.cmd-side ul a:hover{color:var(--ember);background:rgba(247,244,240,.05)}
+.cmd-side ul a[aria-current="page"]{color:var(--ember);background:rgba(255,58,58,.1)}
+.cmd-side .sub a{font-size:.82rem;color:var(--ink-300);padding-block:.38rem}
+.cmd-side .spacer{flex:1}
+.cmd-side .req{display:block;text-align:center;background:var(--ember);color:#fff;text-decoration:none;font-weight:600;font-size:.875rem;letter-spacing:.02em;border-radius:999px;padding:.75rem 1rem;transition:background .25s var(--curve),transform .25s var(--curve)}
+.cmd-side .req:hover{background:var(--ember-hover);color:#fff;transform:translateY(-1px)}
+.cmd-side .back{font-size:.8rem;color:var(--ink-300);text-decoration:none}
+.cmd-side .back:hover{color:var(--ember)}
+@media (min-width:1100px){body{padding-left:252px}}
+@media (max-width:1099px){
+ body{padding-left:0}
+ .cmd-side{position:sticky;top:0;left:auto;bottom:auto;width:auto;flex-direction:row;align-items:center;flex-wrap:wrap;gap:.75rem 1.25rem;padding:.9rem var(--gutter);border-right:0;border-bottom:1px solid rgba(247,244,240,.1)}
+ .cmd-side .cmd-brand{flex-direction:row;align-items:center;gap:.6rem}
+ .cmd-side .cmd-brand>span{display:none}
+ .cmd-side h5,.cmd-side .back{display:none}
+ .cmd-side nav{flex:1}
+ .cmd-side ul{flex-direction:row;flex-wrap:wrap;gap:.25rem .5rem}
+ .cmd-side ul a{margin-left:0;padding:.4rem .7rem}
+ .cmd-side .sub{display:none}
+ .cmd-side .spacer{display:none}
+ .cmd-side .req{padding:.55rem .95rem;font-size:.82rem}
+}

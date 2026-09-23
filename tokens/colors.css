@@ -1,0 +1,40 @@
+/* Journey Church — color. Cream, ink, and ONE red.
+   Verified against the live site 31 Aug 2026. Logo recolored to --ember 19 Sep 2026;
+   the old #e31e26 is retired. Do not invent tokens. */
+:root{
+/* Red — the single accent */
+--ember:#ff3a3a;              /* Journey red. One per view. */
+--ember-hover:#e62d2d;        /* Hover only. */
+--ember-small:#9a1818;        /* Red TEXT under ~26px on cream. Accessibility fallback, not a second color. */
+
+/* Ink ramp — cream through black */
+--ink-50:#f7f4f0;             /* Cream. The default ground, and text on dark. */
+--ink-100:#ece7df;            /* Alternate field */
+--ink-200:#d8d1c5;            /* Borders, dividers */
+--ink-300:#9a948a;            /* Muted text on dark */
+--ink-400:#5a574f;            /* Muted text on cream */
+--ink-500:#2a2824;            /* Nav links */
+--ink-700:#111110;
+--ink-800:#0a0a0a;            /* Body text, and the dark ground */
+--ink-900:#050505;            /* The deepest field */
+
+/* Semantic aliases */
+--surface-page:var(--ink-50);
+--surface-alt:var(--ink-100);
+--surface-dark:var(--ink-800);
+--surface-deep:var(--ink-900);
+--surface-accent:var(--ember);
+--text-body:var(--ink-800);
+--text-muted:var(--ink-400);
+--text-on-dark:var(--ink-50);
+--text-muted-on-dark:var(--ink-300);
+--text-accent:var(--ember-small);
+--text-accent-on-dark:var(--ember);
+--border-hairline:var(--ink-200);
+--border-hairline-dark:rgba(247,244,240,.16);
+--rule-on-cream:rgba(10,10,10,.12);
+--focus-ring:var(--ember);
+
+/* Print — proof once and keep the swatch */
+--ember-cmyk:"C0 M85 Y75 K0"; /* @kind other */
+}

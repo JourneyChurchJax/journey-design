@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&amp;family=Style+Script&amp;display=swap" rel="stylesheet">
+<script src="../../assets/js/frames.js"></script><script src="women.js?v=11"></script>
+<script src="https://unpkg.com/qrcode-generator@1.4.4/qrcode.js"></script>
+<style>html,body{margin:0;background:#050505}a{color:#a8391a}a:hover{color:#7d2a12}
+.ef{position:absolute;inset:0;background:#f8f1e7;font-family:'Montserrat',sans-serif;color:#1a1616;overflow:hidden}
+.ef p{margin:0;position:absolute;left:0;right:0;text-align:center;white-space:nowrap;line-height:1}
+.ef .sc{font-family:'Style Script',cursive}
+.ef svg{position:absolute;overflow:visible}</style></head><body>
+<div class="fr" style="--w:1080;--h:1620"><div class="art" id="art" style="padding:0"><div class="ef">
+<span style="position:absolute;inset:44px;border:2px solid #e7b3a6"></span>
+<img src="florals-only.png" alt="" style="position:absolute;width:1300px;left:-640px;top:-470px;opacity:.2;transform:rotate(18deg)">
+<img src="florals-only.png" alt="" style="position:absolute;width:1300px;right:-640px;bottom:-470px;opacity:.2;transform:rotate(-160deg)">
+<span style="position:absolute;inset:0;background-image:radial-gradient(rgba(60,30,30,.045) .8px,transparent 1px);background-size:3px 3px"></span>
+<div id="lg" style="position:absolute;left:156px;top:40px;transform:scale(.78);transform-origin:0 0"></div>
+<span style="position:absolute;left:495px;width:90px;top:492px;height:2px;background:#d9998b"></span>
+<p style="top:526px;font-weight:600;font-size:88px;line-height:1.08;letter-spacing:.14em;padding-left:.14em">ENCOUNTER<br>NIGHT</p>
+<p style="top:736px;font-weight:300;font-size:28px;letter-spacing:.24em;padding-left:.24em">WORSHIP · WORD · FELLOWSHIP</p>
+<span style="position:absolute;left:495px;width:90px;top:806px;height:2px;background:#d9998b"></span>
+<p style="top:846px;font-weight:500;font-size:28px;letter-spacing:.3em;padding-left:.3em">SATURDAY</p>
+<p style="top:892px;font-weight:600;font-size:72px;letter-spacing:.12em;padding-left:.12em">OCTOBER 10</p>
+<span style="position:absolute;left:539px;width:2px;top:1008px;height:100px;background:#d9998b"></span>
+<p style="left:140px;right:auto;width:399px;top:1016px;font-weight:500;font-size:24px;letter-spacing:.18em;padding-left:.18em">DINNER</p>
+<p style="left:140px;right:auto;width:399px;top:1054px;font-weight:600;font-size:46px;letter-spacing:.08em;padding-left:.08em">5:30 PM</p>
+<p style="left:541px;right:auto;width:399px;top:1016px;font-weight:500;font-size:24px;letter-spacing:.18em;padding-left:.18em">SERVICE</p>
+<p style="left:541px;right:auto;width:399px;top:1054px;font-weight:600;font-size:46px;letter-spacing:.08em;padding-left:.08em">6:30 PM</p>
+<p style="top:1146px;font-weight:300;font-size:30px;letter-spacing:.2em;padding-left:.2em">SOUP &amp; SALAD BAR</p>
+<p class="sc" style="left:120px;right:auto;top:1248px;font-size:108px;color:#a8391a">Register Here</p>
+<svg viewBox="0 0 330 30" style="left:250px;top:1370px;width:330px;height:30px"><path d="M4 24C90 8 200 4 326 10" stroke="#c0643e" stroke-width="7" fill="none" stroke-linecap="round"></path></svg>
+<svg viewBox="0 0 150 50" style="left:540px;top:1330px;width:150px;height:50px"><path d="M4 40C50 52 100 44 140 20" stroke="#c0643e" stroke-width="5" fill="none" stroke-linecap="round"></path><path d="M114 12L142 18 130 44" stroke="#c0643e" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="position:absolute;left:707px;top:1215px;width:200px;height:200px;box-sizing:border-box;border:5px solid #c0643e;border-radius:12px;background:#fff;display:grid;place-items:center">
+<div id="qr" style="width:166px;height:166px;display:grid;place-items:center;text-align:center;font:600 16px/1.3 Montserrat,sans-serif;color:#a8391a;border:2px dashed #c0643e;box-sizing:border-box">QR<br>add link</div></div>
+<svg viewBox="0 0 50 90" style="left:936px;top:1242px;width:50px;height:90px"><path d="M4 30L30 4M10 50L46 42M6 70L36 86" stroke="#c0643e" stroke-width="5" fill="none" stroke-linecap="round"></path></svg>
+<p style="top:1456px;font-weight:500;font-size:20px;letter-spacing:.14em;padding-left:.14em">WOMEN &amp; YOUNG LADIES AGES 12 AND UP ARE WELCOME</p>
+<img src="../../assets/logo/horizontal-ink.png" alt="Journey Church" style="position:absolute;left:50%;transform:translateX(-50%);bottom:74px;width:220px;opacity:.85">
+</div></div></div>
+<script>
+const REG_URL='';
+document.getElementById('lg').innerHTML=jwLogo('.');
+if(REG_URL&&window.qrcode){const q=qrcode(0,'M');q.addData(REG_URL);q.make();const el=document.getElementById('qr');el.style.border='0';el.innerHTML=q.createSvgTag({cellSize:4,margin:0,scalable:true});el.firstChild.setAttribute('style','width:166px;height:166px;display:block');}
+</script>
+</body></html>

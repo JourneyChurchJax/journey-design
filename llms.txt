@@ -1,0 +1,15 @@
+# Journey Church Brand
+
+> Brand guide and design system for Journey Church, Jacksonville, FL — voice, colors, type, logos, ministry branding and every approved graphic.
+
+Read the full guide before writing or designing anything for Journey Church.
+
+## Guide
+- [Brand guide (full, plain text)](/brand/brand.md): voice rules, colors, type, layout, graphic sizes, logos, ministry branding, and a catalog of every design.
+- [Visual brand site](/brand/): browse every design and download PNGs.
+
+## Key assets
+- [Journey Church horizontal logo, red](/brand/assets/logo/horizontal-ember.png)
+- [Journey Church horizontal logo, white](/brand/assets/logo/horizontal-white.png)
+- [Journey Church mark, red](/brand/assets/logo/mark-ember.png)
+- [Good Work brand sheet](/brand/ministries/good-work/brand.html)

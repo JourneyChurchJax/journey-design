@@ -1,0 +1,12 @@
+/* Journey Church — motion. One curve. Slow and few. Nothing bounces, scales, or spins. */
+:root{
+--curve:cubic-bezier(.2,.7,.2,1); /* @kind other */
+--dur-fast:.25s; /* @kind other */     /* hover, color, small transforms */
+--dur-mid:.35s; /* @kind other */      /* disclosure caret */
+--dur-slow:.5s; /* @kind other */      /* underline sweep */
+--dur-reveal:1s; /* @kind other */     /* scroll reveal, stagger .09s per sibling */
+--dur-meter:1.6s; /* @kind other */    /* progress fill */
+/* Stage: cuts and half-second dissolves. Lower thirds slide in from the left over 0.6s. */
+--dur-lower-third:.6s; /* @kind other */
+--dur-dissolve:.5s; /* @kind other */
+}

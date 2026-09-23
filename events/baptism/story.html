@@ -1,0 +1,35 @@
+<!-- @dsCard group="Event · Baptism" viewport="1080x1920" name="Story" subtitle="1080×1920 for Instagram + Facebook Stories. Type kept out of the top 250 and bottom 340 UI zones; face clear in the middle" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script src="../../assets/js/frames.js"></script>
+<style>html,body{margin:0;background:#050505}#root{width:100%}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const { Logo } = window.JourneyChurchDesignSystem_84738d;
+const A='../../assets';
+const PHOTO=A+'/photo/baptism-woman-water-01.webp';
+const WORD='BAPTISM';
+function Stack({n,color,size,style}){
+  return (<div style={{position:'absolute',zIndex:3,display:'flex',flexDirection:'column',...style}}>
+    {Array.from({length:n}).map((_,i)=>(<p key={i} className="big out" style={{fontSize:size,lineHeight:.76,WebkitTextStrokeWidth:3,WebkitTextStrokeColor:color}}>{WORD}</p>))}
+  </div>);
+}
+const SP={margin:0,position:'absolute',zIndex:4,left:0,right:0,textAlign:'center',whiteSpace:'nowrap',textTransform:'uppercase',fontFamily:"'Inter Tight',sans-serif"};
+function Story(){
+  return (<div className="fr" style={{'--w':1080,'--h':1920}}><div className="art" style={{padding:0,background:'#0b0a09'}}>
+    <div style={{position:'absolute',inset:0,zIndex:0,background:`url('${PHOTO}') -110px 0/auto 1400px no-repeat #0b0a09`}}/>
+    <span style={{position:'absolute',inset:0,zIndex:1,background:'linear-gradient(180deg,rgba(11,10,9,.55) 0%,rgba(11,10,9,0) 16%,rgba(11,10,9,0) 48%,rgba(11,10,9,.8) 60%,rgba(11,10,9,1) 67%)'}}/>
+    <span style={{position:'absolute',inset:0,zIndex:1,backgroundImage:'radial-gradient(rgba(247,244,240,.06) 1px,transparent 1px)',backgroundSize:'3px 3px',pointerEvents:'none'}}/>
+    <Logo base={A+'/logo'} on="photo" width={320} className="lgc" style={{left:380,top:150}}/>
+    <Stack n={2} color="#f7f4f0" size={148} style={{left:0,right:0,top:1130,alignItems:'center'}}/>
+    <p style={{...SP,top:1370,font:"800 96px/1 'Inter Tight',sans-serif",letterSpacing:'.2em',paddingLeft:'.2em',color:'#f7f4f0'}}>October 25</p>
+    <p style={{...SP,top:1494,font:"italic 700 27px/1 'Inter Tight',sans-serif",letterSpacing:'.2em',paddingLeft:'.2em',color:'#f7f4f0'}}>Sunday · After Second Service</p>
+    <p style={{...SP,top:1536,font:"italic 700 27px/1 'Inter Tight',sans-serif",letterSpacing:'.2em',paddingLeft:'.2em',color:'#f7f4f0'}}>Outdoors during Missions Sunday</p>
+    <p style={{...SP,top:1604,font:"italic 700 27px/1 'Inter Tight',sans-serif",letterSpacing:'.2em',paddingLeft:'.2em',color:'#f7f4f0'}}><span style={{color:'#ff3a3a'}}>Register:</span> journeychurch.org/baptism</p>
+    <Stack n={2} color="#ff3a3a" size={148} style={{left:0,right:0,top:1720,alignItems:'center'}}/>
+  </div></div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Story/>);
+</script></body></html>
