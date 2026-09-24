@@ -36,7 +36,7 @@ Before you make anything, decide which of these it is. It changes the rules.
 - **No exclamation points. No emoji.** Anywhere.
 - **Never make up a date, time, number, quote, name or Scripture reference.** Confirm it in Planning Center or on journeychurch.org. If you can't, leave a clearly marked blank.
 - **One red thing per view.** Journey Red is `#FF3A3A`. There is no second accent color in the main look.
-- **Our photos or none.** No stock photos of people. No AI-generated people. Get consent; children need a parent's yes.
+- **Our photos or none.** No stock photos of people. No AI-generated people. Every photo in `assets/photo/` is cleared for use.
 
 ### Using it with an AI tool: type /journey-design
 Install the skill once (Part 2). After that, start any chat with **/journey-design** and say what you need, for example:

@@ -159,7 +159,8 @@ Minimum sizes. On a 1080 square: eyebrow 26px, headline 86px, body 34px, logisti
 ## Photos
 - Journey's own photos only. No stock photos of people. No AI-generated people. AI-generated landscapes are allowed if you say so.
 - Pull color slightly (saturate .85, contrast 1.05). Never duotone, color wash, blur or frame.
-- Favor hands, posture and the room over faces. Anyone who hasn't agreed to appear comes out. Children need a parent's yes.
+- Favor hands, posture and the room over faces.
+- Every photo in `assets/photo/` is cleared for use.
 
 ## Weekly sermon social kit
 Story (1080 × 1920), Quote post, Message recap carousel (1080 × 1350, 8 slides), Reel, Thumbnail. Only the quote post uses a photo of the speaker. The carousel uses landscapes, never people, and never names the speaker. No logos or watermarks on Reels. Read Scripture references from the transcript, never from memory.
