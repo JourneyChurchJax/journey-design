@@ -21,8 +21,7 @@ One GitHub repo, **JourneyChurchJax/journey-design**, holds all of it:
 | `guidelines/` `tokens/` `components/` `base/` | The building blocks. You rarely need to open these. |
 
 ### Getting access
-1. Ask Adam to add you to the repo. You'll get an email invite from GitHub. Accept it.
-2. You need a free GitHub account for that. Use your work email.
+Anyone can look at the repo and download from it; you don't need an account for that. To **add** files to it, ask Adam to add you. You'll get an email invite from GitHub (you need a free GitHub account; use your work email).
 
 ### The four kinds of work
 Before you make anything, decide which of these it is. It changes the rules.
@@ -40,15 +39,13 @@ Before you make anything, decide which of these it is. It changes the rules.
 - **Our photos or none.** No stock photos of people. No AI-generated people. Get consent; children need a parent's yes.
 
 ### Using it with an AI tool: type /journey-design
-The skill in Part 2 teaches your AI tool the brand and carries a copy of the whole design system: the logos, photos, templates and finished graphics. In Claude you start it by typing **/journey-design** and saying what you need, for example:
+Install the skill once (Part 2). After that, start any chat with **/journey-design** and say what you need, for example:
 
 > /journey-design a feed square and a story for Baptism Sunday, Oct 19, 11:00 AM
 
-It asks whether this is a Ministry, Series, Event or Project, asks for any facts it doesn't have, builds from the matching templates and finished work, and tells you what it wrote so Adam can approve it.
+Every time, it reads the newest design files straight from this repo, so you always get the current logos, rules, templates and finished graphics. It asks whether this is a Ministry, Series, Event or Project, asks for any facts it doesn't have, builds from the matching templates and finished work, and tells you what it wrote so Adam can approve it.
 
-- **Claude, with your Journey Church account:** nothing to install. Adam adds the skill for the whole church. It shows up under **Customize → Skills**, already turned on. Type **/journey-design** in any chat.
-- **Claude Code:** sign in with your Journey Church account and the same skill is there; type **/journey-design**. Working inside a clone of this repo is even better: the skill uses the repo's full-size files instead of its smaller copies.
-- **ChatGPT:** create a custom GPT (Explore GPTs → Create). Paste the skill text into **Instructions**. Upload `brand.md` and the logo PNGs under **Knowledge**.
+- **ChatGPT:** create a custom GPT (Explore GPTs → Create). Paste the skill text into **Instructions**. Upload `brand.md` and the logo PNGs under **Knowledge**. (ChatGPT won't pull updates on its own; re-upload `brand.md` when Adam says it changed.)
 - **Gemini:** create a Gem. Paste the skill text into the instructions box. Add `brand.md` as a file.
 - **Anything else:** paste the skill text at the top of your first message, then attach `brand.md`.
 
@@ -64,14 +61,24 @@ If you're not sure where something goes, ask Adam before you upload.
 
 ## Part 2: The skill
 
-The skill lives in this repo at **`skill/journey-design/SKILL.md`**. That file is the one source; everything else is built from it.
+The skill is one small file, `skill/journey-design/SKILL.md`, packed as `skill/journey-design.zip` so Claude can take it. It holds the rules and tells Claude where the repo is. The designs themselves stay here in the repo, and the skill reads them fresh each time. **You install it once. When Adam updates the design system, you don't do anything.**
 
-### Installing it
-- **Claude (the whole church):** Adam uploads `journey-design.zip` once in Organization settings → Plugins & skills → Add → Upload a skill. Everyone on the Journey Church account gets **/journey-design** from then on. When the design system changes, Adam uploads a new zip and everyone gets the update.
-- **ChatGPT, Gemini, other tools:** open `skill/journey-design/SKILL.md` on GitHub. Copy everything **below** the block at the top that sits between the two `---` lines (that block is only for Claude). Paste it as the instructions, then add `brand.md` as a file.
+### Install it in Claude (about two minutes)
+1. On github.com, open this repo, then the **skill** folder, then **journey-design.zip**.
+2. Click **Download** (the arrow on the right). It lands in your Downloads folder.
+3. Go to **claude.ai/customize/skills**.
+4. Click the **+** button, then **Create skill**, then **Upload a skill**.
+5. Pick **journey-design.zip** from Downloads.
+6. Make sure the switch next to **journey-design** is on.
+7. Start a new chat and type **/journey-design**.
 
-### What's in the zip
-`journey-design.zip` holds `SKILL.md` and a `design/` folder, which is a copy of this repo. To keep it small enough to upload, the photos, series art and finished graphics in that copy are reduced in size, and `exports/`, `uploads/` and `screenshots/` are left out. Anyone who needs full-resolution artwork gets it from this repo.
+It only goes into your own Claude account. Nobody else gets it unless they install it too.
+
+### If it says it can't reach GitHub
+The skill downloads the design files using Claude's code tool. If that tool isn't allowed to reach the internet, Claude can still read the rules but can't build a finished image. In **Settings → Capabilities**, check that **Code execution and file creation** is on and that it's allowed to use the network. If you can't find that, ask Adam.
+
+### ChatGPT, Gemini, other tools
+Open `skill/journey-design/SKILL.md` on GitHub. Copy everything **below** the block at the top that sits between the two `---` lines (that block is only for Claude). Paste it as the instructions, then add `brand.md` as a file.
 
 ---
 

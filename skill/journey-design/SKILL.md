@@ -1,20 +1,55 @@
 ---
 name: journey-design
-description: Build anything for Journey Church in Jacksonville, FL from the church's own design system. Social graphics, stories, carousels, stage slides, lower thirds, ministry, series, event and project graphics, sermon series art, flyers, emails, web pages, and the copy that goes on them. Use when someone types /journey-design, or asks for a design, graphic, slide or post for Journey Church.
+description: Make Journey Church graphics, slides, stories and posts from the church's live design system on GitHub. Use for /journey-design or any Journey Church design request.
 ---
 
 # /journey-design
 
 You are designing for Journey Church, a single-campus church at 6225 Lake Gray Blvd Ste 2, Jacksonville, FL 32244. Services are Sundays 9:00 & 11:00 AM. Adam Hardegree is Lead Pastor and approves all copy. Kids have their own space from birth through fifth grade. Website: journeychurch.org.
 
-Everything you build comes from the Journey Church design system, the **JourneyChurchJax/journey-design** repo. Don't invent a look. Start from what's already there.
+Everything you build comes from the Journey Church design system, the public GitHub repo **JourneyChurchJax/journey-design**. It changes often, so **always read it fresh from GitHub at the start of every request.** Never work from memory or from an old copy. Don't invent a look. Start from what's already there.
 
-## Step 0: find the design files
+## Step 0: get the newest design files
 
-Call the design system folder **DS** below. It is whichever of these you find first:
+If you're already working inside a copy of the repo (a folder that holds `brand.md` and `_ds_bundle.js`), pull the newest version and use it. Otherwise download what you need with code execution:
 
-1. **A copy of the journey-design repo you're working in** (Claude Code, or a folder the user shared): the folder that holds `brand.md` and `_ds_bundle.js`. Use it; it's the newest.
-2. **Otherwise:** the `design/` folder next to this SKILL.md. It's a copy of the repo that ships with the skill. Its photos, series art and finished graphics are reduced in size to keep the skill small. Use them for layout and for matching a look. When the user needs full-resolution artwork for print or a large screen, the originals are in the GitHub repo.
+```python
+import json, os, urllib.request, urllib.parse
+REPO, BRANCH, OUT = "JourneyChurchJax/journey-design", "main", "/tmp/journey-design"
+RAW = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/"
+tree = json.load(urllib.request.urlopen(f"https://api.github.com/repos/{REPO}/git/trees/{BRANCH}?recursive=1"))["tree"]
+paths = [t["path"] for t in tree if t["type"] == "blob"]
+
+def get(prefixes):
+    """Download every file whose path starts with one of these prefixes."""
+    n = 0
+    for p in paths:
+        if p.startswith(tuple(prefixes)) and not p.endswith(".zip"):
+            dest = os.path.join(OUT, p)
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            urllib.request.urlretrieve(RAW + urllib.parse.quote(p), dest)
+            n += 1
+    return n
+
+# Always: the rules, the building blocks, the logos, the templates.
+get(["brand.md", "readme.md", "styles.css", "_ds_bundle.js", "tokens/", "base/",
+     "assets/logo/", "assets/fonts/", "components/graphics/", "slides/", "projects/"])
+# To see what exists, list the folders:
+print(sorted({p.split("/")[0] + "/" + p.split("/")[1] for p in paths
+              if p.startswith(("ministries/", "series/", "events/", "projects/", "Graphics/")) and p.count("/") >= 2}))
+```
+
+Then, once you know what the request is for, fetch its folders too, for example:
+
+```python
+get(["events/baptism/", "Graphics/Baptism/"])            # an event and its finished work
+get(["ministries/good-work/", "Graphics/Good Work/"])     # a ministry
+get(["assets/photo/"])                                    # only if the design needs a photograph
+```
+
+Call the downloaded folder **DS** below (`/tmp/journey-design`).
+
+**If the download fails** (no network in code execution): read `brand.md` and the files you need through web fetch at `https://raw.githubusercontent.com/JourneyChurchJax/journey-design/main/<path>` (spaces in paths become `%20`). Tell the user that code execution can't reach GitHub, so you can read the rules but can't build a finished image, and that turning on network access for code execution in their Claude settings fixes it. Never guess the rules from memory.
 
 The main pieces in DS:
 
