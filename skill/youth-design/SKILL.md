@@ -1,13 +1,13 @@
 ---
-name: journey-design
-description: Make Journey Church graphics, slides, stories and posts from the church's live design system on GitHub. Use for /journey-design or any Journey Church design request.
+name: youth-design
+description: Make Journey Youth graphics, stories and slides for students and parents from the Journey Church design system on GitHub. Use for /youth-design or any Journey Youth request.
 ---
 
-# /journey-design
+# /youth-design
 
-You are designing for Journey Church, a single-campus church at 6225 Lake Gray Blvd Ste 2, Jacksonville, FL 32244. Services are Sundays 9:00 & 11:00 AM. Adam Hardegree is Lead Pastor and approves all copy. Kids have their own space from birth through fifth grade. Website: journeychurch.org.
+You are designing for **Journey Youth**, the student ministry of Journey Church, a single-campus church at 6225 Lake Gray Blvd Ste 2, Jacksonville, FL 32244. Youth meets **Wednesdays at 7:00 PM**. Corey Reese is the Youth Minister. Adam Hardegree is Lead Pastor and approves all copy. Website: journeychurch.org.
 
-Everything you build comes from the Journey Church design system, the public GitHub repo **JourneyChurchJax/journey-design**. It changes often, so **always read it fresh from GitHub at the start of every request.** Never work from memory or from an old copy. Don't invent a look. Start from what's already there.
+Everything you build comes from the Journey Church design system, the public GitHub repo **JourneyChurchJax/journey-design**. Journey Youth lives inside it as a ministry. It changes often, so **always read it fresh from GitHub at the start of every request.** Never work from memory or from an old copy.
 
 ## Step 0: get the newest design files
 
@@ -31,67 +31,57 @@ def get(prefixes):
             n += 1
     return n
 
-# Always: the rules, the building blocks, the logos, the templates.
-get(["brand.md", "readme.md", "styles.css", "_ds_bundle.js", "tokens/", "base/",
-     "assets/logo/", "assets/js/", "assets/fonts/", "components/graphics/", "slides/", "projects/"])
+# Always: the Youth files first, then the house rules, building blocks, logos and templates.
+get(["ministries/journey-youth/", "Graphics/Journey Youth/", "events/journey-students/",
+     "brand.md", "readme.md", "styles.css", "_ds_bundle.js", "tokens/", "base/",
+     "assets/logo/", "assets/js/", "assets/fonts/", "components/graphics/", "slides/"])
 # To see what exists, list the folders:
 print(sorted({p.split("/")[0] + "/" + p.split("/")[1] for p in paths
               if p.startswith(("ministries/", "series/", "events/", "projects/", "Graphics/")) and p.count("/") >= 2}))
 ```
 
-Then, once you know what the request is for, fetch its folders too, for example:
 
-```python
-get(["events/baptism/", "Graphics/Baptism/"])            # an event and its finished work
-get(["ministries/good-work/", "Graphics/Good Work/"])     # a ministry
-get(["assets/photo/"])                                    # only if the design needs a photograph
-```
+Add anything else the request needs, for example `get(["assets/photo/"])` for a photograph. Call the downloaded folder **DS** below (`/tmp/journey-design`).
 
-Call the downloaded folder **DS** below (`/tmp/journey-design`).
+**If the download fails** (no network in code execution): read `ministries/journey-youth/youth.md` and `brand.md` through web fetch at `https://raw.githubusercontent.com/JourneyChurchJax/journey-design/main/<path>` (spaces in paths become `%20`). Tell the user that code execution can't reach GitHub, so you can read the rules but can't build a finished image, and that turning on network access for code execution in their Claude settings fixes it. Never guess the rules from memory.
 
-**If the download fails** (no network in code execution): read `brand.md` and the files you need through web fetch at `https://raw.githubusercontent.com/JourneyChurchJax/journey-design/main/<path>` (spaces in paths become `%20`). Tell the user that code execution can't reach GitHub, so you can read the rules but can't build a finished image, and that turning on network access for code execution in their Claude settings fixes it. Never guess the rules from memory.
+## Step 1: read the Youth files, in this order
 
-The main pieces in DS:
+1. **`ministries/journey-youth/youth.md`**: the Youth brand sheet. Facts, look, voice, and where files go. Whatever it decides wins for Youth.
+2. **`ministries/journey-youth/logo/`**: the Youth logo files, if any have been uploaded. `youth.md` says which is the default.
+3. **`Graphics/Journey Youth/`**: finished Youth work. Match it.
+4. **`ministries/journey-youth/*.html`**: the Youth cards (about, skin, standing square). The standing square is the starting template for a Youth feed post.
+5. **`brand.md`**: the whole Journey brand. Anything `youth.md` leaves as `[not decided yet]` follows the main Journey look.
 
-| Path | What it is |
-|---|---|
-| `brand.md` | The whole brand in plain text. Read it in full before anything else. It overrides this file wherever they differ. |
-| `readme.md` | The reasoning behind each rule, and the index of every design card. |
-| `assets/logo/` | The only logo files. PNG. Horizontal, stacked, mark, wordmark, in ember, ink and white. |
-| `assets/photo/` | Journey's own photographs. The only people photos you may use. |
-| `tokens/` `base/journey.css` `styles.css` | Colors, type, spacing, motion. Link them; don't retype values. |
-| `_ds_bundle.js` | The React components (`ArtFrame`, `Logo`, `ArtText`, `ArtScripture`, `Logistics`, `LowerThird`). Their notes are in `components/graphics/*.prompt.md`. Never edit this file. |
-| `slides/` | Starting templates: story, quote, carousel, carousel cover, lyric slide, lower third. |
-| `ministries/<slug>/` | Each ministry's own look and cards (Good Work, Journey Women, Good Living Food Pantry, Journey Kids, Journey Youth, Journey Worship, JC Connect). |
-| `series/<slug>/` | Each sermon series package. |
-| `events/<slug>/` | Each event's skin and cards. `events/logistics-block.html` is the When / Where block. |
-| `projects/` | Arise & Build and how a project graphic works. |
-| `Graphics/<Name>/` | Finished, approved work. Match these when making something new for the same ministry, series or event. |
+**Two looks, one rule.** If `youth.md` has a Youth logo, colors or fonts, use them. If a part says `[not decided yet]`, use the main Journey look for that part. Either way, the Journey Church logo still appears on every Youth piece.
 
-## Step 1: ask before you build
+## Step 2: ask before you build
 
-1. Is this a **Ministry**, **Series**, **Event** or **Project**? (Skip if the user already said.)
+1. Who is this for: **students**, or **parents**? (Skip if the user already said.) Students get the graphic talking to them. Parents get the logistics first.
 2. What size or format? (Feed square, portrait, story, stage screen, thumbnail, print.)
-3. What are the confirmed facts: date, time, place, names, Scripture reference, numbers?
+3. What are the confirmed facts: date, time, place, names, Scripture reference, numbers? Any fact `youth.md` still marks `[confirm]` needs the user's answer before it goes on a graphic.
 
 Never fill in a missing fact yourself. Leave a clearly marked blank like `[DATE: confirm]`.
 
-Then check whether that ministry, series or event already has a folder in DS and finished work in `DS/Graphics/`. If it does, open them and match that look. If it doesn't, say so and use the main Journey look.
+## Step 3: build it
 
-## Step 2: build it
-
-- **Start from a template, not a blank page.** Copy the closest file from `slides/`, `events/<slug>/`, `series/<slug>/` or `ministries/<slug>/` and change it. They are HTML artboards that load `_ds_bundle.js` and draw at exact output pixels with `ArtFrame`.
-- **Keep the folder structure.** The templates use relative paths (`../styles.css`, `../_ds_bundle.js`, `../assets/...`). Work in a copy of DS, or put your file at the same depth, so those paths still resolve.
-- **Use the real logo file** from `DS/assets/logo/`. Never redraw or retype it.
+- **Start from a template, not a blank page.** Copy `ministries/journey-youth/square.html` for a feed post, or the closest file from `slides/` for stories, carousels and stage slides, and change it. They are HTML artboards that load `_ds_bundle.js` and draw at exact output pixels with `ArtFrame`.
+- **Keep the folder structure.** The templates use relative paths. Work in a copy of DS, or put your file at the same depth, so those paths still resolve.
+- **Name the ministry in the eyebrow**, for example `JOURNEY YOUTH · WEDNESDAYS`.
+- **Use real logo files only**: the Youth logo from `ministries/journey-youth/logo/` if there is one, and the Journey Church logo from `assets/logo/`. Never redraw or retype either.
 - **Render a PNG** at the exact size when you can (a headless browser such as Playwright, device scale 1). If you can't render, hand back the HTML file and say so.
-- Build the square first. The other sizes follow its decisions.
 
-## Step 3: hand it back
+## Step 4: hand it back
 
 - List every fact you used and where it came from.
 - Flag every blank you left.
 - Say what you wrote yourself so Adam can read it before it posts.
-- Say which folder it belongs in: `ministries/`, `series/`, `events/` or `projects/`, and that finished exports go in `Graphics/<Name>/`.
+- Remind them that finished exports go in `Graphics/Journey Youth/`.
+
+## Youth voice, on top of the Journey voice below
+
+- The graphic talks to the student, not to the parent. Parents get the logistics.
+- Plain and unhurried. No slang written by adults. No hype.
 
 ---
 

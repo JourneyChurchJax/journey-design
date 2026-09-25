@@ -49,6 +49,21 @@ Every time, it reads the newest design files straight from this repo, so you alw
 - **Gemini:** create a Gem. Paste the skill text into the instructions box. Add `brand.md` as a file.
 - **Anything else:** paste the skill text at the top of your first message, then attach `brand.md`.
 
+### Journey Youth: type /youth-design
+Youth has its own skill. It reads the same repo, but starts from the Youth files and writes for students and their parents.
+
+> /youth-design a story for this Wednesday night
+
+Youth files live in three places:
+
+| What | Where |
+|---|---|
+| The Youth brand sheet: facts, look, voice | `ministries/journey-youth/youth.md` |
+| Youth logo files | `ministries/journey-youth/logo/` |
+| Finished Youth graphics | `Graphics/Journey Youth/` |
+
+Until a Youth logo, colors and fonts are uploaded and written into `youth.md`, /youth-design uses the main Journey look. The moment they're there, it uses them.
+
 ### Adding something new to the repo
 1. Put the finished files in the right folder (Ministry, Series, Event or Project), one folder per name.
 2. Finished exports (PNGs, JPGs) also go in `Graphics/<name>/`.
@@ -64,13 +79,15 @@ If you're not sure where something goes, ask Adam before you upload.
 The skill is one small file, `skill/journey-design/SKILL.md`, packed as `skill/journey-design.zip` so Claude can take it. It holds the rules and tells Claude where the repo is. The designs themselves stay here in the repo, and the skill reads them fresh each time. **You install it once. When Adam updates the design system, you don't do anything.**
 
 ### Install it in Claude (about two minutes)
-1. On github.com, open this repo, then the **skill** folder, then **journey-design.zip**.
+There are two skills in the **skill** folder: **journey-design.zip** for everything, and **youth-design.zip** for Journey Youth. Install whichever you need, or both. The steps are the same.
+
+1. On github.com, open this repo, then the **skill** folder, then **journey-design.zip** (or **youth-design.zip**).
 2. Click **Download** (the arrow on the right). It lands in your Downloads folder.
 3. Go to **claude.ai/customize/skills**.
 4. Click the **+** button, then **Create skill**, then **Upload a skill**.
-5. Pick **journey-design.zip** from Downloads.
-6. Make sure the switch next to **journey-design** is on.
-7. Start a new chat and type **/journey-design**.
+5. Pick the zip from Downloads.
+6. Make sure its switch is on.
+7. Start a new chat and type **/journey-design** (or **/youth-design**).
 
 It only goes into your own Claude account. Nobody else gets it unless they install it too.
 
