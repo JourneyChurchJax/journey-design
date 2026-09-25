@@ -52,7 +52,7 @@ The brand guide is hosted behind auth on journeycommand.com. Assume a reader doe
 | `projects/` | Arise & Build at square and screen, plus what makes something a project |
 | `guidelines/` | 33 specimen cards — Colors, Type, Spacing, Brand, Social |
 | `slides/social-*.html` | Four house-look sermon-kit boards: story, quote, carousel cover and teaching slide |
-| `assets/logo/` | 16 lockup PNGs · `assets/photo/` 8 photographs · `assets/series/` 6 series files · `assets/js/` the two ported scripts |
+| `assets/logo/` | 16 lockup PNGs · `assets/photo/` 32 photographs · `assets/series/` 6 series files · `assets/js/` the two ported scripts |
 | `SKILL.md` | Agent Skills front matter, for use in Claude Code |
 
 ### Components

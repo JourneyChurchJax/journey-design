@@ -139,6 +139,30 @@ PNG only (no vector exists yet — nothing larger than a flier should be printed
 - [student-praying.jpg](/brand/assets/photo/student-praying.jpg)
 - [two-bowed-together.jpg](/brand/assets/photo/two-bowed-together.jpg)
 
+Sunday service, September 20, 2026 (2000 px web copies; the full-size originals are in Journey Command):
+- [baptism-arms-raised.jpg](/brand/assets/photo/baptism-arms-raised.jpg)
+- [dancing-by-the-cross.jpg](/brand/assets/photo/dancing-by-the-cross.jpg)
+- [embrace-in-the-crowd.jpg](/brand/assets/photo/embrace-in-the-crowd.jpg)
+- [face-to-the-floor.jpg](/brand/assets/photo/face-to-the-floor.jpg)
+- [hands-open-singing.jpg](/brand/assets/photo/hands-open-singing.jpg)
+- [hands-raised-in-the-rows.jpg](/brand/assets/photo/hands-raised-in-the-rows.jpg)
+- [hug-and-a-smile.jpg](/brand/assets/photo/hug-and-a-smile.jpg)
+- [hug-by-the-cross.jpg](/brand/assets/photo/hug-by-the-cross.jpg)
+- [kneeling-in-the-crowd.jpg](/brand/assets/photo/kneeling-in-the-crowd.jpg)
+- [praying-at-the-altar.jpg](/brand/assets/photo/praying-at-the-altar.jpg)
+- [preacher-reading-bible.jpg](/brand/assets/photo/preacher-reading-bible.jpg)
+- [room-under-the-cross.jpg](/brand/assets/photo/room-under-the-cross.jpg)
+- [singer-arm-raised.jpg](/brand/assets/photo/singer-arm-raised.jpg)
+- [singer-bowed-by-the-cross.jpg](/brand/assets/photo/singer-bowed-by-the-cross.jpg)
+- [singer-in-the-light.jpg](/brand/assets/photo/singer-in-the-light.jpg)
+- [singer-reaching-out.jpg](/brand/assets/photo/singer-reaching-out.jpg)
+- [worship-leader-singing.jpg](/brand/assets/photo/worship-leader-singing.jpg)
+- [worship-stage-and-room.jpg](/brand/assets/photo/worship-stage-and-room.jpg)
+- [worship-team-lyrics.jpg](/brand/assets/photo/worship-team-lyrics.jpg)
+- [young-man-eyes-closed.jpg](/brand/assets/photo/young-man-eyes-closed.jpg)
+- [young-man-worship-blue.jpg](/brand/assets/photo/young-man-worship-blue.jpg)
+- [young-woman-praying.jpg](/brand/assets/photo/young-woman-praying.jpg)
+
 ---
 
 ## Design catalog
