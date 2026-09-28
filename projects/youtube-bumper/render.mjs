@@ -35,7 +35,7 @@ const ff = spawn(process.env.FFMPEG || 'ffmpeg', [
 
 const frames = Math.round(duration * FPS);
 for (let f = 0; f < frames; f++) {
-  await page.evaluate(t => window.__seek(t), f / FPS);
+  await page.evaluate(t => window.__seek(t), (f + .5) / FPS); // mid-frame, so a cut lands on the frame nearest its beat
   const buf = await page.screenshot({ type: 'png' });
   if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once('drain', r));
 }

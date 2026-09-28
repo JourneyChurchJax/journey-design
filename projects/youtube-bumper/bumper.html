@@ -1,4 +1,4 @@
-<!-- @dsCard group="Project · YouTube Bumper" viewport="1920x1080" name="YouTube bumper" subtitle="6.5 seconds, 1920 × 1080, cut to Symmetry at 129 BPM. Sixteen of our own photos cutting on the kick (quarters, eighths, sixteenths), a red line racing underneath, then the mark draws on the bass drop and the lockup settles on ink. Click to play with sound. Render: node projects/youtube-bumper/render.mjs" -->
+<!-- @dsCard group="Project · YouTube Bumper" viewport="1920x1080" name="YouTube bumper" subtitle="7.5 seconds, 1920 × 1080, cut to Symmetry slowed to 112 BPM. Sixteen of our own photos cutting on the kick (quarters, eighths, sixteenths), a red line racing underneath, then the mark draws on the bass drop and the lockup settles on ink. Click to play with sound. Render: node projects/youtube-bumper/render.mjs" -->
 <!doctype html><html><head><meta charset="utf-8">
 <title>YouTube bumper</title>
 <style>
@@ -33,9 +33,9 @@
 <script>
 // Everything is a pure function of t (seconds) so the export script can seek frame by frame.
 // Photos cut hard, no scaling. Easing is the house curve cubic-bezier(.2,.7,.2,1), except the mark's draw (see below).
-// Cut to the music: "Symmetry" at 128.9 BPM. The excerpt starts two bars before its bass drop,
+// Cut to the music: "Symmetry", slowed from 128.9 to 112 BPM. The excerpt starts two bars before its bass drop,
 // so the photos cut on the kick for 8 beats (quarters, then eighths, then sixteenths) and the drop lands on the logo.
-const BEAT = 0.4655;
+const BEAT = 60 / 112; // 0.5357s
 const P = '../../assets/photo/';
 const SHOTS = [ // [file, beats on screen, horizontal drift direction]
   ['worship-stage-and-room.jpg', 1, 1],
@@ -55,8 +55,8 @@ const SHOTS = [ // [file, beats on screen, horizontal drift direction]
   ['young-man-eyes-closed.jpg', .25, 1],
   ['room-under-the-cross.jpg', .25, -1],
 ].map(([f, beats, dir]) => [f, beats * BEAT, dir]);
-const MONTAGE_END = SHOTS.reduce((s, x) => s + x[1], 0); // 8 beats, 3.72s: the drop
-const DURATION = MONTAGE_END + 6 * BEAT;                    // 6 beats of lockup, 6.52s total
+const MONTAGE_END = SHOTS.reduce((s, x) => s + x[1], 0); // 8 beats, 4.29s: the drop
+const DURATION = MONTAGE_END + 6 * BEAT;                    // 6 beats of lockup, 7.5s total
 
 function bezier(x1, y1, x2, y2) {
   const cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx;

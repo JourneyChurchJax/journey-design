@@ -341,7 +341,7 @@ Every design in the system, by group. Each link opens the design at full size.
 - [What makes it a project](/brand/projects/what-is-a-project.html) · 700x210 — Longer than an event, tracked over time, always with a number attached
 
 ### Project · YouTube Bumper
-- [YouTube bumper](/brand/projects/youtube-bumper/bumper.html) · 1920x1080 — 6.5 seconds, cut to *Symmetry* at 129 BPM. Sixteen of our own photos cutting on the kick, speeding up into the drop; the mark draws on the bass hit and the lockup settles on ink. MP4: [journey-bumper-1920x1080.mp4](/brand/exports/youtube-bumper/journey-bumper-1920x1080.mp4)
+- [YouTube bumper](/brand/projects/youtube-bumper/bumper.html) · 1920x1080 — 7.5 seconds, cut to *Symmetry* slowed to 112 BPM. Sixteen of our own photos cutting on the kick, speeding up into the drop; the mark draws on the bass hit and the lockup settles on ink. MP4: [journey-bumper-1920x1080.mp4](/brand/exports/youtube-bumper/journey-bumper-1920x1080.mp4)
 
 ---
 *Before posting anything: confirm every date and number against Planning Center or the live site, and have Adam approve the copy.*
