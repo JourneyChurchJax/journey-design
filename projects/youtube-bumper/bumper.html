@@ -1,4 +1,4 @@
-<!-- @dsCard group="Project · YouTube Bumper" viewport="1920x1080" name="YouTube bumper" subtitle="6 seconds, 1920 × 1080. Thirteen of our own photos on hard cuts that speed up, a red line racing underneath, then the mark draws on and the lockup settles on ink. Render: node projects/youtube-bumper/render.mjs" -->
+<!-- @dsCard group="Project · YouTube Bumper" viewport="1920x1080" name="YouTube bumper" subtitle="6.5 seconds, 1920 × 1080, cut to Symmetry at 129 BPM. Sixteen of our own photos cutting on the kick (quarters, eighths, sixteenths), a red line racing underneath, then the mark draws on the bass drop and the lockup settles on ink. Click to play with sound. Render: node projects/youtube-bumper/render.mjs" -->
 <!doctype html><html><head><meta charset="utf-8">
 <title>YouTube bumper</title>
 <style>
@@ -29,27 +29,34 @@
   </div>
   <div id="black"></div>
 </div></div>
+<audio id="music" src="../../exports/youtube-bumper/bumper-music.m4a" preload="auto"></audio>
 <script>
 // Everything is a pure function of t (seconds) so the export script can seek frame by frame.
 // Photos cut hard, no scaling. Easing is the house curve cubic-bezier(.2,.7,.2,1), except the mark's draw (see below).
-const DURATION = 6.0;
+// Cut to the music: "Symmetry" at 128.9 BPM. The excerpt starts two bars before its bass drop,
+// so the photos cut on the kick for 8 beats (quarters, then eighths, then sixteenths) and the drop lands on the logo.
+const BEAT = 0.4655;
 const P = '../../assets/photo/';
-const SHOTS = [ // [file, seconds on screen, horizontal drift direction]
-  ['worship-stage-and-room.jpg', .34, 1],
-  ['baptism-arms-raised.jpg', .30, -1],
-  ['singer-arm-raised.jpg', .27, 1],
-  ['hug-and-a-smile.jpg', .24, -1],
-  ['dancing-by-the-cross.jpg', .22, 1],
-  ['hands-raised-in-the-rows.jpg', .20, -1],
-  ['baptism-woman-water-01.webp', .18, 1],
-  ['young-man-eyes-closed.jpg', .17, -1],
-  ['embrace-in-the-crowd.jpg', .16, 1],
-  ['worship-leader-singing.jpg', .15, -1],
-  ['praying-at-the-altar.jpg', .14, 1],
-  ['congregation-hands-raised.jpg', .13, -1],
-  ['room-under-the-cross.jpg', .36, 1],
-];
-const MONTAGE_END = SHOTS.reduce((s, x) => s + x[1], 0); // ≈ 2.9s
+const SHOTS = [ // [file, beats on screen, horizontal drift direction]
+  ['worship-stage-and-room.jpg', 1, 1],
+  ['baptism-arms-raised.jpg', 1, -1],
+  ['singer-arm-raised.jpg', 1, 1],
+  ['hug-and-a-smile.jpg', 1, -1],
+  ['dancing-by-the-cross.jpg', .5, 1],
+  ['hands-raised-in-the-rows.jpg', .5, -1],
+  ['baptism-woman-water-01.webp', .5, 1],
+  ['young-man-worship-blue.jpg', .5, -1],
+  ['embrace-in-the-crowd.jpg', .25, 1],
+  ['worship-leader-singing.jpg', .25, -1],
+  ['praying-at-the-altar.jpg', .25, 1],
+  ['singer-reaching-out.jpg', .25, -1],
+  ['congregation-hands-raised.jpg', .25, 1],
+  ['hug-by-the-cross.jpg', .25, -1],
+  ['young-man-eyes-closed.jpg', .25, 1],
+  ['room-under-the-cross.jpg', .25, -1],
+].map(([f, beats, dir]) => [f, beats * BEAT, dir]);
+const MONTAGE_END = SHOTS.reduce((s, x) => s + x[1], 0); // 8 beats, 3.72s: the drop
+const DURATION = MONTAGE_END + 6 * BEAT;                    // 6 beats of lockup, 6.52s total
 
 function bezier(x1, y1, x2, y2) {
   const cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx;
@@ -77,15 +84,14 @@ const shotEls = SHOTS.map(([f]) => {
 const $ = id => document.getElementById(id);
 
 function render(t) {
-  // Montage: hard cuts, each frame drifting 60px sideways while it's up
+  // Montage: hard cuts on the beat, each photo drifting sideways while it's up
   let start = 0;
   SHOTS.forEach(([, dur, dir], k) => {
     const on = t >= start && t < start + dur;
     const el = shotEls[k];
     el.style.visibility = on ? 'visible' : 'hidden';
     if (on) {
-      const p = (t - start) / dur;
-      el.firstChild.style.transform = `translateX(${dir * (p - .5) * 60}px)`;
+      el.firstChild.style.transform = `translateX(${dir * (t - start - dur / 2) * 120}px)`; // 120px/s, same speed on every shot
     }
     start += dur;
   });
@@ -99,15 +105,15 @@ function render(t) {
   const C = MONTAGE_END;
   $('card').style.visibility = t >= C ? 'visible' : 'hidden';
 
-  // 1. The mark sweeps in clockwise from its opening, 0.75s.
+  // 1. The mark sweeps in clockwise from its opening, 0.75s, starting on the drop.
   // The one departure from the house curve: (.2,.7,.2,1) is so front-loaded the sweep reads as a pop, so this draw is in-out
-  const m = inOut(clamp01((t - C - .08) / .75));
+  const m = inOut(clamp01((t - C) / .75)); // starts on the drop
   const deg = m * 360;
   const mask = `conic-gradient(from 90deg at 9.33% 50%, #000 ${deg}deg, transparent ${deg}deg)`;
   $('mark').style.webkitMaskImage = mask; $('mark').style.maskImage = mask;
 
   // 2. The lockup slides from mark-centered to lockup-centered while the wordmark wipes in
-  const w = span(t, C + .7, C + 1.7);
+  const w = span(t, C + 1.5 * BEAT, C + 3.5 * BEAT);
   const markCenterOffset = 1100 / 2 - (1100 * .09); // mark centre sits ~9% in from the left edge
   $('lockup').style.transform = `translateX(${(1 - w) * markCenterOffset}px)`;
   $('word').style.clipPath = `inset(0 ${(1 - w) * 81.5}% 0 18.5%)`;
@@ -131,8 +137,14 @@ if (reduce || location.hash === '#still') {
   render(DURATION - .8); // the settled lockup
 } else if (location.hash !== '#seek') {
   window.__ready.then(() => {
-    const t0 = performance.now();
-    const tick = now => { render(((now - t0) / 1000) % (DURATION + 1)); requestAnimationFrame(tick); };
+    // Loops silently; click to restart it with the music (browsers won't autoplay sound)
+    let t0 = performance.now();
+    const music = $('music');
+    addEventListener('click', () => { music.currentTime = 0; music.play().catch(() => {}); t0 = performance.now(); });
+    const tick = now => {
+      const t = music.paused ? ((now - t0) / 1000) % (DURATION + 1) : music.currentTime;
+      render(Math.min(t, DURATION)); requestAnimationFrame(tick);
+    };
     requestAnimationFrame(tick);
   });
 }

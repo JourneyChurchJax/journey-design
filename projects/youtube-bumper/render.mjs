@@ -1,7 +1,7 @@
 // Renders bumper.html to an MP4, frame by frame.
 // Needs Playwright (Chromium) and ffmpeg (set FFMPEG=/path/to/ffmpeg if it isn't on PATH).
-// If exports/youtube-bumper/bumper-score.wav exists (python3 projects/youtube-bumper/score.py),
-// it is laid under the picture (score.py already masters it to -14 LUFS, true peak -1.3).
+// If exports/youtube-bumper/bumper-music.wav exists (python3 projects/youtube-bumper/music.py Symmetry.mp3),
+// it is laid under the picture (music.py already masters it to -14 LUFS).
 //   node projects/youtube-bumper/render.mjs
 import { chromium } from 'playwright';
 import { spawn } from 'node:child_process';
@@ -23,7 +23,7 @@ await page.evaluate(() => window.__ready);
 await page.evaluate(() => document.fonts.ready);
 const duration = await page.evaluate(() => window.__duration);
 
-const score = path.join(outDir, 'bumper-score.wav');
+const score = path.join(outDir, 'bumper-music.wav');
 const audio = fs.existsSync(score)
   ? ['-i', score, '-map', '0:v', '-map', '1:a', '-ar', '48000', '-c:a', 'aac', '-b:a', '192k', '-shortest']
   : [];
