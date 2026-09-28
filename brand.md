@@ -306,6 +306,7 @@ Every design in the system, by group. Each link opens the design at full size.
 ### Ministry · JC Connect Membership Class
 - [Screen slide · Nov 1](/brand/ministries/jc-connect-membership-class/slide-nov1.html) · 1920x1080 — Sunday, November 1, 9 – 11 AM
 - [Screen slide](/brand/ministries/jc-connect-membership-class/slide.html) · 1920x1080 — Recreated from the supplied graphic: boxed JC CONNECT lockup, Membership Class, three connects
+- [Screen slide · Your First Step](/brand/ministries/jc-connect-membership-class/slide-first-step.html) · 1920x1080 — The standing slide with YOUR FIRST STEP under the lockup. Journey has no written membership, so this is the version for the website
 - [Story · Nov 1 · Collage](/brand/ministries/jc-connect-membership-class/story-nov1-collage.html) · 1080x1920 — 1080×1920 for Instagram + Facebook Stories. A House Built collage up top fading into red
 - [Story · Nov 1 · Red](/brand/ministries/jc-connect-membership-class/story-nov1-red.html) · 1080x1920 — 1080×1920 for Instagram + Facebook Stories. Solid red, one centered group, Journey Church logo at the bottom
 - [Story · Nov 1](/brand/ministries/jc-connect-membership-class/story-nov1.html) · 1080x1920 — 1080×1920 for Instagram + Facebook Stories. Ruled date band low, Journey Church logo at the bottom
