@@ -1,0 +1,139 @@
+<!-- @dsCard group="Project · YouTube Bumper" viewport="1920x1080" name="YouTube bumper" subtitle="6 seconds, 1920 × 1080. Thirteen of our own photos on hard cuts that speed up, a red line racing underneath, then the mark draws on and the lockup settles on ink. Render: node projects/youtube-bumper/render.mjs" -->
+<!doctype html><html><head><meta charset="utf-8">
+<title>YouTube bumper</title>
+<style>
+  html,body{margin:0;height:100%;background:#050505;overflow:hidden}
+  #fit{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0}
+  #stage{position:relative;width:1920px;height:1080px;overflow:hidden;background:#0a0a0a}
+  .shot{position:absolute;inset:0;overflow:hidden;visibility:hidden}
+  .shot img{position:absolute;top:0;left:-60px;width:2040px;height:1080px;object-fit:cover;filter:saturate(.85) contrast(1.05)}
+  #line{position:absolute;left:0;bottom:0;height:12px;width:0;background:#ff3a3a}
+  #card{position:absolute;inset:0;background:#0a0a0a;visibility:hidden}
+  /* .grain — 4% white dots at 3px, overlay; dark field only, never on a photo */
+  #card::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1.2px);background-size:3px 3px;mix-blend-mode:overlay}
+  /* Lockup is horizontal-ember_cream.png (3340 × 643) shown twice: mark and wordmark clipped apart so they can arrive separately */
+  #lockup{position:absolute;left:50%;top:50%;width:1100px;height:212px;margin:-106px 0 0 -550px}
+  #lockup img{position:absolute;inset:0;width:100%;height:100%}
+  #mark{clip-path:inset(0 81.5% 0 0)}
+  #word{clip-path:inset(0 100% 0 18.5%)}
+  #black{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+</style></head><body>
+<div id="fit"><div id="stage">
+  <div id="shots"></div>
+  <div id="line"></div>
+  <div id="card">
+    <div id="lockup">
+      <img id="mark" src="../../assets/logo/horizontal-ember_cream.png" alt="">
+      <img id="word" src="../../assets/logo/horizontal-ember_cream.png" alt="Journey Church">
+    </div>
+  </div>
+  <div id="black"></div>
+</div></div>
+<script>
+// Everything is a pure function of t (seconds) so the export script can seek frame by frame.
+// Photos cut hard, no scaling. Easing is the house curve cubic-bezier(.2,.7,.2,1), except the mark's draw (see below).
+const DURATION = 6.0;
+const P = '../../assets/photo/';
+const SHOTS = [ // [file, seconds on screen, horizontal drift direction]
+  ['worship-stage-and-room.jpg', .34, 1],
+  ['baptism-arms-raised.jpg', .30, -1],
+  ['singer-arm-raised.jpg', .27, 1],
+  ['hug-and-a-smile.jpg', .24, -1],
+  ['dancing-by-the-cross.jpg', .22, 1],
+  ['hands-raised-in-the-rows.jpg', .20, -1],
+  ['baptism-woman-water-01.webp', .18, 1],
+  ['young-man-eyes-closed.jpg', .17, -1],
+  ['embrace-in-the-crowd.jpg', .16, 1],
+  ['worship-leader-singing.jpg', .15, -1],
+  ['praying-at-the-altar.jpg', .14, 1],
+  ['congregation-hands-raised.jpg', .13, -1],
+  ['room-under-the-cross.jpg', .36, 1],
+];
+const MONTAGE_END = SHOTS.reduce((s, x) => s + x[1], 0); // ≈ 2.9s
+
+function bezier(x1, y1, x2, y2) {
+  const cx = 3 * x1, bx = 3 * (x2 - x1) - cx, ax = 1 - cx - bx;
+  const cy = 3 * y1, by = 3 * (y2 - y1) - cy, ay = 1 - cy - by;
+  const X = t => ((ax * t + bx) * t + cx) * t, Y = t => ((ay * t + by) * t + cy) * t;
+  const dX = t => (3 * ax * t + 2 * bx) * t + cx;
+  return x => {
+    if (x <= 0) return 0; if (x >= 1) return 1;
+    let t = x;
+    for (let i = 0; i < 8; i++) { const d = dX(t); if (Math.abs(d) < 1e-6) break; t -= (X(t) - x) / d; }
+    return Y(Math.min(1, Math.max(0, t)));
+  };
+}
+const ease = bezier(.2, .7, .2, 1);
+const span = (t, a, b) => ease((t - a) / (b - a));
+const clamp01 = v => Math.max(0, Math.min(1, v));
+const inOut = bezier(.65, 0, .35, 1);
+
+const shotsEl = document.getElementById('shots');
+const shotEls = SHOTS.map(([f]) => {
+  const d = document.createElement('div'); d.className = 'shot';
+  const i = document.createElement('img'); i.src = P + f; i.alt = '';
+  d.appendChild(i); shotsEl.appendChild(d); return d;
+});
+const $ = id => document.getElementById(id);
+
+function render(t) {
+  // Montage: hard cuts, each frame drifting 60px sideways while it's up
+  let start = 0;
+  SHOTS.forEach(([, dur, dir], k) => {
+    const on = t >= start && t < start + dur;
+    const el = shotEls[k];
+    el.style.visibility = on ? 'visible' : 'hidden';
+    if (on) {
+      const p = (t - start) / dur;
+      el.firstChild.style.transform = `translateX(${dir * (p - .5) * 60}px)`;
+    }
+    start += dur;
+  });
+
+  // The red line runs the length of the montage, then leaves with it
+  const lp = clamp01(t / MONTAGE_END);
+  $('line').style.width = (lp * 1920) + 'px';
+  $('line').style.visibility = t < MONTAGE_END ? 'visible' : 'hidden';
+
+  // End card: cut to ink
+  const C = MONTAGE_END;
+  $('card').style.visibility = t >= C ? 'visible' : 'hidden';
+
+  // 1. The mark sweeps in clockwise from its opening, 0.75s.
+  // The one departure from the house curve: (.2,.7,.2,1) is so front-loaded the sweep reads as a pop, so this draw is in-out
+  const m = inOut(clamp01((t - C - .08) / .75));
+  const deg = m * 360;
+  const mask = `conic-gradient(from 90deg at 9.33% 50%, #000 ${deg}deg, transparent ${deg}deg)`;
+  $('mark').style.webkitMaskImage = mask; $('mark').style.maskImage = mask;
+
+  // 2. The lockup slides from mark-centered to lockup-centered while the wordmark wipes in
+  const w = span(t, C + .7, C + 1.7);
+  const markCenterOffset = 1100 / 2 - (1100 * .09); // mark centre sits ~9% in from the left edge
+  $('lockup').style.transform = `translateX(${(1 - w) * markCenterOffset}px)`;
+  $('word').style.clipPath = `inset(0 ${(1 - w) * 81.5}% 0 18.5%)`;
+
+  // 3. Hold, then a half-second dissolve to black
+  $('black').style.opacity = clamp01((t - (DURATION - .5)) / .5);
+}
+
+function fit() {
+  const s = Math.min(innerWidth / 1920, innerHeight / 1080);
+  $('fit').style.transform = `translate(${-960 * s}px,${-540 * s}px) scale(${s})`;
+}
+addEventListener('resize', fit); fit();
+
+window.__duration = DURATION;
+window.__seek = t => render(t);
+window.__ready = Promise.all([...document.images].map(i => i.decode().catch(() => {})));
+
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (reduce || location.hash === '#still') {
+  render(DURATION - .8); // the settled lockup
+} else if (location.hash !== '#seek') {
+  window.__ready.then(() => {
+    const t0 = performance.now();
+    const tick = now => { render(((now - t0) / 1000) % (DURATION + 1)); requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  });
+}
+</script></body></html>

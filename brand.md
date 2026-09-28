@@ -340,5 +340,8 @@ Every design in the system, by group. Each link opens the design at full size.
 - [Arise & Build](/brand/projects/arise-and-build.html) · 1080x1080 — The building campaign. The progress meter is the graphic; both figures from a live source
 - [What makes it a project](/brand/projects/what-is-a-project.html) · 700x210 — Longer than an event, tracked over time, always with a number attached
 
+### Project · YouTube Bumper
+- [YouTube bumper](/brand/projects/youtube-bumper/bumper.html) · 1920x1080 — 6 seconds. Thirteen of our own photos on hard cuts that speed up, then the mark draws on and the lockup settles on ink. MP4: [journey-bumper-1920x1080.mp4](/brand/exports/youtube-bumper/journey-bumper-1920x1080.mp4)
+
 ---
 *Before posting anything: confirm every date and number against Planning Center or the live site, and have Adam approve the copy.*
