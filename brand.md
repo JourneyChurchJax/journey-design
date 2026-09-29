@@ -139,6 +139,12 @@ PNG only (no vector exists yet — nothing larger than a flier should be printed
 - [student-praying.jpg](/brand/assets/photo/student-praying.jpg)
 - [two-bowed-together.jpg](/brand/assets/photo/two-bowed-together.jpg)
 
+Sunday service, April 26, 2026 (2000 px web copy; the full-size original is in Journey Command):
+- [baptism-student-smiling.jpg](/brand/assets/photo/baptism-student-smiling.jpg)
+
+Wednesday service, August 26, 2026 (2000 px web copy; the full-size original is in Journey Command):
+- [students-clapping-in-worship.jpg](/brand/assets/photo/students-clapping-in-worship.jpg)
+
 Sunday service, September 20, 2026 (2000 px web copies; the full-size originals are in Journey Command):
 - [baptism-arms-raised.jpg](/brand/assets/photo/baptism-arms-raised.jpg)
 - [dancing-by-the-cross.jpg](/brand/assets/photo/dancing-by-the-cross.jpg)
