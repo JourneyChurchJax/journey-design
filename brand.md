@@ -61,9 +61,14 @@ Eyebrows: 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72rem, 0.18em, 600
 **Minimum sizes on graphics (floors):** 1080 square — eyebrow 26px, headline 86px, body 34px, logistics label 22px / value 36px. 1920 stage screen — lyrics 100px, Scripture 80px, labels 30px.
 
 ## Layout
-- Flex/grid with gaps. Generous space. Structure comes from 1px hairlines and hard color splits, not boxes or shadows.
-- **Corners:** 999px pills (buttons, chips) or 0. Nothing in between.
-- **No shadows, no decorative gradients.** Gradients only as dark scrims to protect type on photos.
+- Flex/grid with gaps. Generous space. The feel is Apple and Airbnb in Journey's colors: lots of air, soft rounded shapes, cards that lift slightly off the page, one obvious next step.
+- **Surfaces:** cream page (`#F7F4F0`), raised card (`#FBF9F6`, always with a shadow), sunken ground for grouped lists and fields (`#ECE7DF`). Dark sections stay punctuation.
+- **Corners (Oct 2026):** a fixed scale — `--radius-xs` 6 (tags), `--radius-sm` 10 (inputs, segmented controls), `--radius-md` 14 (grouped lists, small cards), `--radius-lg` 20 (cards, tiles, photos in UI), `--radius-xl` 28 (hero media, galleries, sheets), `--radius-pill` 999 (buttons, chips, search, avatars, bars). Square only for full-bleed photos, edge-to-edge sections and the frame of a graphic or stage screen. Nested corners step down one size.
+- **Shadows (Oct 2026):** soft and warm, only from the `--shadow-*` tokens. `md` is the default card, `lg` for hover, popovers and a sticky action panel, `sm` for the search bar and chips, `xs` under resting buttons, `xl` only for a sheet over a scrim. A card gets a shadow or a 1px hairline, never both. No shadow on text, the logo, a bare photo or a dark section.
+- **Interface patterns:** frosted sticky nav (cream at 82% with a 20px blur and a hairline), pill search bar, listing-style tiles (rounded media, plain facts underneath), a sticky booking-style action panel, grouped lists with inset separators and a typed `›`, segmented controls, bento tiles for personal dashboards.
+- **Motion additions:** a card lifts 2px on hover (shadow md → lg, 0.25s); a button settles to 0.98 scale on press; sheets rise from the bottom. Nothing bounces or spins.
+- **On graphics:** rounded cards and soft shadows may appear inside a graphic when it shows an interface or an information card. The frame of the graphic, full-bleed photos and stage screens stay square.
+- **No decorative gradients.** Gradients only as dark scrims to protect type on photos.
 - Textures: fine dot grain on large dark fields, or fine ink dots on large cream fields — never both, never on a photo.
 - **Ghost device:** one per graphic — a huge numeral or word in Inter Tight 800 at 8% (cream) / 10% (dark) opacity bleeding off an edge.
 - **No icon set.** Arrows are typographic (→). Labels ("When," "Where") instead of calendar or clock icons.
@@ -180,7 +185,7 @@ Every design in the system, by group. Each link opens the design at full size.
 - [Logo rules](/brand/guidelines/brand-logo-never.html) · 700x180 — Clear space, minimums, and the list of never
 - [Motion](/brand/guidelines/brand-motion.html) · 700x170 — One curve. Slow and few. Nothing bounces, scales, or spins
 - [Never](/brand/guidelines/brand-never.html) · 700x200 — The short list of no
-- [Ornaments](/brand/guidelines/brand-ornaments.html) · 700x180 — The entire set. No icon library, no shadows, no gradients
+- [Ornaments](/brand/guidelines/brand-ornaments.html) · 700x180 — The entire set. No icon library, no gradients
 - [Photography rules](/brand/guidelines/brand-photo-rules.html) · 700x180 — Our room, our people. No stock photography of people, ever
 - [Photo treatment](/brand/guidelines/brand-photo.html) · 700x220 — Natural color pulled to 85%, bottom-weighted scrim, grain. Never a duotone or a blur
 - [Voice](/brand/guidelines/brand-voice.html) · 700x200 — Like a friend over coffee. Written to one real person
@@ -203,7 +208,7 @@ Every design in the system, by group. Each link opens the design at full size.
 
 ### Spacing
 - [Page rhythm](/brand/guidelines/space-layout.html) · 700x170 — Section padding, gutter, measure, container
-- [Radii](/brand/guidelines/space-radii.html) · 700x150 — Two values. Pills, and square. Nothing in between
+- [Radii](/brand/guidelines/space-radii.html) · 700x150 — The radius scale: xs 6 through xl 28, pills, and square for full bleed
 - [Artboard geometry](/brand/guidelines/space-safe.html) · 700x170 — Sizes, safe zones, and the locked logo corner
 - [Space scale](/brand/guidelines/space-scale.html) · 700x150 — Seven steps, the last one fluid
 

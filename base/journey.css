@@ -45,7 +45,7 @@ a:hover{color:var(--ember)}
 .link-u::after{content:"";position:absolute;left:0;right:0;bottom:-.15em;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .5s var(--curve)}
 .link-u:hover::after{transform:scaleX(1)}
 
-/* ORNAMENTS — this is the entire set. No icon library, no shadows, no gradients. */
+/* ORNAMENTS — this is the entire set. No icon library, no gradients. (Soft shadows are surface tokens, not ornaments: see tokens/spacing.css.) */
 .ember-dot::before{content:"";display:inline-block;width:.48em;height:.48em;background:var(--ember);border-radius:999px;margin-right:.7em;vertical-align:middle;transform:translateY(-.08em)}
 .eyebrow-line{display:inline-block;height:1px;background:var(--ember);width:4rem;vertical-align:middle;transition:width 1s var(--curve)}
 .reveal .eyebrow-line{width:0}
