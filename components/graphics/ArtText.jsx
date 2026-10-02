@@ -1,7 +1,7 @@
 import React from 'react';
 
 /* Eyebrow plus headline at artboard scale. Floors: eyebrow 26px, headline 86px.
-   One italic red accent word, same rule as the web. */
+   One red accent word or phrase (not italic), same rule as the web. */
 export function ArtText({ eyebrow, accent, size = 120, eyebrowSize = 26, series = false, children, className = '', style, ...rest }) {
   return (
     <div className={className} style={style} {...rest}>

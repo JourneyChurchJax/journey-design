@@ -72,7 +72,7 @@ function OverviewScreen({setPage}){
       <div className="g2" style={{marginTop:'2rem'}}>
         <div className="ex"><div className="box" style={{background:'var(--ink-50)',border:'1px solid var(--ink-200)',minHeight:'9rem',justifyContent:'center'}}>
           <p className="display" style={{fontSize:'clamp(1.9rem,4vw,2.8rem)'}}>Come as you <span className="display-italic">are</span>.</p></div>
-          <p className="ex-l">Inter Tight 800 — the church's voice</p><p className="ex-n">Headlines, titles, numbers. Tracking −0.035em, line-height 0.95. Every headline gets exactly one italic red word, and it is the emotional beat — never "the," "and," or "of."</p></div>
+          <p className="ex-l">Bricolage Grotesque 800 — the church's voice</p><p className="ex-n">Headlines, titles, numbers. Tracking −0.035em, line-height 0.95. Every headline gets exactly one italic red word, and it is the emotional beat — never "the," "and," or "of."</p></div>
         <div className="ex"><div className="box" style={{background:'var(--ink-50)',border:'1px solid var(--ink-200)',minHeight:'9rem',justifyContent:'center'}}>
           <p style={{margin:0,fontSize:'1.05rem',lineHeight:1.65,maxWidth:'34ch'}}>Sundays 9:00 &amp; 11:00 AM. Kids have their own space from birth through fifth grade. Come early, coffee's on.</p></div>
           <p className="ex-l">Inter 400 — the plain speech</p><p className="ex-n">Body, logistics, captions, buttons. Never below 1rem on the web, never below 26px on a 1080 graphic.</p></div>
@@ -167,7 +167,7 @@ function OverviewScreen({setPage}){
           <ArtText eyebrow="Healing Room · Quarterly" size={108} accent="prayed">Come and be</ArtText>
           <Logistics items={[{label:'When',value:'Sun Oct 12 · 6 PM'},{label:'Where',value:'The Chapel'}]}/>
           <Logo base={L} on="cream" width={280}/>
-        </ArtFrame><p className="ex-l">And the house look, for comparison</p><p className="ex-n">Everything that is not a series stays in Inter Tight.</p></div>
+        </ArtFrame><p className="ex-l">And the house look, for comparison</p><p className="ex-n">Everything that is not a series stays in Bricolage Grotesque.</p></div>
       </div>
     </Sect>
 

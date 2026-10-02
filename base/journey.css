@@ -21,9 +21,10 @@ section{padding:var(--section-y) 0}
 .on-ember .muted{color:rgba(255,255,255,.82)}
 
 /* TYPE */
-.display{font-family:'Inter Tight','Inter',ui-sans-serif,system-ui,sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.95;margin:0}
-.display-italic{font-family:'Inter Tight','Inter',ui-sans-serif,system-ui,sans-serif;font-style:italic;font-weight:700;letter-spacing:-.03em;color:var(--ember)}
-.on-dark .display-italic,.on-deep .display-italic,.on-ember .display-italic{color:#fff;opacity:.95}
+.display{font-family:var(--font-display);font-weight:800;letter-spacing:var(--track-display);line-height:var(--leading-display);margin:0}
+/* The red accent (Oct 2026): one word or phrase in red, same weight, NOT italic. Class name kept so existing pages keep working. */
+.display-italic{font-family:var(--font-display);font-style:normal;font-weight:800;letter-spacing:var(--track-display);color:var(--ember)}
+.on-ember .display-italic{color:#fff}
 .t-hero{font-size:clamp(3.25rem,10.5vw,9.25rem)}
 .t-display{font-size:clamp(2.25rem,5.5vw,4.75rem)}
 .t-h2{font-size:clamp(1.875rem,3.5vw,3rem)}
@@ -51,8 +52,8 @@ a:hover{color:var(--ember)}
 .reveal .eyebrow-line{width:0}
 .reveal.in .eyebrow-line{width:4rem}
 .ember-underline{background-image:linear-gradient(to right,var(--ember) 0,var(--ember) 100%);background-repeat:no-repeat;background-size:100% .22em;background-position:0 88%;padding:0 .05em}
-.num{font-family:'Inter Tight','Inter',sans-serif;font-weight:600;color:var(--ember);letter-spacing:-.02em}
-.huge-letter{font-family:'Inter Tight','Inter',sans-serif;font-weight:800;line-height:.8}
+.num{font-family:'Bricolage Grotesque','Inter',sans-serif;font-weight:600;color:var(--ember);letter-spacing:-.02em}
+.huge-letter{font-family:'Bricolage Grotesque','Inter',sans-serif;font-weight:800;line-height:.8}
 .rule{height:1px;background:rgba(10,10,10,.12);border:0;margin:0}
 .rule-dark{height:1px;background:rgba(247,244,240,.16);border:0;margin:0}
 .grain{position:relative}
@@ -87,7 +88,7 @@ a:hover{color:var(--ember)}
 .facts{margin:0}
 .facts dt{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--ink-400)}
 .on-dark .facts dt,.on-deep .facts dt{color:var(--ink-300)}
-.facts dd{margin:.35rem 0 1.4rem;font-family:'Inter Tight','Inter',sans-serif;font-weight:600;font-size:1.05rem;letter-spacing:-.01em;line-height:1.45}
+.facts dd{margin:.35rem 0 1.4rem;font-family:'Bricolage Grotesque','Inter',sans-serif;font-weight:600;font-size:1.05rem;letter-spacing:-.01em;line-height:1.45}
 
 /* STEPS — .num pattern */
 .step h3{margin:.75rem 0 0}
@@ -123,7 +124,7 @@ a:hover{color:var(--ember)}
 
 /* DISCLOSURE — FAQ / accordion, hairlines only */
 .disclose{border-top:1px solid var(--ink-200)}
-.disclose summary{cursor:pointer;list-style:none;padding:1.25rem 0;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;font-family:'Inter Tight','Inter',sans-serif;font-weight:600;font-size:clamp(1.05rem,1.5vw,1.25rem);letter-spacing:-.01em}
+.disclose summary{cursor:pointer;list-style:none;padding:1.25rem 0;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;font-family:'Bricolage Grotesque','Inter',sans-serif;font-weight:600;font-size:clamp(1.05rem,1.5vw,1.25rem);letter-spacing:-.01em}
 .disclose summary::-webkit-details-marker{display:none}
 .disclose summary::after{content:"";width:.7rem;height:.7rem;flex:none;border-right:1.5px solid var(--ember);border-bottom:1.5px solid var(--ember);transform:rotate(45deg);transition:transform .35s var(--curve)}
 .disclose[open] summary::after{transform:rotate(225deg)}
@@ -134,7 +135,7 @@ a:hover{color:var(--ember)}
 /* NAV */
 .nav{position:sticky;top:0;z-index:50;background:var(--ink-50);border-bottom:1px solid var(--ink-200)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;gap:2rem;padding-block:1.05rem}
-.nav-brand{font-family:'Inter Tight','Inter',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:1.15rem;text-decoration:none;color:var(--ink-800)}
+.nav-brand{font-family:'Bricolage Grotesque','Inter',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:1.15rem;text-decoration:none;color:var(--ink-800)}
 .nav-brand:hover{color:var(--ink-800)}
 .nav-links{display:flex;align-items:center;gap:clamp(1rem,2.2vw,2rem);list-style:none;margin:0;padding:0}
 .nav-links a{font-size:.9rem;font-weight:500;text-decoration:none;color:var(--ink-500);transition:color .25s var(--curve),transform .25s var(--curve)}

@@ -9,7 +9,7 @@ export interface LowerThirdProps extends React.HTMLAttributes<HTMLDivElement> {
   left?: number;
   /** Distance from the bottom edge in output px. Default 96. */
   bottom?: number;
-  /** Set the name in the current series face instead of Inter Tight. */
+  /** Set the name in the current series face instead of Bricolage Grotesque. */
   seriesFace?: boolean;
 }
 export declare function LowerThird(props: LowerThirdProps): JSX.Element;

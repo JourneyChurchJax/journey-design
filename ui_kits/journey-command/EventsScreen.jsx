@@ -22,7 +22,7 @@ function EventsScreen(){
         </ArtFrame>
         <div className="box"><h4>How it's set</h4><ul>
           <li>Label in Inter 600, 22px, tracked 0.18em, uppercase, muted.</li>
-          <li>Value in Inter Tight 600, 36px.</li>
+          <li>Value in Bricolage Grotesque 600, 36px.</li>
           <li>Two or three cells. Never four — if it needs four, it needs a web page.</li>
           <li>Dates as <b>Sun Oct 12 · 6 PM</b>. Times with the ampersand: <b>9:00 &amp; 11:00 AM</b>.</li>
           <li>It sits directly above the logo, always, so the eye finishes on when and where.</li>
@@ -101,7 +101,7 @@ function EventsScreen(){
         <dt>Formats</dt><dd>Every event ships as square (1080 × 1080), story (1080 × 1920), and screen (1920 × 1080). Build the square first — the other two follow its decisions.</dd>
         <dt>Safe zones</dt><dd>Square 80px all sides. Story 250px top and bottom, 80px sides. Screen 96px action-safe.</dd>
         <dt>Type floor</dt><dd>Eyebrow 26px · Headline 86px · Logistics label 22px, value 36px · Body 34px.</dd>
-        <dt>The series face</dt><dd>Only big events borrow Archivo. Everything recurring stays in Inter Tight, so the calendar doesn't shout every week.</dd>
+        <dt>The series face</dt><dd>Only big events borrow Archivo. Everything recurring stays in Bricolage Grotesque, so the calendar doesn't shout every week.</dd>
         <dt>One device</dt><dd>A ghosted numeral, a ghosted word, or a progress meter. One per graphic, never on a photo. The logo is never the device.</dd>
         <dt>Red budget</dt><dd>One red thing per graphic. On cream that's the italic word; on dark or photo it's the eyebrow.</dd>
         <dt>Copy</dt><dd>The eyebrow names the moment. The headline says it in a human sentence. No exclamation points. Copy decisions are Adam's.</dd>

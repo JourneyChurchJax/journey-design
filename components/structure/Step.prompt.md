@@ -7,5 +7,5 @@ Use Step for "how this works" sequences. Lay three or four across a `.grid3` or 
 </div>
 ```
 
-- Numerals are Inter Tight 600 in red, around 2.75rem.
+- Numerals are Bricolage Grotesque 600 in red, around 2.75rem.
 - No circles, no badges, no connector lines. The numeral is the device.

@@ -16,7 +16,7 @@ function Stack({n,color,size,style}){
     {Array.from({length:n}).map((_,i)=>(<p key={i} className="big out" style={{fontSize:size,lineHeight:.76,WebkitTextStrokeWidth:3.5,WebkitTextStrokeColor:color}}>{WORD}</p>))}
   </div>);
 }
-const SP={margin:0,position:'absolute',zIndex:4,right:96,textAlign:'right',whiteSpace:'nowrap',textTransform:'uppercase',fontFamily:"'Inter Tight',sans-serif"};
+const SP={margin:0,position:'absolute',zIndex:4,right:96,textAlign:'right',whiteSpace:'nowrap',textTransform:'uppercase',fontFamily:"'Bricolage Grotesque',sans-serif"};
 function Slide(){
   return (<div className="fr" style={{'--w':1920,'--h':1080}}><div className="art" style={{padding:0,background:'#1c1b19'}}>
     <div style={{position:'absolute',inset:0,zIndex:0,background:`url('${PHOTO}') 30% 90%/cover`}}/>
@@ -24,10 +24,10 @@ function Slide(){
     <span style={{position:'absolute',inset:0,zIndex:1,backgroundImage:'radial-gradient(rgba(247,244,240,.06) 1px,transparent 1px)',backgroundSize:'3px 3px',pointerEvents:'none'}}/>
     <Stack n={4} color="#f7f4f0" size={140} style={{right:80,top:-6}}/>
     <Stack n={4} color="#ff3a3a" size={140} style={{left:24,top:774}}/>
-    <p style={{...SP,top:452,font:"800 108px/1 'Inter Tight',sans-serif",letterSpacing:'.22em',marginRight:'-.22em',color:'#f7f4f0'}}>October 25</p>
-    <p style={{...SP,top:582,font:"italic 700 28px/1 'Inter Tight',sans-serif",letterSpacing:'.2em',marginRight:'-.2em',color:'#f7f4f0'}}>Sunday · After Second Service</p>
-    <p style={{...SP,top:628,font:"italic 700 28px/1 'Inter Tight',sans-serif",letterSpacing:'.2em',marginRight:'-.2em',color:'#f7f4f0'}}>Outdoors during Missions Sunday</p>
-    <p style={{...SP,top:704,font:"italic 700 30px/1 'Inter Tight',sans-serif",letterSpacing:'.24em',marginRight:'-.24em',color:'#f7f4f0'}}><span style={{color:'#ff3a3a'}}>Register:</span> journeychurch.org/baptism</p>
+    <p style={{...SP,top:452,font:"800 108px/1 'Bricolage Grotesque',sans-serif",letterSpacing:'.22em',marginRight:'-.22em',color:'#f7f4f0'}}>October 25</p>
+    <p style={{...SP,top:582,font:"italic 700 28px/1 'Bricolage Grotesque',sans-serif",letterSpacing:'.2em',marginRight:'-.2em',color:'#f7f4f0'}}>Sunday · After Second Service</p>
+    <p style={{...SP,top:628,font:"italic 700 28px/1 'Bricolage Grotesque',sans-serif",letterSpacing:'.2em',marginRight:'-.2em',color:'#f7f4f0'}}>Outdoors during Missions Sunday</p>
+    <p style={{...SP,top:704,font:"italic 700 30px/1 'Bricolage Grotesque',sans-serif",letterSpacing:'.24em',marginRight:'-.24em',color:'#f7f4f0'}}><span style={{color:'#ff3a3a'}}>Register:</span> journeychurch.org/baptism</p>
     <Logo base={A+'/logo'} on="photo" width={360} className="lgc" style={{right:96,bottom:88}}/>
   </div></div>);
 }
