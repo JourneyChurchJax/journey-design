@@ -1,0 +1,28 @@
+/* Journey Church — social templates (Oct 2026).
+   The look: our own photos in full color, Bricolage Grotesque 800 headlines set big, one red word or phrase,
+   a faint ghost word, the heavy J. No band when the photo can carry the type; a white, red or black band when it can't.
+   Loaded after ../styles.css. Artboards are px. */
+:root{--red:var(--ember);--ink:var(--ink-800);--mute:#6B675F;--cream:var(--ink-50)} /* short names used inside the templates */
+.ab{position:relative;overflow:hidden;background:var(--white);color:var(--ink-800);flex:none}
+.sq{width:1080px;height:1080px}.pt{width:1080px;height:1350px}.st{width:1080px;height:1920px}
+.ph,.cut{position:absolute;background-size:cover;background-position:center;filter:saturate(1.05) brightness(1.07) contrast(1.04)}
+.scrim{position:absolute;left:0;right:0;background:linear-gradient(to top,rgba(5,5,5,.62),rgba(5,5,5,0))}
+.scrimT{position:absolute;left:0;right:0;top:0;background:linear-gradient(to bottom,rgba(5,5,5,.55),rgba(5,5,5,0))}
+.band{position:absolute;left:0;right:0;bottom:0;background:var(--white)}
+.band.redbg,.redbg{background:var(--ember);color:#fff}
+.band.dark,.dark{background:var(--ink-800);color:#fff}
+.abs{position:absolute}
+.f{font-family:var(--font-display);font-weight:800;letter-spacing:-.04em;line-height:.88}
+.i{font-family:var(--font-body);line-height:1.25}
+.nr{font-family:var(--font-scripture);font-style:italic}
+.hand{font-family:"Nanum Pen Script",cursive;line-height:.9} /* stand-in until Adam's handwriting is scanned */
+.em{color:var(--ember)}
+.gh{position:absolute;font-family:var(--font-display);font-weight:800;letter-spacing:-.05em;line-height:.8;white-space:nowrap}
+.gink{color:rgba(10,10,10,.06)}.gwhite{color:rgba(255,255,255,.16)}.gw2{color:rgba(255,255,255,.12)}.gred{color:rgba(10,10,10,.10)}
+.place{font-family:var(--font-body);font-size:26px;font-weight:600;letter-spacing:.02em}
+.J{position:absolute}
+/* carousel */
+.dashes{position:absolute;top:60px;display:flex;gap:10px}
+.dashes i{flex:1;height:6px;border-radius:999px}
+.count{position:absolute;top:44px;font:600 30px var(--font-body)}
+.swipe{position:absolute;top:620px;font:700 96px var(--font-body);line-height:1} /* not .arrow: base/journey-assets.css already uses that name */

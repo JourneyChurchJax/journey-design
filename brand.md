@@ -23,22 +23,23 @@
 
 - Warm, clear, honest. Short and human over clever. Answer the practical question first (time, place, what happens), then say the meaningful thing.
 - **Say Jesus.** Not "the divine" or "a higher purpose."
-- Sentence case everywhere. Eyebrows and labels are UPPERCASE and tracked.
+- Sentence case everywhere. Labels on the website are UPPERCASE and tracked. Social graphics have no eyebrows (Oct 2026).
 - **No exclamation points. No emoji.** Hard rules.
 - Service times use an ampersand: `Sundays 9:00 & 11:00 AM`. Dates read `Sun Oct 12 · 6 PM` (middle dot separates label and value).
 - Words we don't use: blessed, anointed, season of, powerful, breakthrough, intercede, "pursue God's presence," "stand in unity," "come ready to respond," and "encounter" as filler.
 - **The test:** if the sentence could be lifted from any church email in the country, rewrite it.
-- On a graphic: the eyebrow names the moment, the headline says it in one human sentence, and the headline carries exactly one italic red word — the emotional beat (never "the," "and," "of").
+- On a graphic: the headline says it in one human sentence, set big, and one word or short phrase in it is red. That is the emotional beat, never "the," "and" or "of." The red is the same weight as the rest, not italic (Oct 2026).
 
 ## Color
-Cream, ink, and **one** red.
+Cream, white, ink, and **one** red.
 
 | Name | Hex | Use |
 |---|---|---|
 | Journey Red (ember) | #FF3A3A | The only accent. One red thing per view. |
 | Red hover | #E62D2D | Hover only |
 | Small red text | #9A1818 | Red text under ~26px on cream (accessibility) |
-| Cream | #F7F4F0 | Default background; text on dark |
+| Cream | #F7F4F0 | Default page background; text on dark |
+| White | #FFFFFF | The clean ground for social bands and white fields (Oct 2026) |
 | Alt cream | #ECE7DF | Alternate fields, boxes |
 | Border | #D8D1C5 | 1px hairlines |
 | Muted on dark | #9A948A | |
@@ -47,18 +48,18 @@ Cream, ink, and **one** red.
 | Ink | #0A0A0A | Body text, dark background |
 | Deepest | #050505 | |
 
-Print red: C0 M85 Y75 K0. Red is never a background except buttons and pull-quotes. On dark grounds or photos, the accent word turns white (95%) and red moves to the eyebrow **or** the logo mark — not both. The old red #E31E26 is retired.
+Print red: C0 M85 Y75 K0. Red is a background only for buttons, pull-quotes, and on social the red band and the red field. One red thing per view still holds: the red phrase in a headline counts, a red band or field counts, a red hand-drawn mark counts. When the ground is already red, the headline goes all white and the J goes white. On photos the red phrase stays red. The old red #E31E26 is retired.
 
 ## Type
 Four typefaces, four jobs. All free on Google Fonts.
-- **Inter Tight 800** — headlines, titles, numbers. Tracking −0.035em, line-height 0.95. Italic accent word is 700.
+- **Bricolage Grotesque 800** (Oct 2026): headlines, titles, numbers. Tracking −0.04em, line-height 0.9. The red accent is the same face and weight, not italic. Set it big: friendly, bright, energetic. It replaced Inter Tight, which now stays only inside the Good Work logo.
 - **Inter 400** — body, logistics, captions, buttons. Line-height 1.7.
 - **Newsreader** — Scripture and pull-quotes only (main brand). Italic marks the beat instead of red.
 - **Archivo Expanded Black** (width 125, weight 900) — sermon series art and stage screens only.
 
-Eyebrows: 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72rem, 0.18em, 600, uppercase.
+Eyebrows (website only): 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72rem, 0.18em, 600, uppercase.
 
-**Minimum sizes on graphics (floors):** 1080 square — eyebrow 26px, headline 86px, body 34px, logistics label 22px / value 36px. 1920 stage screen — lyrics 100px, Scripture 80px, labels 30px.
+**Minimum sizes on graphics (floors):** 1080 square: headline 86px (social headlines usually run 120 to 190px), body 34px, logistics label 22px / value 36px. 1920 stage screen: lyrics 100px, Scripture 80px, labels 30px. Bigger is better on social.
 
 ## Layout
 - Flex/grid with gaps. Generous space. The feel is Apple and Airbnb in Journey's colors: lots of air, soft rounded shapes, cards that lift slightly off the page, one obvious next step.
@@ -70,9 +71,9 @@ Eyebrows: 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72rem, 0.18em, 600
 - **On graphics:** rounded cards and soft shadows may appear inside a graphic when it shows an interface or an information card. The frame of the graphic, full-bleed photos and stage screens stay square.
 - **No decorative gradients.** Gradients only as dark scrims to protect type on photos.
 - Textures: fine dot grain on large dark fields, or fine ink dots on large cream fields — never both, never on a photo.
-- **Ghost device:** one per graphic — a huge numeral or word in Inter Tight 800 at 8% (cream) / 10% (dark) opacity bleeding off an edge.
+- **Ghost device:** one per graphic: a huge word or number taken from the post itself (the day, the date, the verse) in Bricolage Grotesque 800 at 6 to 8% on white or cream, 10% on red, 12 to 16% white on dark or on a photo, bleeding off an edge.
 - **No icon set.** Arrows are typographic (→). Labels ("When," "Where") instead of calendar or clock icons.
-- Photos: Journey's own only, never stock people. Treatment saturate(.85) contrast(1.05). Never duotone, color wash, blur or frame. Get consent; children need a parent's yes.
+- Photos: Journey's own only, never stock people. Use one whenever you can. Full natural color, a touch brighter: `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026). Never black and white by default, never duotone, color wash, blur or frame. Get consent; children need a parent's yes.
 - Motion: one easing curve cubic-bezier(.2,.7,.2,1), slow and few. Nothing bounces, scales or spins.
 
 ## Graphic sizes
@@ -88,7 +89,9 @@ Eyebrows: 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72rem, 0.18em, 600
 Build the square first; the other sizes follow its decisions. The Journey Church logo sits in its locked corner (or centered at the bottom on ministry slides).
 
 ## Logo — Journey Church
-PNG only (no vector exists yet — nothing larger than a flier should be printed until one does). Horizontal is the default; stacked for squares; mark alone when the name is already written. The mark is red on cream and on dark; the whole lockup reverses (white) on red and on photos.
+PNG only (no vector exists yet, so nothing larger than a flier should be printed until one does). Horizontal is the default; stacked for squares; mark alone when the name is already written. The mark is red on cream and on dark; the whole lockup reverses (white) on red and on photos.
+
+**Heavy J (Oct 2026, interim):** social graphics use a heavier mark, made by thickening the existing PNG: `mark-ember-heavy.png`, `mark-ink-heavy.png`, `mark-white-heavy.png`. Ink on white, white on red, black and photos, red only when nothing else on the post is red. Have a designer redraw it as a vector before it is printed or used large; the hook of the J tightens at this weight.
 
 - [horizontal-ember.png](/brand/assets/logo/horizontal-ember.png)
 - [horizontal-ember_cream.png](/brand/assets/logo/horizontal-ember_cream.png)
@@ -112,7 +115,34 @@ PNG only (no vector exists yet — nothing larger than a flier should be printed
 - **Events** — stay in the house look; only big events borrow a custom skin. The logistics block (When / Where / etc.) is set the same every time, directly above the logo.
 - **Projects** — run for months and carry a number (e.g. *Arise & Build*). The progress meter is the device; figures come from a live source.
 - **Ministries** — each ministry has its own logo and look (see catalog). Journey Church's logo still appears on ministry graphics, usually small, centered at the bottom.
-- **Weekly social kit** — Story, Quote post, Message recap carousel (8 slides), Reel, Thumbnail. Only the quote post uses a photo of the speaker; the carousel uses landscapes, never people. No logos or watermarks on Reels. Generated landscapes are OK; generated people are not.
+- **Weekly social kit:** Story, Quote post, Message recap carousel, Reel, Thumbnail. Use our own photos wherever we can (see Social below). Recap carousels never name the speaker. No logos or watermarks on Reels. Generated landscapes are OK; generated people are not.
+
+## Social (Oct 2026)
+The look approved by Adam on Oct 2, 2026. Our photos in full color, Bricolage Grotesque set big, one red phrase, a faint ghost word, the heavy J. Templates in `slides/` (`social.css` holds the shared styles).
+
+**Pick the layout in this order.**
+1. **No band.** First choice whenever the photo has a calm, darker area for the type (sky, background, shadow). Headline, facts and the J sit right on the photo over a dark scrim. `slides/social-square-photo.html`
+2. **Big band.** When the photo is busy where the type would go, the type would cover a face, or there are three or more facts. The photo takes the top, a band takes the bottom third, and the facts in the band are set as big as a headline. White is the default band, red for Sundays and big days, black for evenings. `slides/social-square-band-white.html`, `-red.html`, `-black.html`, `social-quote.html`, `social-story.html`
+3. **No photo.** Red field for quotes and Scripture-adjacent truths (all white type), white field for simple announcements. `slides/social-square-field-red.html`, `-white.html`
+
+**Rotate.** Never the same layout twice in a row, and when a band is used, change its color from the last one.
+
+**Carousels.** `slides/social-carousel-*.html`
+- Progress dashes across the top: one thin pill per slide, filled up to the current slide (red on white slides, white on photo and red slides), with a count like `2 / 7` in the top right.
+- A typed arrow (→, never an icon) on the right edge of every slide except the last. The cover says **Swipe →**, circled by hand.
+- Something crosses the slide edge: a photo, a big word, or the red marker line that runs along the bottom and stops at the close.
+- Rhythm: photo cover with a big headline, then teaching slides alternating photo and white or red fields, then a red close with the heavy J and what to do next ("Save this," "Send this to a friend," "See you Sunday").
+
+**What brings it to life (and keeps it from looking generated).**
+- **Handwriting.** Hand-drawn circles, underlines and arrows in marker, from `assets/hand/`. Written words come only from Adam's real handwriting, scanned; until then, a stand-in pen font marked as a stand-in.
+- **Real objects.** Close-up photos of real things in our building (a Bible being written in, the lobby sign, the coffee bar, Journey Kids drawings), used as the photo.
+- **Person in front of the words.** The cutout from `assets/photo/cutouts/` sits over the headline, so a head or raised hands break out of the photo over the red word. Keep the words readable: only the bottom of the word gets covered. `slides/social-cutout.html`
+- **Place markers.** Small marks like "Lake Gray Blvd · Jacksonville".
+- **Series markers.** "A House Built for His Presence · Week 2", same spot every week. Only state the total weeks when it is confirmed.
+- **Motion.** For Reels and stories: the ghost word drifts slowly, the headline rises in, the red words arrive last, then the facts. One curve, about 3 seconds to land, nothing bounces or spins.
+- **Scripture look.** Newsreader italic on white, a hand-drawn red underline under the key phrase, the reference and version, and a real photo underneath. `slides/social-scripture.html`
+
+**Avoid:** eyebrows on social, glows, decorative gradients, emoji, stock icons, fake handwriting presented as real, and the same formula every post.
 
 ## Ministry logos (download)
 - **Good Work — Job Placement Ministry:** red circle handshake + "Good Work." in Newsreader Italic 500 with a red period; subtitle "JOB PLACEMENT MINISTRY" in Inter Tight 600 tracked 0.3em. Colors: Journey Red, Ink, Cream, Warm Gray. Brand sheet: [/brand/ministries/good-work/brand.html](/brand/ministries/good-work/brand.html)
@@ -187,19 +217,19 @@ Every design in the system, by group. Each link opens the design at full size.
 - [Never](/brand/guidelines/brand-never.html) · 700x200 — The short list of no
 - [Ornaments](/brand/guidelines/brand-ornaments.html) · 700x180 — The entire set. No icon library, no gradients
 - [Photography rules](/brand/guidelines/brand-photo-rules.html) · 700x180 — Our room, our people. No stock photography of people, ever
-- [Photo treatment](/brand/guidelines/brand-photo.html) · 700x220 — Natural color pulled to 85%, bottom-weighted scrim, grain. Never a duotone or a blur
+- [Photo treatment](/brand/guidelines/brand-photo.html) · 700x220 · Full natural color, a touch brighter. Never black and white by default, a duotone or a blur
 - [Voice](/brand/guidelines/brand-voice.html) · 700x200 — Like a friend over coffee. Written to one real person
 
 ### Colors
 - [Grounds](/brand/guidelines/color-grounds.html) · 700x150 — Cream is default; dark is punctuation, not rhythm
 - [Ink ramp](/brand/guidelines/color-neutrals.html) · 700x150 — Borders, dividers, and the two muted text values
 - [The one red](/brand/guidelines/color-red.html) · 700x150 — Journey red, its hover, and the small-text fallback
-- [Red budget](/brand/guidelines/color-rules.html) · 700x170 — One red thing per view, and red is never a background
+- [Red budget](/brand/guidelines/color-rules.html) · 700x170 · One red thing per view. On social, a red band or red field counts as it
 - [Surfaces in use](/brand/guidelines/color-surfaces.html) · 700x150 — The five grounds, with the text colors they carry
 
 ### Type
 - [Body — Inter 400](/brand/guidelines/type-body.html) · 700x170 — Plain speech: body, logistics, captions, buttons
-- [Display — Inter Tight 800](/brand/guidelines/type-display.html) · 700x190 — The church's voice. One italic red word per headline
+- [Display · Bricolage Grotesque 800](/brand/guidelines/type-display.html) · 700x190 · The church's voice. One red word or phrase per headline
 - [Eyebrow &amp; label](/brand/guidelines/type-eyebrow.html) · 700x150 — 0.22em tracking on eyebrows, 0.18em on labels
 - [Type floors on graphics](/brand/guidelines/type-floors.html) · 700x200 — Pixel minimums on artboards and on stage. Nothing smaller, ever
 - [Web scale](/brand/guidelines/type-scale.html) · 700x260 — Five fluid steps, from hero down to lead
@@ -218,7 +248,7 @@ Every design in the system, by group. Each link opens the design at full size.
 - [Graphics](/brand/components/graphics/graphics.card.html) · 1080x600 — ArtFrame, ArtText, ArtScripture, Logistics, Logo, LowerThird
 - [Navigation](/brand/components/navigation/navigation.card.html) · 700x420 — Sticky cream Nav and the deep ink Footer
 - [Structure](/brand/components/structure/structure.card.html) · 700x400 — Facts, Step, Meter, Disclose
-- [Typography](/brand/components/typography/typography.card.html) · 700x380 — Headline with its italic red beat, Eyebrow, Scripture
+- [Typography](/brand/components/typography/typography.card.html) · 700x380 — Headline with its red beat, Eyebrow, Scripture
 
 ### Website
 - [journeychurch.org](/brand/ui_kits/journeychurch-org/index.html) · 1280x900 — Public church site — home, visit, messages, give
@@ -231,18 +261,27 @@ Every design in the system, by group. Each link opens the design at full size.
 - [Lyric slide](/brand/slides/lyric-slide.html) · 1920x1080 — Centered, 110px, four lines max. No logo, no red — the system gets out of the way
 
 ### Social
-- [Carousel anatomy](/brand/guidelines/social-carousel.html) · 700x230 — Eight slides: a cover, six that teach, a close that encourages
-- [Generated imagery](/brand/guidelines/social-generated.html) · 700x150 — Landscapes may be generated. People may not
-- [Never, additionally](/brand/guidelines/social-never.html) · 700x150 — The social-specific list of no
-- [Who gets the photograph](/brand/guidelines/social-photo-budget.html) · 700x150 — Only one still piece carries the speaker
-- [The weekly sermon kit](/brand/guidelines/social-pieces.html) · 700x210 — Every Sunday message produces the same five pieces
-- [Quote post anatomy](/brand/guidelines/social-quote.html) · 700x190 — Display type, last line in ember, three tracked labels in a fixed order
-- [Story anatomy](/brand/guidelines/social-story.html) · 700x190 — Ink ground, ghosted question mark, the question they are already asking
-- [Video — open, not agreed](/brand/guidelines/social-video-open.html) · 700x200 — Three departures on moving image that Adam has not settled
-- [Carousel — cover](/brand/slides/social-carousel-cover.html) · 1080x1350 — Opens on the hook. Swipe cue in ember. No speaker name anywhere
-- [Carousel — teaching slide](/brand/slides/social-carousel.html) · 1080x1350 — Eight-segment tracker, Roman numeral, graded landscape, lockup bottom-left at 280
-- [Quote post](/brand/slides/social-quote.html) · 1080x1350 — Wide photograph faded into ink, last line ember, three labels in order
-- [Story — the watch post](/brand/slides/social-story.html) · 1080x1920 — Ink, ghosted question mark, eyebrow at the 250 safe line, action cluster above 1670
+- [The social system](/brand/guidelines/social-system.html) · 700x420 · No band first, Big band when needed, red or white field with no photo. Rotate every post
+- [Who gets the photograph](/brand/guidelines/social-photo-budget.html) · 700x150 · Use our photos wherever we can. Only the quote post shows the speaker
+- [Generated imagery](/brand/guidelines/social-generated.html) · 700x150 · Landscapes may be generated. People may not
+- [Never, additionally](/brand/guidelines/social-never.html) · 700x150 · The social-specific list of no
+- [The weekly sermon kit](/brand/guidelines/social-pieces.html) · 700x210 · Every Sunday message produces the same five pieces
+- [Video, open, not agreed](/brand/guidelines/social-video-open.html) · 700x200 · Three departures on moving image that Adam has not settled
+- [Square, no band](/brand/slides/social-square-photo.html) · 1080x1080 · First choice when the photo has a calm area for the type
+- [Square, white band](/brand/slides/social-square-band-white.html) · 1080x1080 · The default band
+- [Square, red band](/brand/slides/social-square-band-red.html) · 1080x1080 · Sundays and big days, headline all white
+- [Square, black band](/brand/slides/social-square-band-black.html) · 1080x1080 · Evenings
+- [Square, red field](/brand/slides/social-square-field-red.html) · 1080x1080 · No photo. Quotes, all white type
+- [Square, white field](/brand/slides/social-square-field-white.html) · 1080x1080 · No photo. Simple announcements
+- [Quote post](/brand/slides/social-quote.html) · 1080x1350 · Speaker photo, quote big with its last words red, name huge in a white band
+- [Story](/brand/slides/social-story.html) · 1080x1920 · Big band story, facts as big as the headline
+- [Person in front of the words](/brand/slides/social-cutout.html) · 1080x1080 · The cutout breaks out of the photo over the red word
+- [Scripture post](/brand/slides/social-scripture.html) · 1080x1080 · Newsreader italic, hand underline, series marker, a real object photo
+- [Handwriting post](/brand/slides/social-handwriting.html) · 1080x1350 · Hand-drawn circle, a handwritten note, place marker
+- [Carousel, cover](/brand/slides/social-carousel-cover.html) · 1080x1350 · Photo cover, headline behind the person, circled Swipe
+- [Carousel, teaching slide](/brand/slides/social-carousel.html) · 1080x1350 · Progress dashes, count, typed arrow, the red line keeps going
+- [Carousel, close](/brand/slides/social-carousel-close.html) · 1080x1350 · Red field, heavy J, what to do next, no arrow
+- [Carousel, all seven slides](/brand/slides/social-carousel-strip.html) · 7560x1350 · Your first Sunday at Journey as one artboard
 
 ### Sermon Series
 - [Adding a series](/brand/series/adding-a-series.html) · 700x230 — Each series is a folder and a skin. The contract is the only thing they share
