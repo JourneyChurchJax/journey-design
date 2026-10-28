@@ -1,30 +1,15 @@
-<!-- @dsCard group="Social" viewport="1080x1920" name="Story — the watch post" subtitle="Ink, ghosted question mark, eyebrow at the 250 safe line, action cluster above 1670" -->
-<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script src="../_ds_bundle.js"></script>
-<style>html,body{margin:0;background:#050505}#root{width:100%}</style></head><body><div id="root"></div>
-<script type="text/babel">
-const { ArtFrame, Logo } = window.JourneyChurchDesignSystem_84738d;
-const A='../assets';
-
-const LBL={margin:0,font:"600 26px/1 'Inter',sans-serif",letterSpacing:'.2em',textTransform:'uppercase',whiteSpace:'nowrap'};
-function Board(){
-  return (<ArtFrame width={1080} height={1920} ground="dark" grain>
-    <span className="ghost" style={{fontSize:1500,right:-120,top:-380,opacity:.1,color:'#f7f4f0'}}>?</span>
-    <div style={{position:'absolute',left:80,right:80,top:250,display:'flex',flexDirection:'column',gap:44}}>
-      <p style={{...LBL,color:'#ff3a3a'}}>This Sunday · A House Built for His Presence</p>
-      <p className="a-h" style={{'--h1':'124px',maxWidth:920}}>What if the room God wants is the one you keep <em style={{color:'#ff3a3a',opacity:1}}>locked</em>?</p>
-      <p className="a-body" style={{'--body':'36px',maxWidth:'26ch',color:'#9a948a'}}>Week two looks at the parts of a life that get furnished for guests and never for him.</p>
-      <p style={{...LBL,color:'#9a948a',marginTop:12}}>Adam Hardegree · Week 02</p>
-    </div>
-    <div style={{position:'absolute',left:80,right:80,bottom:250,display:'flex',flexDirection:'column',alignItems:'flex-start',gap:28}}>
-      <span style={{display:'inline-flex',alignItems:'center',background:'#ff3a3a',color:'#fff',borderRadius:999,padding:'26px 48px',font:"600 34px/1 'Inter',sans-serif",letterSpacing:'.02em',whiteSpace:'nowrap'}}>Watch the message</span>
-      <p style={{margin:0,font:"800 64px/1 'Inter Tight',sans-serif",color:'#f7f4f0'}}>&darr;</p>
-      <p style={{...LBL,color:'#9a948a',whiteSpace:'nowrap'}}>Link below</p>
-    </div>
-  </ArtFrame>);
-}
-ReactDOM.createRoot(document.getElementById('root')).render(<Board/>);
-</script></body></html>
+<!-- @dsCard group="Social" viewport="1080x1920" name="Story" subtitle="Big band story. Facts set as big as the headline, faint ghost word behind" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"><link rel="stylesheet" href="social.css">
+<style>html,body{margin:0;background:#888}</style></head><body>
+<div class="ab st" id="bb-story">
+<div class="ph" style="inset:0 0 590px 0;background-image:url(../assets/photo/students-clapping-in-worship.jpg);background-position:48% 45%"></div>
+<div class="scrim" style="bottom:590px;height:700px"></div>
+<div class="abs f" style="left:70px;bottom:630px;font-size:180px;color:#fff;width:950px">Come as<br><span class="em">you are.</span></div>
+<div class="band" style="height:590px"></div>
+<div class="gh gink" style="left:-30px;bottom:110px;font-size:380px">Sunday</div>
+<div class="abs f" style="left:68px;top:1362px;font-size:150px">Sundays</div>
+<div class="abs f" style="left:68px;top:1500px;font-size:132px">9:00 &amp; 11:00<span style="font-size:70px;letter-spacing:-.02em"> AM</span></div>
+<div class="abs i" style="left:74px;top:1636px;font-size:38px;font-weight:600;color:var(--mute)">6225 Lake Gray Blvd Ste 2, Jacksonville</div>
+<img class="J" src="../assets/logo/mark-ink-heavy.png" style="right:70px;top:1366px;height:136px">
+</div>
+</body></html>

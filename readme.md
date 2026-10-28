@@ -50,7 +50,7 @@ The brand guide is hosted behind auth on journeycommand.com. Assume a reader doe
 | `slides/` | Stage boards — lyric, lower third |
 | `events/` | One folder per named event (`healing-room/`, `journey-students/`, `discipleship-groups/`, `missions-sunday/`), plus the shared logistics block and the adding-an-event test |
 | `projects/` | Arise & Build at square and screen, plus what makes something a project |
-| `guidelines/` | 33 specimen cards — Colors, Type, Spacing, Brand, Social |
+| `guidelines/` | 34 specimen cards: Colors, Type, Spacing, Brand, Social (incl. `social-system.html`, Oct 2026) |
 | `slides/social-*.html` | Four house-look sermon-kit boards: story, quote, carousel cover and teaching slide |
 | `assets/logo/` | 16 lockup PNGs · `assets/photo/` 32 photographs · `assets/series/` 6 series files · `assets/js/` the two ported scripts |
 | `SKILL.md` | Agent Skills front matter, for use in Claude Code |
@@ -93,7 +93,7 @@ The brand's own summary: **like a friend over coffee.**
 
 **Never invent.** Not a statistic, not a quote, not a testimonial, not a Scripture reference. Confirm every date and number against a live system — Planning Center or the live site — never a document and never memory. "A wrong dollar amount on a giving graphic is worse than no graphic."
 
-**Copy shape on a graphic.** The eyebrow names the moment. The headline says it in one human sentence. The body adds a fact only if there is one. Every headline carries exactly one italic red word, and that word is the emotional beat — never "the," "and," or "of."
+**Copy shape on a graphic.** The eyebrow names the moment. The headline says it in one human sentence. The body adds a fact only if there is one. Every headline carries one red word or short phrase, same weight as the rest and not italic, and it is the emotional beat, never "the," "and" or "of." Social graphics have no eyebrow (Oct 2026).
 
 **Who owns copy.** Adam. Headlines in the brand guide are labelled placeholder shapes, not approved copy.
 
@@ -104,11 +104,11 @@ The brand's own summary: **like a friend over coffee.**
 ### Color
 Cream, ink, and **one** red. `--ember` `#ff3a3a` is the whole accent system; `--ember-hover` `#e62d2d`; `--ember-small` `#9a1818` for red text under about 26px on cream, which is an accessibility fallback and not a second color. The ink ramp runs `#f7f4f0` cream → `#ece7df` alternate → `#d8d1c5` borders → `#9a948a` muted-on-dark → `#5a574f` muted-on-cream → `#2a2824` nav → `#0a0a0a` ink → `#050505` deepest. Print red is C0 M85 Y75 K0.
 
-Red is never a background except a button and a pull-quote. One red thing per view. There is no second accent, no semantic green or amber, no ministry palettes, no sub-logos. On dark grounds and photos the accent word turns **white at 95% opacity** and red retreats to the eyebrow *or* the mark — one, not both. The logo was recolored to `--ember` on 19 Sep 2026; the older `#e31e26` is retired.
+Red is a background only for a button, a pull-quote, and on social the red band and red field (Oct 2026). One red thing per view. There is no second accent, no semantic green or amber, no ministry palettes, no sub-logos. On photos the red phrase stays red and the J goes white; on a red ground the headline goes all white (Oct 2026). The logo was recolored to `--ember` on 19 Sep 2026; the older `#e31e26` is retired.
 
 ### Type
 Four faces, four jobs, and the jobs do not overlap.
-- **Inter Tight 800** — the church's voice. Headlines, titles, numbers. Tracking −0.035em, line-height 0.95. The italic accent is weight 700 at −0.03em.
+- **Bricolage Grotesque 800** — the church's voice. Headlines, titles, numbers. Tracking −0.04em, line-height 0.9. The red accent is the same weight, not italic (Oct 2026, replacing Inter Tight).
 - **Inter 400** — plain speech. Body, logistics, captions, buttons. Line-height 1.7.
 - **Newsreader** — Scripture and pull-quotes **only**. Never a headline, never a title, never the church speaking. Italic marks the beat instead of red.
 - **Archivo Expanded Black** (wdth 125, weight 900) — series art and stage only, where it has to read from row twenty. Never on the website body, never for logistics.
@@ -140,10 +140,10 @@ Only as photo protection, never as decoration. The `.photo` scrim runs `rgba(5,5
 Cream is the default ground; **dark sections are punctuation, not rhythm** (the stylesheet says exactly that). Two textures, and they are the only ones: `.grain` is 4% white dots at 3px in `mix-blend-mode: overlay`, for large dark fields. `.tooth` is 5.5% ink dots at 3px, the cream counterpart, for large cream fields. Never both, never on a photo. Full-bleed imagery is reserved for hero sections and artboards. The other background device is a **hard split** — two solid fields with no gradient between them, cream over ink by default.
 
 ### Imagery
-Journey's own photographs, cleared for use. Treatment is `saturate(.85) contrast(1.05)` — natural color pulled slightly, warm rather than cool, with grain over the dark areas. **Never a duotone, never a color wash, never a blur, never a frame.** Crops favor hands, posture, and the room over faces in focus; real moments, never posed. No stock photography of people — our photos or none. Alt text describes what is happening, not just what is pictured. Anyone who has not agreed to appear comes out before it runs; children need a parent's yes.
+Journey's own photographs, cleared for use. Treatment is `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026): full natural color, a touch brighter. Use our photos wherever we can. **Never a duotone, never a color wash, never a blur, never a frame.** Crops favor hands, posture, and the room over faces in focus; real moments, never posed. No stock photography of people — our photos or none. Alt text describes what is happening, not just what is pictured. Anyone who has not agreed to appear comes out before it runs; children need a parent's yes.
 
 ### The ghost device
-One per graphic: a numeral or a word set in Inter Tight 800 (or italic 700 for a word) at −0.06em, bleeding off an edge, at **8% opacity on cream and 10% on dark**. Or a progress meter. Never two devices, never on a photo, and the logo is never the device. In series art the ghost is stroked instead of filled — outline over solid is the house move.
+One per graphic: a numeral or a word set in Bricolage Grotesque 800 (or italic 700 for a word) at −0.06em, bleeding off an edge, at **8% opacity on cream and 10% on dark**. Or a progress meter. Never two devices, never on a photo, and the logo is never the device. In series art the ghost is stroked instead of filled — outline over solid is the house move.
 
 ### Transparency and blur
 Transparency is used for hairlines (`rgba(10,10,10,.12)` on cream, `rgba(247,244,240,.16)` on dark), for muted text on colored grounds, for the photo scrims, and for the ghost device. **Blur is used essentially never** — the single instance in the whole source is a deliberately defocused collage behind a lower-third demo. There is no frosted glass, no backdrop-filter, no translucent nav.
@@ -202,7 +202,7 @@ Added 21 Sep 2026 from `uploads/sermon-social.md`, decided in build from a real 
 
 **These layouts are house, not series.** A running series supplies the skin; only the series contract holds — the reversed horizontal logo in its corner at its size, and Scripture in Newsreader.
 
-**Photo budget.** Only the quote post carries a photograph of the speaker, run wide and faded into ink top and bottom. The story is type alone with a ghosted glyph. The carousel uses landscape imagery, never a person.
+**Photo budget (Oct 2026).** Use our own photos wherever we can. Only the quote post shows the speaker. Recap carousels never name the speaker. The full social system (layout order, rotation, carousels, handwriting, cutouts, place and series markers, motion, Scripture) is in brand.md under Social.
 
 **Story.** Ink ground, ghosted question mark at 10% cream bleeding off the top right, eyebrow at the 250px safe line in ember, headline autofit to a 920px measure with one italic ember word, two lines of teaser, speaker and series, then an action cluster (ember pill, typographic down arrow, tracked label) closing above 1670.
 
@@ -220,7 +220,7 @@ Added 21 Sep 2026 from `uploads/sermon-social.md`, decided in build from a real 
 
 ## Substitutions and open questions
 
-**Fonts are Google-hosted here.** No woff2 binaries were in the handoff, so `tokens/fonts.css` loads Inter, Inter Tight, Newsreader, and Archivo (wdth 125, wght 900) from Google Fonts. **This is a substitution of delivery, not of typeface** — the families are the real ones. Production journeychurch.org self-hosts Inter and Inter Tight as **blocking** woff2 from `/fonts`, and the source carries an all-caps warning never to make that load non-blocking: CLS went from 0 to 1.0 the one time it was. **Please send the woff2 binaries** and I will replace the import with `@font-face` rules.
+**Fonts are Google-hosted here.** No woff2 binaries were in the handoff, so `tokens/fonts.css` loads Inter, Bricolage Grotesque, Newsreader, and Archivo (wdth 125, wght 900) from Google Fonts. **This is a substitution of delivery, not of typeface** — the families are the real ones. Production journeychurch.org self-hosts Inter and Bricolage Grotesque as **blocking** woff2 from `/fonts`, and the source carries an all-caps warning never to make that load non-blocking: CLS went from 0 to 1.0 the one time it was. **Please send the woff2 binaries** and I will replace the import with `@font-face` rules.
 
 **Archivo is itself a stand-in.** The brand guide says Archivo Expanded is standing in for a licensed wide grotesque, and that an older stylesheet used Big Shoulders Display. `--font-series` lists Archivo first with Big Shoulders as the fallback. If the series goes to print at size, the office needs to settle the license.
 

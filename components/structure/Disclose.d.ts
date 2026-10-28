@@ -5,7 +5,7 @@ import * as React from 'react';
  * @startingPoint section="Structure" subtitle="FAQ accordion on hairlines" viewport="700x260"
  */
 export interface DiscloseProps extends React.HTMLAttributes<HTMLDetailsElement> {
-  /** The question. Inter Tight 600. */
+  /** The question. Bricolage Grotesque 600. */
   summary: React.ReactNode;
   defaultOpen?: boolean;
   children?: React.ReactNode;

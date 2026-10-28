@@ -27,7 +27,7 @@ This is the one file the **/youth-design** skill reads first. Fill in the blanks
 |---|---|
 | Youth logo | `[not decided yet]` When it's uploaded, list the file names here and say which one is the default. |
 | Colors | `[not decided yet]` Main Journey look for now: cream, ink, Journey Red `#FF3A3A`. |
-| Fonts | `[not decided yet]` Main Journey look for now: Inter Tight 800 headlines, Inter body, Newsreader for Scripture. |
+| Fonts | `[not decided yet]` Main Journey look for now: Bricolage Grotesque 800 headlines, Inter body, Newsreader for Scripture. |
 | Device | `[not decided yet]` At most one, and a ghosted word rather than a mascot. |
 | Journey Church logo | Still appears on every Youth piece, as on every ministry. Reversed horizontal, bottom left, 280px wide on a 1080 square. |
 

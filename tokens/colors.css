@@ -18,12 +18,16 @@
 --ink-800:#0a0a0a;            /* Body text, and the dark ground */
 --ink-900:#050505;            /* The deepest field */
 
+/* White (Oct 2026): the clean ground for social bands and white fields. Cream stays the page ground. */
+--white:#ffffff;
+
 /* Semantic aliases */
 --surface-page:var(--ink-50);
 --surface-alt:var(--ink-100);
 --surface-dark:var(--ink-800);
 --surface-deep:var(--ink-900);
---surface-accent:var(--ember);
+--surface-accent:var(--ember);  /* red grounds: buttons, pull-quotes, and on social the red band and red field */
+--surface-band:var(--white);
 --text-body:var(--ink-800);
 --text-muted:var(--ink-400);
 --text-on-dark:var(--ink-50);

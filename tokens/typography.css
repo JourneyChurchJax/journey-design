@@ -1,29 +1,30 @@
 /* Journey Church — type. Four faces, four jobs.
-   Inter Tight 800 is the church's voice. Inter 400 is plain speech.
-   Newsreader is Scripture ONLY. Archivo Expanded Black is series art and stage ONLY. */
+   Bricolage Grotesque 800 is the church's voice (Oct 2026; it replaced Inter Tight). Inter 400 is plain speech.
+   Newsreader is Scripture ONLY. Archivo Expanded Black is series art and stage ONLY.
+   Inter Tight stays loaded only for the Good Work logo. */
 :root{
---font-display:'Inter Tight','Inter',ui-sans-serif,system-ui,sans-serif;
+--font-display:'Bricolage Grotesque','Inter',ui-sans-serif,system-ui,sans-serif;
 --font-body:'Inter',ui-sans-serif,system-ui,sans-serif;
 --font-scripture:'Newsreader',Georgia,'Times New Roman',serif;
---font-series:'Archivo','Big Shoulders Display','Inter Tight',sans-serif;
+--font-series:'Archivo','Big Shoulders Display','Bricolage Grotesque',sans-serif;
 --font-mono:ui-monospace,SFMono-Regular,Menlo,monospace;
 
 /* Weights */
 --weight-display:800; /* @kind font */
---weight-display-italic:700; /* @kind font */
+--weight-display-italic:800; /* @kind font */ /* the red accent is no longer italic; name kept so nothing breaks */
 --weight-semibold:600; /* @kind font */
 --weight-medium:500; /* @kind font */
 --weight-body:400; /* @kind font */
 --weight-series:900; /* @kind font */
 
 /* Tracking */
---track-display:-.035em; /* @kind font */
---track-display-italic:-.03em; /* @kind font */
+--track-display:-.04em; /* @kind font */
+--track-display-italic:-.04em; /* @kind font */
 --track-eyebrow:.22em; /* @kind font */
 --track-label:.18em; /* @kind font */
 
 /* Leading */
---leading-display:.95; /* @kind font */
+--leading-display:.9; /* @kind font */
 --leading-series:.86; /* @kind font */
 --leading-scripture:1.32; /* @kind font */
 --leading-body:1.7; /* @kind font */

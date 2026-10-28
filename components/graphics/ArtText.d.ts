@@ -10,7 +10,7 @@ export interface ArtTextProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: number;
   /** Eyebrow size in output px. Floor 26. */
   eyebrowSize?: number;
-  /** Set the headline in the series face (Archivo Expanded Black) instead of Inter Tight. Big events and series only. */
+  /** Set the headline in the series face (Archivo Expanded Black) instead of Bricolage Grotesque. Big events and series only. */
   series?: boolean;
   children?: React.ReactNode;
 }

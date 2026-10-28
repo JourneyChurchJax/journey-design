@@ -1,7 +1,7 @@
 import React from 'react';
 
-/* The church's voice: Inter Tight 800, tracking -0.035em, line-height 0.95.
-   Every headline gets exactly ONE italic red word, and it is the emotional beat —
+/* The church's voice: Bricolage Grotesque 800, tracking -0.04em, line-height 0.9.
+   Every headline gets ONE red word or short phrase (not italic), and it is the emotional beat —
    never "the", "and", or "of". Pass it as `accent`; it is appended to `children`,
    or you can place <em> yourself inside children and leave accent off. */
 const SIZES = { hero: 't-hero', display: 't-display', h2: 't-h2', h3: 't-h3' };

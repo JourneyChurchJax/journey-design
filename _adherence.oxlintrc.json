@@ -46,8 +46,8 @@
         "message": "Raw px value — use a design-system spacing token via var()."
       },
       {
-        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Inter Tight|Inter|Archivo|Newsreader))/i]",
-        "message": "Font not provided by the design system. Available: Inter Tight, Inter, Archivo, Newsreader."
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Bricolage Grotesque|Inter Tight|Inter|Archivo|Newsreader))/i]",
+        "message": "Font not provided by the design system. Available: Bricolage Grotesque, Inter, Archivo, Newsreader (Inter Tight only for the Good Work logo)."
       },
       {
         "selector": "JSXOpeningElement[name.name='ArtFrame'] > JSXAttribute > JSXIdentifier[name!=/^(?:width|height|ground|pad|photo|scrim|tooth|grain|safe|children|key|ref|className|style|children)$/]",
@@ -432,6 +432,7 @@
     "fontFamilies": [
       "Archivo",
       "Inter",
+      "Bricolage Grotesque",
       "Inter Tight",
       "Newsreader"
     ]

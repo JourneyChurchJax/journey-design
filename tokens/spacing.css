@@ -14,9 +14,23 @@
 --space-6:2.5rem;
 --space-7:clamp(2rem,5vw,4rem);
 
-/* Radii — there are two. Pills, and square. Nothing in between. */
---radius-pill:999px;
---radius-square:0;
+/* Radii — a fixed scale (Oct 2026). Interfaces are rounded; nested corners step down one size.
+   Square is kept for full-bleed photos, edge-to-edge sections, and the frame of graphics and stage art. */
+--radius-xs:6px;     /* tags, badges, checkbox corners */
+--radius-sm:10px;    /* inputs, search fields, segmented-control track */
+--radius-md:14px;    /* grouped lists, small cards, date chips */
+--radius-lg:20px;    /* cards, trip tiles, photos inside the UI */
+--radius-xl:28px;    /* hero media, galleries, bento tiles, sheets, dialogs */
+--radius-pill:999px; /* buttons, chips, search bar, avatars, progress bars */
+--radius-square:0;   /* full bleed only */
+
+/* Shadows — soft, warm, low. Ink at 6–16%. A card gets a shadow OR a hairline, never both.
+   Never on text, the logo, a bare photograph, or a dark section. */
+--shadow-xs:0 1px 2px rgba(10,10,10,.06);
+--shadow-sm:0 1px 2px rgba(10,10,10,.06),0 4px 14px rgba(10,10,10,.06);
+--shadow-md:0 1px 2px rgba(10,10,10,.06),0 8px 24px rgba(10,10,10,.07);
+--shadow-lg:0 2px 6px rgba(10,10,10,.06),0 16px 40px rgba(10,10,10,.10);
+--shadow-xl:0 8px 24px rgba(10,10,10,.10),0 32px 80px rgba(10,10,10,.16);
 
 /* Artboard geometry */
 --art-pad:80px;            /* 1080 square */

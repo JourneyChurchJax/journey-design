@@ -95,7 +95,7 @@ function SeriesScreen(){
           <div className="sbg" style={{backgroundImage:`url('${SR_A}/series/collage-a.png')`}}/><span className="sbg" style={{background:'rgba(0,0,0,.62)',zIndex:1}}/><span className="spine"/>
           <p className="big gw" style={{left:-80,top:-140,fontSize:700,WebkitTextStrokeColor:'rgba(255,255,255,.14)'}}>02</p>
           <div style={{position:'relative',zIndex:3,display:'flex',flexDirection:'column',gap:40}}>
-            <p style={{margin:0,font:"800 30px/1 'Inter Tight',sans-serif",letterSpacing:'.22em',textTransform:'uppercase',color:'#ff3a3a'}}>Week two</p>
+            <p style={{margin:0,font:"800 30px/1 'Bricolage Grotesque',sans-serif",letterSpacing:'.22em',textTransform:'uppercase',color:'#ff3a3a'}}>Week two</p>
             <p className="big" style={{fontSize:150,whiteSpace:'normal',maxWidth:1500}}>Rooms He Hasn't<br/>Been Given</p>
             <span style={{width:220,height:14,background:'#ff3a3a',display:'block'}}/></div>
         </div></div><p className="ex-l">Sermon title slide</p><p className="ex-n">Collage dimmed, week number ghosted, short red rule as the full stop. Title is a placeholder.</p></div>
@@ -113,7 +113,7 @@ function SeriesScreen(){
           <div className="sbg" style={{backgroundImage:`url('${SR_A}/series/collage-a-sq.png')`}}/><span className="sbg" style={{background:'rgba(0,0,0,.62)',zIndex:1}}/><span className="spine" style={{width:18}}/>
           <p className="big gw" style={{right:-110,top:-60,fontSize:330}}>Presence</p>
           <div style={{position:'relative',zIndex:3}}>
-            <p style={{margin:0,font:"800 30px/1 'Inter Tight',sans-serif",letterSpacing:'.22em',textTransform:'uppercase',color:'#ff3a3a'}}>Our Culture, Vision, &amp; Values</p>
+            <p style={{margin:0,font:"800 30px/1 'Bricolage Grotesque',sans-serif",letterSpacing:'.22em',textTransform:'uppercase',color:'#ff3a3a'}}>Our Culture, Vision, &amp; Values</p>
             <p style={{margin:'12px 0 0',font:"600 24px/1 'Inter',sans-serif",letterSpacing:'.24em',textTransform:'uppercase',color:'rgba(255,255,255,.75)'}}>New series · Begins Sunday Oct 18</p></div>
           <div className="blk" style={{width:880,gap:14,filter:'none'}}><p className="big out" data-fit>A House</p><p className="big out" data-fit>Built For</p>
             <div className="ln" style={{gap:32}}><span className="rl" style={{height:12}}/><p className="big out" data-size="0">His</p></div>

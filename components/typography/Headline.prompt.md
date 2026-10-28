@@ -1,4 +1,4 @@
-Use Headline for any Journey headline — the church speaking in Inter Tight 800, with exactly one italic red accent word.
+Use Headline for any Journey headline — the church speaking in Bricolage Grotesque 800, with exactly one italic red accent word.
 
 ```jsx
 <Headline as="h1" size="hero" accent="are">Come as you</Headline>
