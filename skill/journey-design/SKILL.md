@@ -44,7 +44,7 @@ Then, once you know what the request is for, fetch its folders too, for example:
 ```python
 get(["events/baptism/", "Graphics/Baptism/"])            # an event and its finished work
 get(["ministries/good-work/", "Graphics/Good Work/"])     # a ministry
-get(["assets/photo/"])                                    # only if the design needs a photograph
+get(["assets/photo/"])                                    # Journey's own photos (use one whenever you can)
 ```
 
 Call the downloaded folder **DS** below (`/tmp/journey-design`).
@@ -71,7 +71,7 @@ The main pieces in DS:
 ## Step 1: ask before you build
 
 1. Is this a **Ministry**, **Series**, **Event** or **Project**? (Skip if the user already said.)
-2. What size or format? (Feed square, portrait, story, stage screen, thumbnail, print.)
+2. What size or format? (Feed square, portrait, story, stage screen, thumbnail, print.) For the stage, ask which screen: the side screens are 1920 × 1080. The size of the large center screen is not in the design system yet, so ask for its exact pixel size before you build for it.
 3. What are the confirmed facts: date, time, place, names, Scripture reference, numbers?
 
 Never fill in a missing fact yourself. Leave a clearly marked blank like `[DATE: confirm]`.
@@ -97,53 +97,69 @@ Then check whether that ministry, series or event already has a folder in DS and
 
 # The rules
 
+These are a short copy of `brand.md` as of the October 2026 look. If they ever differ, `brand.md` wins.
+
 ## Voice: like a friend over coffee
 - Write to one real person thinking about visiting, never "an audience." Use "you." The church is "we."
 - Warm, clear, honest. Short and human over clever. Answer the practical question first (when, where, what happens), then say the meaningful thing.
 - Say Jesus. Not "the divine" or "a higher purpose."
-- Sentence case. Eyebrows and labels are UPPERCASE and letter-spaced.
+- Sentence case. Social graphics have no eyebrows. Labels on the website are UPPERCASE and letter-spaced.
 - No exclamation points. No emoji. Ever.
 - No dashes in copy. Rewrite the sentence instead.
 - Times: `Sundays 9:00 & 11:00 AM`. Dates: `Sun Oct 12 · 6 PM`.
 - Never use: blessed, anointed, season of, powerful, breakthrough, intercede, "pursue God's presence," "stand in unity," "come ready to respond," or "encounter" as filler.
 - Test: if the sentence could come from any church email in the country, rewrite it.
-- On a graphic: the eyebrow names the moment, the headline says it in one human sentence, and exactly one word in the headline is italic and red. That word is the emotional beat, never "the," "and" or "of."
+- On a graphic: the headline says it in one human sentence, set big, and one word or short phrase in it is red. That is the emotional beat, never "the," "and" or "of." The red is the same weight as the rest, not italic.
 - Never invent a statistic, quote, testimonial, name, date or Scripture reference.
 
-## Color: cream, ink, one red
-- Journey Red `#FF3A3A` is the only accent. One red thing per view. Red is never a background except a button or a pull-quote.
-- Cream `#F7F4F0` (default background) · Alt cream `#ECE7DF` · Border `#D8D1C5` · Muted on cream `#5A574F` · Muted on dark `#9A948A` · Ink `#0A0A0A` · Deepest `#050505`.
+## Color: white, cream, ink, one red
+- Journey Red `#FF3A3A` is the only accent. One red thing per view: the red phrase, a red band or field, or a red hand-drawn mark each count as the one.
+- White `#FFFFFF` (social bands and fields) · Cream `#F7F4F0` · Alt cream `#ECE7DF` · Border `#D8D1C5` · Muted on cream `#5A574F` · Muted on dark `#9A948A` · Ink `#0A0A0A` · Deepest `#050505`.
 - Red text smaller than about 26px on cream uses `#9A1818`.
-- On dark or photo backgrounds, the accent word turns white, and red moves to the eyebrow or the logo mark, not both.
-- The old red `#E31E26` is retired. Don't use it.
+- Red can be a background only for buttons, pull-quotes, and on social the red band and red field. On a red ground the headline goes all white and the J goes white. On photos the red phrase stays red.
+- The old red `#E31E26` is retired.
 
 ## Type: four faces, four jobs
-- **Inter Tight 800**: headlines, titles, numbers. Tight tracking (−0.035em), line-height 0.95. The italic accent word is weight 700.
+- **Bricolage Grotesque 800**: headlines, titles, numbers. Tracking −0.04em, line-height 0.9. Set it big. The red accent is the same face and weight, not italic. (Inter Tight is retired except inside the Good Work logo.)
 - **Inter 400**: body, logistics, captions, buttons.
-- **Newsreader**: Scripture and pull-quotes only. Never a headline.
+- **Newsreader**: Scripture and pull-quotes only. Italic marks the beat there instead of red. Never a headline.
 - **Archivo Expanded Black**: sermon series art and stage screens only.
 All four are free on Google Fonts, and `tokens/fonts.css` loads them.
 
-Minimum sizes. On a 1080 square: eyebrow 26px, headline 86px, body 34px, logistics label 22px, value 36px. On a 1920 stage screen: lyrics 100px, Scripture 80px, labels 30px. Nothing smaller.
+Minimum sizes. On a 1080 square: headline 86px (social headlines usually run 120 to 190px), body 34px, logistics label 22px, value 36px. On a 1920 stage screen: lyrics 100px, Scripture 80px, labels 30px. Bigger is better on social.
+
+## Social layouts (pick in this order)
+1. **No band:** the first choice when the photo has a calm, darker area for the type. Type sits on the photo over a dark scrim. `slides/social-square-photo.html`
+2. **Big band:** when the photo is busy where the type goes, the type would cover a face, or there are three or more facts. Photo on top, band on the bottom third. White band by default, red for Sundays and big days, black for evenings. `slides/social-square-band-*.html`
+3. **No photo:** red field for quotes and Scripture-adjacent truths (all white type), white field for simple announcements. `slides/social-square-field-*.html`
+
+Never the same layout twice in a row, and change the band color from the last one.
+
+Carousels (`slides/social-carousel-*.html`): thin progress dashes across the top with a count like `2 / 7`, a typed → on every slide but the last, a cover that says "Swipe →" circled by hand, and a red close with the heavy J and one next step.
+
+What brings it to life: hand-drawn circles, underlines and arrows from `assets/hand/`; close-up photos of real things in our building; a cutout person from `assets/photo/cutouts/` breaking over the headline (`slides/social-cutout.html`); place markers like "Lake Gray Blvd · Jacksonville"; series markers like "A House Built for His Presence · Week 2". Scripture posts: Newsreader italic on white, a hand-drawn red underline, the reference and version, a real photo. `slides/social-scripture.html`
+
+Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake handwriting presented as real, and the same formula every post.
 
 ## Layout
-- Generous space. Structure comes from thin 1px lines and hard two-color splits, not boxes.
-- Corners are either fully round pills (buttons, chips) or square. Nothing in between.
-- No shadows. No decorative gradients. A dark gradient is allowed only behind type on a photo.
+- Generous space. The frame of a graphic, full-bleed photos and stage screens are square. Rounded cards with soft shadows may appear inside a graphic only when it shows an interface or an information card.
+- No decorative gradients. A dark scrim is allowed only behind type on a photo.
 - No icons. Arrows are typed (→). Write "When" and "Where" instead of calendar or clock icons.
-- One ghost device per graphic, at most: a huge numeral or word in Inter Tight 800 at 8% opacity on cream or 10% on dark, bleeding off an edge.
+- One ghost device per graphic, at most: a huge word or number from the post itself in Bricolage Grotesque 800 at 6 to 8% on white or cream, 10% on red, 12 to 16% white on dark or on a photo, bleeding off an edge.
 
 ## Sizes
 - Feed square 1080 × 1080 (80px safe margin)
 - Portrait feed / carousel 1080 × 1350 (80px)
 - Story / Reel 1080 × 1920 (250px top and bottom, 80px sides)
-- Stage screen 1920 × 1080 (96px action safe, 120px title safe)
+- Stage side screens 1920 × 1080 (96px action safe, 120px title safe)
+- Stage center screen: size not set in the design system yet. Ask for it.
+- 4K wall 3840 × 2160
 - YouTube thumbnail 1280 × 720
 
 ## Logo
 - Use only the real PNG files from `assets/logo/`. Never redraw, retype, recolor, stretch or add effects.
 - Horizontal is the default. Stacked for squares. Mark alone when the name is already written nearby.
-- The mark is red on cream and on dark. The whole lockup goes white on red and on photos.
+- Social uses the heavy J: `mark-ink-heavy.png` on white, `mark-white-heavy.png` on red, black and photos, `mark-ember-heavy.png` only when nothing else on the post is red.
 - No vector logo exists yet. Don't send anything larger than a flyer to print.
 - If you can't place the real logo file, leave a labeled empty box where it goes.
 
@@ -153,14 +169,13 @@ Minimum sizes. On a 1080 square: eyebrow 26px, headline 86px, body 34px, logisti
   - Journey Women: florals, "JOURNEY" in Montserrat Light wide-spaced, "women" in Style Script. Cream `#F8F1E7`, blush `#E7B3A6`, rust `#A8391A`.
   - Good Living Food Pantry: stacked GOOD / LIVING with an apple for the O. Figtree 800. Green `#2B5E2F`, apple `#6FAE3D`, brown `#9A6B3C`.
 - **Series:** can have its own face, palette and imagery. Keep the white horizontal Journey logo in its corner and set Scripture in Newsreader.
-- **Event:** main Journey look unless it's a big event. The When / Where block is identical every time and sits directly above the logo.
+- **Event:** house look unless it's a big event. The When / Where block is identical every time and sits directly above the logo.
 - **Project** (like Arise & Build): a progress bar is the device. Every figure must come from a live, confirmed source.
 
 ## Photos
-- Journey's own photos only. No stock photos of people. No AI-generated people. AI-generated landscapes are allowed if you say so.
-- Pull color slightly (saturate .85, contrast 1.05). Never duotone, color wash, blur or frame.
-- Favor hands, posture and the room over faces.
-- Every photo in `assets/photo/` is cleared for use.
+- Journey's own photos only, and use one whenever you can. No stock photos of people. No AI-generated people. AI-generated landscapes are allowed if you say so.
+- Full natural color, a touch brighter: saturate 1.05, brightness 1.06, contrast 1.04. Never black and white by default, never duotone, color wash, blur or frame.
+- Every photo in `assets/photo/` is cleared for use. Children need a parent's yes.
 
 ## Weekly sermon social kit
-Story (1080 × 1920), Quote post, Message recap carousel (1080 × 1350, 8 slides), Reel, Thumbnail. Only the quote post uses a photo of the speaker. The carousel uses landscapes, never people, and never names the speaker. No logos or watermarks on Reels. Read Scripture references from the transcript, never from memory.
+Story (1080 × 1920), Quote post, Message recap carousel (1080 × 1350), Reel, Thumbnail. Use our own photos wherever we can. Recap carousels never name the speaker. No logos or watermarks on Reels. Read Scripture references from the transcript, never from memory.
