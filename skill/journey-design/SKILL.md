@@ -25,6 +25,9 @@ def get(prefixes):
     n = 0
     for p in paths:
         if p.startswith(tuple(prefixes)) and not p.endswith(".zip"):
+            # Sunday photos are many and large: only when a prefix asks for them by name.
+            if p.startswith("assets/photo/sunday/") and not any(x.startswith("assets/photo/sunday/") for x in prefixes):
+                continue
             dest = os.path.join(OUT, p)
             os.makedirs(os.path.dirname(dest), exist_ok=True)
             urllib.request.urlretrieve(RAW + urllib.parse.quote(p), dest)
@@ -45,6 +48,7 @@ Then, once you know what the request is for, fetch its folders too, for example:
 get(["events/baptism/", "Graphics/Baptism/"])            # an event and its finished work
 get(["ministries/good-work/", "Graphics/Good Work/"])     # a ministry
 get(["assets/photo/"])                                    # Journey's own photos (use one whenever you can)
+get(["assets/photo/sunday/2026-10-25/"])                  # one Sunday's photo post (folders are YYYY-MM-DD)
 ```
 
 Call the downloaded folder **DS** below (`/tmp/journey-design`).
@@ -59,6 +63,7 @@ The main pieces in DS:
 | `readme.md` | The reasoning behind each rule, and the index of every design card. |
 | `assets/logo/` | The only logo files. PNG. Horizontal, stacked, mark, wordmark, in ember, ink and white. |
 | `assets/photo/` | Journey's own photographs. The only people photos you may use. |
+| `assets/photo/sunday/<date>/` | The photos from each Sunday's photo post, added every Monday. Already posted publicly, so cleared for promotions. List the folders to see which Sundays exist. |
 | `tokens/` `base/journey.css` `styles.css` | Colors, type, spacing, motion. Link them; don't retype values. |
 | `_ds_bundle.js` | The React components (`ArtFrame`, `Logo`, `ArtText`, `ArtScripture`, `Logistics`, `LowerThird`). Their notes are in `components/graphics/*.prompt.md`. Never edit this file. |
 | `slides/` | Starting templates: story, quote, carousel, carousel cover, lyric slide, lower third. |
@@ -71,7 +76,7 @@ The main pieces in DS:
 ## Step 1: ask before you build
 
 1. Is this a **Ministry**, **Series**, **Event** or **Project**? (Skip if the user already said.)
-2. What size or format? (Feed square, portrait, story, stage screen, thumbnail, print.) For the stage, ask which screen: the side screens are 1920 × 1080. The size of the large center screen is not in the design system yet, so ask for its exact pixel size before you build for it.
+2. What size or format? (Feed square, portrait, story, stage screen, thumbnail, print.) For the stage, ask which screen: the side screens are 1920 × 1080 and the large center screen is 3840 × 2160. The center screen is broken by side panels; check `brand.md` (Graphic sizes) for where the breaks fall and keep words and faces off them. If the break positions aren't listed there yet, ask before you build.
 3. What are the confirmed facts: date, time, place, names, Scripture reference, numbers?
 
 Never fill in a missing fact yourself. Leave a clearly marked blank like `[DATE: confirm]`.
@@ -152,8 +157,7 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
 - Portrait feed / carousel 1080 × 1350 (80px)
 - Story / Reel 1080 × 1920 (250px top and bottom, 80px sides)
 - Stage side screens 1920 × 1080 (96px action safe, 120px title safe)
-- Stage center screen: size not set in the design system yet. Ask for it.
-- 4K wall 3840 × 2160
+- Stage center screen 3840 × 2160, broken by side panels. Keep words and faces off the breaks (positions in `brand.md`; ask if they're not listed).
 - YouTube thumbnail 1280 × 720
 
 ## Logo
