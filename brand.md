@@ -82,9 +82,9 @@ Eyebrows (website only): 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72r
 | Feed square | 1080 × 1080 | 80px |
 | Portrait feed / carousel | 1080 × 1350 | 80px |
 | Story / Reel | 1080 × 1920 | 250px top & bottom, 80px sides |
-| Stage / screen slide | 1920 × 1080 | 96px action, 120px title |
+| Stage side screens | 1920 × 1080 | 96px action, 120px title |
+| Stage center screen | 3840 × 2160 | Broken by side panels: keep words and faces off the breaks. Break positions: [to confirm] |
 | YouTube thumbnail | 1280 × 720 | |
-| 4K wall | 3840 × 2160 | |
 
 Build the square first; the other sizes follow its decisions. The Journey Church logo sits in its locked corner (or centered at the bottom on ministry slides).
 
