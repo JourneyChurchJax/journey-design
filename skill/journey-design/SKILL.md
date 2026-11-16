@@ -90,9 +90,11 @@ Then check whether that ministry, series or event already has a folder in DS and
 - **Use the real logo file** from `DS/assets/logo/`. Never redraw or retype it.
 - **Render a PNG** at the exact size when you can (a headless browser such as Playwright, device scale 1). If you can't render, hand back the HTML file and say so.
 - Build the square first. The other sizes follow its decisions.
+- **Match the gold standard.** The approved examples are in `Graphics/New Look/` (and the Examples group of the claude.ai design system). If yours looks busier, take something out.
 
 ## Step 3: hand it back
 
+- **Run the check before handoff** (in `brand.md`): one red thing, type floors, real logo, no banned words, no em or en dashes or exclamation points, every fact confirmed or marked [to confirm], our own photo, layout rotated, exact export size. Fix any miss before handing back.
 - List every fact you used and where it came from.
 - Flag every blank you left.
 - Say what you wrote yourself so Adam can read it before it posts.
@@ -159,6 +161,14 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
 - Stage side screens 1920 × 1080 (96px action safe, 120px title safe)
 - Stage center screen 3840 × 2160, broken by side panels. Keep words and faces off the breaks (positions in `brand.md`; ask if they're not listed).
 - YouTube thumbnail 1280 × 720
+- Invite card (print) 3.5 × 2 in, 1125 × 675 at 300 dpi with 1/8 in bleed; export CMYK
+- Templates for every size are in `slides/`: social-*.html, `thumbnail.html`, `stage-title.html`, `stage-center.html`, `lyric-slide.html`, `lower-third-slide.html`, `print-card.html`.
+
+## Motion
+- One curve `cubic-bezier(.2,.7,.2,1)`; nothing bounces, scales up or spins.
+- Reels and stories open on a finished frame (never black, a logo sting or a countdown). Ghost word drifts; headline rises in over 1s; the red phrase lands last; then facts. About 3 seconds to land, then hold.
+- Loops: last frame equals first, 6 to 12 s (stage 20 s+), only the ghost word or photo moves, no audio; watch it loop three times before handoff.
+- Slow motion: one 50% moment per clip at most, never ramped; type never moves in slow motion. No logo on Reels.
 
 ## Logo
 - Use only the real PNG files from `assets/logo/`. Never redraw, retype, recolor, stretch or add effects.

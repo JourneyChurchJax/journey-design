@@ -84,9 +84,10 @@ Eyebrows (website only): 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72r
 | Story / Reel | 1080 × 1920 | 250px top & bottom, 80px sides |
 | Stage side screens | 1920 × 1080 | 96px action, 120px title |
 | Stage center screen | 3840 × 2160 | Broken by side panels: keep words and faces off the breaks. Break positions: [to confirm] |
-| YouTube thumbnail | 1280 × 720 | |
+| YouTube thumbnail | 1280 × 720 | Keep words out of the bottom right (video length) |
+| Invite card (print) | 3.5 × 2 in · 1125 × 675 at 300 dpi with 1/8 in bleed | 1/8 in inside the trim. Export CMYK |
 
-Build the square first; the other sizes follow its decisions. The Journey Church logo sits in its locked corner (or centered at the bottom on ministry slides).
+Build the square first; the other sizes follow its decisions. Every size has a template in `slides/`: social-*.html, `thumbnail.html`, `stage-title.html`, `stage-center.html`, `lyric-slide.html`, `lower-third-slide.html`, `print-card.html`. The Journey Church logo sits in its locked corner (or centered at the bottom on ministry slides).
 
 ## Logo — Journey Church
 PNG only (no vector exists yet, so nothing larger than a flier should be printed until one does). Horizontal is the default; stacked for squares; mark alone when the name is already written. The mark is red on cream and on dark; the whole lockup reverses (white) on red and on photos.
@@ -143,6 +144,27 @@ The look approved by Adam on Oct 2, 2026. Our photos in full color, Bricolage Gr
 - **Scripture look.** Newsreader italic on white, a hand-drawn red underline under the key phrase, the reference and version, and a real photo underneath. `slides/social-scripture.html`
 
 **Avoid:** eyebrows on social, glows, decorative gradients, emoji, stock icons, fake handwriting presented as real, and the same formula every post.
+
+## Motion and loops (Nov 2026)
+One curve, `cubic-bezier(.2,.7,.2,1)`. Slow and few. Nothing bounces, scales up or spins.
+- **How a Reel or story opens:** the first frame is already a finished graphic (photo, headline, J), so a paused or thumbnailed Reel still reads. Never open on a black frame, a logo sting or a countdown.
+- **The build, about 3 seconds:** the ghost word is already drifting (about 40px over the clip); the headline rises 22px and fades in over 1s; the red phrase arrives last, 0.3s after; then the facts, 0.09s apart. Then hold at least 2 seconds per line.
+- **Slow motion:** real footage may run at 50% for one moment of worship or a baptism per clip. Never ramped, never a zoom punch. Type never moves in slow motion.
+- **Logo:** none on Reels. On a story the heavy J sits still in its corner from the first frame.
+- **Loops repeat without a jump:** last frame equals first frame (a there-and-back, or a drift that wraps one tile). 6 to 12 seconds; stage background loops 20 seconds or more. Only the ghost word, a slow photo drift or light in the footage moves; words never loop. MP4, no audio; play it three times in a row before handing it off.
+- **Stage:** cuts and half-second dissolves; lower thirds slide in from the left over 0.6s; lyrics cut, never fade word by word; background loops sit under a scrim dark enough for 4.5:1 lyrics.
+
+## Check before handoff
+Run this on every graphic, slide, card and video before it goes to Adam. Any "no" means fix it first.
+1. **One red thing.** The red phrase, or a red band or field, or a red hand mark. On a red ground the headline and J are white.
+2. **Type floors.** 1080 graphic: headline 86px+ (usually 120 to 190), body 34px, logistics 36px value / 22px label. Stage: lyrics 100, Scripture 80, labels 30; double them on the 3840 center screen. Nothing past the safe area.
+3. **Real logo.** A shipped PNG, never redrawn or retyped. Heavy J on social in its bottom-right spot, right color for the ground. None on Reels.
+4. **Banned words.** None of the list in Voice.
+5. **No dashes, no exclamation points, no emoji.** No em or en dashes in copy. Sentence case. No eyebrows on social.
+6. **Confirmed facts.** Every date, time, place, name, number and Scripture reference checked against a live source or confirmed by Adam. Otherwise a visible [to confirm].
+7. **Our own photo,** full color, with consent. No stock or AI people.
+8. **Rotation.** Not the same layout or band color as the last post.
+9. **Real size.** Exported at the exact pixels for its format, checked at phone-thumbnail size.
 
 ## Ministry logos (download)
 - **Good Work — Job Placement Ministry:** red circle handshake + "Good Work." in Newsreader Italic 500 with a red period; subtitle "JOB PLACEMENT MINISTRY" in Inter Tight 600 tracked 0.3em. Colors: Journey Red, Ink, Cream, Warm Gray. Brand sheet: [/brand/ministries/good-work/brand.html](/brand/ministries/good-work/brand.html)
