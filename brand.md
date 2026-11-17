@@ -145,7 +145,7 @@ PNG only (no vector exists yet, so nothing larger than a flier should be printed
 - Phone home screen: `apple-touch-icon-180.png` (red J on white).
 - Ministry accounts use their own ministry logo as the profile photo, not the J.
 
-**Contact lockups** (`assets/logo/digital/contact-horizontal-ink.png`, `contact-stacked-ink.png`): the horizontal logo, a hairline, then `6225 Lake Gray Blvd Ste 2 / Jacksonville, FL 32244 / journeychurch.org` in Inter. For letterhead, email signatures and print footers. Add a phone number or social handles only once Adam confirms which ones.
+**Contact lockups** (`assets/logo/digital/contact-horizontal-ink.png`, `contact-stacked-ink.png`): the horizontal logo, a hairline, then `6225 Lake Gray Blvd Ste 2 / Jacksonville, FL 32244 / journeychurch.org` in Inter. For letterhead, email signatures and print footers. Address and website only: no phone number or social handles (Adam, 17 Nov 2026).
 
 **No vector logo exists yet.** Everything above is PNG. Nothing larger than a flyer goes to print, and no sign, shirt or banner is made, until a designer redraws the logo as a vector.
 
