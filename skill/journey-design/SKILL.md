@@ -125,6 +125,7 @@ These are a short copy of `brand.md` as of the October 2026 look. If they ever d
 - Red text smaller than about 26px on cream uses `#9A1818`.
 - Red can be a background only for buttons, pull-quotes, and on social the red band and red field. On a red ground the headline goes all white and the J goes white. On photos the red phrase stays red.
 - The old red `#E31E26` is retired.
+- Text pairings (WCAG): Journey Red text on white or cream, and white on red, are big type only (24px+, or 19px bold). Never set text in `#9A948A` on cream or in the border color. Full table: `guidelines/color-pairings.html`; specs with RGB and CMYK: `guidelines/color-specs.html`.
 
 ## Type: four faces, four jobs
 - **Bricolage Grotesque 800**: headlines, titles, numbers. Tracking −0.04em, line-height 0.9. Set it big. The red accent is the same face and weight, not italic. (Inter Tight is retired except inside the Good Work logo.)
@@ -176,6 +177,8 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
 - Social uses the heavy J: `mark-ink-heavy.png` on white, `mark-white-heavy.png` on red, black and photos, `mark-ember-heavy.png` only when nothing else on the post is red.
 - No vector logo exists yet. Don't send anything larger than a flyer to print.
 - If you can't place the real logo file, leave a labeled empty box where it goes.
+- Clear space: X = the J circle height, clear on every side. Smallest: horizontal 120px / 1.25 in, stacked 80px / 0.75 in, wordmark 120px / 1.25 in, mark 24px / 0.25 in, heavy J 32px (screen only).
+- Profile photos, favicons and contact lockups are ready in `assets/logo/digital/`. Misuse examples: `guidelines/brand-logo-misuse.html`.
 
 ## By kind of work
 - **Ministry:** use that ministry's own logo and look. The Journey Church logo still appears, usually small and centered at the bottom.
@@ -188,8 +191,12 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
 
 ## Photos
 - Journey's own photos only, and use one whenever you can. No stock photos of people. No AI-generated people. AI-generated landscapes are allowed if you say so.
+- Show hands, posture and the room. Faces only of consenting stage team and staff. No identifiable child without a parent's signed release (Adam, 17 Nov 2026). When unsure, pick a photo shot from behind or of hands.
 - Full natural color, a touch brighter: saturate 1.05, brightness 1.06, contrast 1.04. Never black and white by default, never duotone, color wash, blur or frame.
-- Every photo in `assets/photo/` is cleared for use. Children need a parent's yes.
+- Photographers: shot list, iPhone setup, three-stage edit and the Journey 2026 Lightroom preset are in `brand.md` (Photos) and `assets/photo/preset/`. Never the Pro Church Tools presets.
+
+## Owner and help
+Adam Hardegree owns this system and approves every change and every post. Version log in `brand.md` (Who runs this guide).
 
 ## Weekly sermon social kit
 Story (1080 × 1920), Quote post, Message recap carousel (1080 × 1350), Reel, Thumbnail. Use our own photos wherever we can. Recap carousels never name the speaker. No logos or watermarks on Reels. Read Scripture references from the transcript, never from memory.

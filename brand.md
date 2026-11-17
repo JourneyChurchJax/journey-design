@@ -50,6 +50,20 @@ Cream, white, ink, and **one** red.
 
 Print red: C0 M85 Y75 K0. Red is a background only for buttons, pull-quotes, and on social the red band and the red field. One red thing per view still holds: the red phrase in a headline counts, a red band or field counts, a red hand-drawn mark counts. When the ground is already red, the headline goes all white and the J goes white. On photos the red phrase stays red. The old red #E31E26 is retired.
 
+**Full specs and pairings** (checked by script against `tokens/colors.css`, 17 Nov 2026): `guidelines/color-specs.html` has HEX, RGB, CMYK and one job for every color; `guidelines/color-pairings.html` shows each text and background pair with its contrast ratio. CMYK for every color but the red is a straight conversion, so get a printer's proof. No Pantone is confirmed.
+
+| Text on ground | Ratio | Verdict |
+|---|---|---|
+| Ink on white / cream | 19.8 / 18.1 | Any size |
+| Warm gray on cream | 13.4 | Any size |
+| Muted on cream (#5A574F) on cream / white | 6.6 / 7.2 | Any size |
+| Small red (#9A1818) on cream / white | 7.6 / 8.3 | Any size |
+| Cream on ink; muted on dark (#9A948A) on ink | 18.1 / 6.6 | Any size |
+| Journey Red on white / cream; white on red | 3.6 / 3.2 / 3.6 | Big type only (24px+, or 19px bold) |
+| Muted on dark on cream; border color on anything | 2.8 / 1.5 | Never for text |
+
+The brand rule wins over the math: on a red ground, type goes white even though ink measures higher.
+
 ## Type
 Four typefaces, four jobs. All free on Google Fonts.
 - **Bricolage Grotesque 800** (Oct 2026): headlines, titles, numbers. Tracking −0.04em, line-height 0.9. The red accent is the same face and weight, not italic. Set it big: friendly, bright, energetic. It replaced Inter Tight, which now stays only inside the Good Work logo.
@@ -73,7 +87,7 @@ Eyebrows (website only): 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72r
 - Textures: fine dot grain on large dark fields, or fine ink dots on large cream fields — never both, never on a photo.
 - **Ghost device:** one per graphic: a huge word or number taken from the post itself (the day, the date, the verse) in Bricolage Grotesque 800 at 6 to 8% on white or cream, 10% on red, 12 to 16% white on dark or on a photo, bleeding off an edge.
 - **No icon set.** Arrows are typographic (→). Labels ("When," "Where") instead of calendar or clock icons.
-- Photos: Journey's own only, never stock people. Use one whenever you can. Full natural color, a touch brighter: `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026). Never black and white by default, never duotone, color wash, blur or frame. Get consent; children need a parent's yes.
+- Photos: Journey's own only, never stock people. Use one whenever you can. Full natural color, a touch brighter: `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026). Never black and white by default, never duotone, color wash, blur or frame. Faces only of consenting stage team and staff; no identifiable child without a parent's signed release (Nov 2026, see Photos).
 - Motion: one easing curve cubic-bezier(.2,.7,.2,1), slow and few. Nothing bounces, scales or spins.
 
 ## Graphic sizes
@@ -110,6 +124,30 @@ PNG only (no vector exists yet, so nothing larger than a flier should be printed
 - [wordmark-cream.png](/brand/assets/logo/wordmark-cream.png)
 - [wordmark-ember.png](/brand/assets/logo/wordmark-ember.png)
 - [wordmark-ink.png](/brand/assets/logo/wordmark-ink.png)
+
+**Clear space.** X = the height of the J circle in the logo you are using. Keep X clear on every side: no type, edge, photo detail or other logo inside it. On social the locked corner already gives more than X.
+
+**Smallest sizes** (below these the logo breaks up; use the next simpler lockup instead):
+
+| Lockup | Screen | Print |
+|---|---|---|
+| Horizontal | 120 px wide | 1.25 in wide |
+| Stacked | 80 px wide | 0.75 in wide |
+| Wordmark | 120 px wide | 1.25 in wide |
+| Mark (J alone) | 24 px | 0.25 in |
+| Heavy J | 32 px | not for print |
+
+**Never** (shown in `guidelines/brand-logo-misuse.html`): stretch or squash it, rotate it, add a shadow or glow, recolor it, put the red mark on a busy photo, put the ink logo on dark, crowd it inside its clear space, retype it in another font, put a gradient behind it, or use it below its smallest size.
+
+**Profile photos, avatars and favicons** (`assets/logo/digital/`):
+- Church profile photo, every platform: `profile-red-1080.png` (white heavy J on red, J at 50% of the height so the circle crop never clips it). `profile-white-1080.png` where red clashes with the platform.
+- Website tab: `favicon.ico` (16, 32, 48) and `favicon-32.png` / `favicon-48.png` / `favicon-512.png` (red heavy J, transparent).
+- Phone home screen: `apple-touch-icon-180.png` (red J on white).
+- Ministry accounts use their own ministry logo as the profile photo, not the J.
+
+**Contact lockups** (`assets/logo/digital/contact-horizontal-ink.png`, `contact-stacked-ink.png`): the horizontal logo, a hairline, then `6225 Lake Gray Blvd Ste 2 / Jacksonville, FL 32244 / journeychurch.org` in Inter. For letterhead, email signatures and print footers. Add a phone number or social handles only once Adam confirms which ones.
+
+**No vector logo exists yet.** Everything above is PNG. Nothing larger than a flyer goes to print, and no sign, shirt or banner is made, until a designer redraws the logo as a vector.
 
 ## Kinds of work
 - **Sermon series** — each series gets its own look (face, palette, imagery). Only the contract holds: the reversed horizontal Journey logo in its corner, and Scripture in Newsreader. Package: 1920 title, square, story, lower third, weekly sermon title and Scripture boards.
@@ -185,6 +223,33 @@ Run this on every graphic, slide, card and video before it goes to Adam. Any "no
 - [good-living/good-living-food-pantry-logo-transparent.png](/brand/exports/good-living/good-living-food-pantry-logo-transparent.png)
 
 ## Photos
+**What we show (Adam, 17 Nov 2026):** hands, posture and the room. Faces only of stage team and staff who have said yes. No identifiable child without a parent's signed release: show kids as the space, the toys, small hands, the backs of heads. When in doubt, crop to hands or shoot from behind.
+
+**Shot list for a Sunday** (one photographer, both vertical and horizontal of every shot; expect one keeper in five):
+
+| Stop | Shots | What to get at Journey |
+|---|---|---|
+| Worship practice | 100 to 200 | Hands on instruments, the team from behind with the room, the cross lit, wide from the back aisle (the anchor shot) |
+| Greeters | 50 | Doors opening, handshakes and hugs as hands, coffee being poured |
+| Lobby | 50 | Name tags, the connect table, people talking (backs and hands), the kids check-in area empty |
+| Sanctuary in service | 50 | Raised hands from behind, someone kneeling, the room under the cross, communion plates and hands |
+| Campus | 50 | the sign on Lake Gray Blvd, the building at golden hour, people walking in |
+| Detail | 40 | Bibles open, coffee cups, the kids room toys, a hand on a shoulder, chairs before people arrive |
+
+**iPhone setup** (native Camera): Settings › Camera › Formats › ProRAW & Resolution Control on, ProRAW Max 48 MP (about 75 MB a shot, so clear 25 to 33 GB first). Preserve Settings all on except Action Mode. Grid and Level on. Live Photos off. In the app: RAW MAX badge on, exposure -1.0 (protects the stage lights), optical lenses only (0.5x, 1x, 5x; never pinch to zoom).
+
+**Edit in three stages** (Lightroom):
+1. **Preset first:** apply `assets/photo/preset/Journey 2026.xmp` (it already holds Texture -10, Clarity -20, Dehaze +6 and the +0.70 exposure that undoes the -1.0). Applying a preset after your own edits overwrites them, so preset first, always.
+2. **Fix the photo:** crop and straighten, set white balance (skin looks real, not orange from stage light), then adjust exposure by eye. Highlights down if the stage blows out, shadows up if the room goes black.
+3. **Finish:** check the vignette (-8 in the preset), sharpening (60, masking 85), profile corrections on, Lens Blur or masks only if a face needs to pop. Look at it once on a phone before export.
+
+**Journey 2026 preset:** built for our brighter, full natural color look. Whites reach true white and blacks lift only a hair. Don't use the Pro Church Tools presets; they cap the whites at 229, 205 or 196 and make our room look gray. Before and after on ten of our photos: `guidelines/photo-preset.html` (a simulation on finished JPEGs; the real preset on RAW files will look a little different, so check one shoot in Lightroom).
+
+**Filing:** one folder per shoot named `YYYY-MM-DD Sunday`, a `Keepers` folder inside it. Tag keepers by stop (worship, greeters, lobby, sanctuary, campus, detail), by shape (vertical, horizontal) and `faces` if anyone is recognizable. Web copies (2000 px) go to `assets/photo/`; full-size originals go in Journey Command.
+
+**Release forms:** stage team and staff sign a media release (recommended: once a year, at the start of the ministry year; Adam to confirm). Any child who could be recognized needs a parent's signed release on file before the photo is used anywhere.
+
+### Photo library
 - [adam-stage-pointing.jpg](/brand/assets/photo/adam-stage-pointing.jpg)
 - [baptism-woman-water-01.webp](/brand/assets/photo/baptism-woman-water-01.webp)
 - [bowed-at-the-stage.jpg](/brand/assets/photo/bowed-at-the-stage.jpg)
@@ -225,6 +290,30 @@ Sunday service, September 20, 2026 (2000 px web copies; the full-size originals 
 - [young-man-eyes-closed.jpg](/brand/assets/photo/young-man-eyes-closed.jpg)
 - [young-man-worship-blue.jpg](/brand/assets/photo/young-man-worship-blue.jpg)
 - [young-woman-praying.jpg](/brand/assets/photo/young-woman-praying.jpg)
+
+## Who runs this guide
+- **Owner:** Adam Hardegree, Lead Pastor. He approves every change to this guide and every piece of copy before it posts.
+- **Get the files:** the claude.ai design system (Journey Church Design System), this repo (`journey-design`, `brand/` on the website), the logo PNGs in `assets/logo/` and `assets/logo/digital/`, photos in `assets/photo/`, templates in `slides/`.
+- **Ask for help:** ask Adam. Request route for volunteers and staff: [to confirm].
+- **Review:** look the guide over once a quarter; anything retired gets marked retired, not deleted.
+
+**Version log**
+| Date | Change |
+|---|---|
+| 19 Sep 2026 | First decisions: one red, cream and ink, voice rules |
+| 1 Oct 2026 | Shape: corners, shadows, interface patterns |
+| 2 Oct 2026 | New look: Bricolage Grotesque, red not italic, social system, heavy J |
+| 16 Nov 2026 | Gold-standard examples, a template for every size, motion and loop rules, check before handoff |
+| 17 Nov 2026 | Logo clear space, minimums, misuse, digital files, contact lockups; full color specs and pairings; photo rules, shot list, iPhone setup, three-stage edit, Journey 2026 preset; this section |
+
+## Who we are and voice
+[Coming: being drafted for Adam's approval.]
+
+## Communication levels
+[Coming: being drafted for Adam's approval.]
+
+## Social engine and safeguarding
+[Coming: being drafted for Adam's approval.]
 
 ---
 
