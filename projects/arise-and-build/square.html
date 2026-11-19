@@ -1,0 +1,29 @@
+<!-- @dsCard group="Project · Arise & Build" viewport="1080x1080" name="Arise & Build · square" subtitle="Feed post. Blue Jacksonville street map, Coolvetica title, hand script line" -->
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=block" rel="stylesheet">
+<style>
+/* Arise & Build key art. Title: Coolvetica, outlined to title.svg so no font file ships. Script: Nothing You Could Do, standing in for Automobile Contest from the original PSD. Map: OpenStreetMap, Westside Jacksonville around the church. */
+html,body{margin:0;background:#1f4b88}
+.c{position:relative;overflow:hidden;width:1080px;height:1080px;background:radial-gradient(ellipse at 50% 45%,#2a5c9e 0%,#21508f 55%,#1a4279 100%)}
+.map{position:absolute;inset:-4%;background:url(../../assets/projects/arise-and-build/jax-map.svg) center/cover no-repeat;opacity:.9}
+.paper{position:absolute;inset:0;mix-blend-mode:soft-light;opacity:.55}
+.frame i{position:absolute;background:rgba(190,215,248,.35)}
+.t{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#f6f6f4;text-align:center}
+h1{margin:0;line-height:0}h1 img{display:block;filter:drop-shadow(0 2px 14px rgba(10,30,70,.25))}
+p{font-family:'Nothing You Could Do',cursive;margin:0;transform:skewX(-8deg);letter-spacing:.06em;white-space:nowrap}
+</style></head><body>
+<div class="c" id="c">
+ <div class="map"></div>
+ <svg class="paper" width="100%" height="100%"><filter id="f"><feTurbulence type="fractalNoise" baseFrequency=".0035" numOctaves="5" seed="7"/><feDiffuseLighting lighting-color="#fff" surfaceScale="6"><feDistantLight azimuth="225" elevation="35"/></feDiffuseLighting></filter><rect width="100%" height="100%" filter="url(#f)"/></svg>
+ <div class="frame" id="fr"></div>
+ <div class="t"><h1 id="h"><img src="../../assets/projects/arise-and-build/title.svg" alt="arise &amp; build"></h1><p id="p">building a legacy for future generations</p></div>
+</div>
+<script>
+const W=1080,H=1080,u=Math.min(W,H*1.45);
+document.querySelector('#h img').style.height=(u*0.122*1.2)+'px';
+const p=document.getElementById('p');p.style.fontSize=(u*0.036)+'px';p.style.marginTop=(u*0.012)+'px';
+const fr=document.getElementById('fr'),m=Math.round(W*0.15),lw=Math.max(1,W/1080),tk=W*0.022;
+const add=(x,y,w,h)=>{const i=document.createElement('i');Object.assign(i.style,{left:x+'px',top:y+'px',width:w+'px',height:h+'px'});fr.appendChild(i)};
+add(m,0,lw,H);add(W-m,0,lw,H);
+[H*0.32,H*0.68].forEach(y=>{add(m-tk,y,tk,lw);add(W-m,y,tk,lw)});
+</script></body></html>

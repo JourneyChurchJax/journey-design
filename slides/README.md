@@ -31,3 +31,12 @@ Plain HTML at real output pixels, sharing `social.css`. See brand.md, Social, fo
 | `social-handwriting.html` | 1080 × 1350 | Hand-drawn marks and a handwritten note (stand-in font until the real scan) |
 | `social-carousel-cover.html`, `social-carousel.html`, `social-carousel-close.html` | 1080 × 1350 | Carousel cover, teaching slide, close |
 | `social-carousel-strip.html` | 7560 × 1350 | All seven slides as one artboard; cut into 1080 slides |
+
+## Other sizes (Nov 2026)
+
+| File | Size | What it is |
+|---|---|---|
+| `thumbnail.html` | 1280 × 720 | YouTube sermon thumbnail: three to five words, one red phrase, preacher on the right |
+| `stage-title.html` | 1920 × 1080 | Side-screen announcement in the new look |
+| `stage-center.html` | 3840 × 2160 | Center screen; words stay in the middle panel. Dashed break lines are placeholders [to confirm]; add `noexport` to the artboard to hide them |
+| `print-card.html` | 1125 × 675 | 3.5 × 2 in invite card at 300 dpi with 1/8 in bleed; add `noexport` to hide the trim and safe lines, then convert to CMYK |
