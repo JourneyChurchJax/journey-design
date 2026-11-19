@@ -88,7 +88,7 @@ Eyebrows (website only): 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72r
 - Textures: fine dot grain on large dark fields, or fine ink dots on large cream fields — never both, never on a photo.
 - **Ghost device:** one per graphic: a huge word or number taken from the post itself (the day, the date, the verse) in Bricolage Grotesque 800 at 6 to 8% on white or cream, 10% on red, 12 to 16% white on dark or on a photo, bleeding off an edge.
 - **No icon set.** Arrows are typographic (→). Labels ("When," "Where") instead of calendar or clock icons.
-- Photos: Journey's own only, never stock people. Use one whenever you can. Full natural color, a touch brighter: `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026). Never black and white by default, never duotone, color wash, blur or frame. Faces only of consenting stage team and staff; no identifiable child without a parent's signed release (Nov 2026, see Photos).
+- Photos: Journey's own only, never stock people. Use one whenever you can. Full natural color, a touch brighter: `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026). Never black and white by default, never duotone, color wash, blur or frame. Faces are wanted: people smiling and happy (Adam, 18 Nov 2026). No identifiable child without a parent's signed release (see Photos).
 - Motion: one easing curve cubic-bezier(.2,.7,.2,1), slow and few. Nothing bounces, scales or spins.
 
 ## Graphic sizes
@@ -228,15 +228,15 @@ Run this on every graphic, slide, card and video before it goes to Adam. Any "no
 - [good-living/good-living-food-pantry-logo-transparent.png](/brand/exports/good-living/good-living-food-pantry-logo-transparent.png)
 
 ## Photos
-**What we show (Adam, 17 Nov 2026):** hands, posture and the room. Show the room, not the band. Faces only of stage team and staff who have said yes. Photos in `assets/photo/sunday/` are already public, but any photo tagged `faces` and any baptism still gets a consent check before a promo uses it. Never the same photo twice on one page or post. Shoot through the crowd; edit honestly (no removing or adding people). No identifiable child without a parent's signed release: show kids as the space, the toys, small hands, the backs of heads. When in doubt, crop to hands or shoot from behind.
+**What we show (Adam, 18 Nov 2026):** faces. People smiling and happy, worshiping, laughing in the lobby. In his words: "I want faces and photos, people that are smiling and happy." Show the room, not the band. Never the same photo twice on one page or post. Shoot through the crowd; edit honestly (no removing or adding people). **Kids stay the exception:** no identifiable child without a parent's signed release. Show kids as the space, the toys, small hands, the backs of heads, unless that release is on file.
 
 **Shot list for a Sunday** (one photographer, both vertical and horizontal of every shot; expect one keeper in five):
 
 | Stop | Shots | What to get at Journey |
 |---|---|---|
 | Worship practice | 100 to 200 | Hands on instruments, the team from behind with the room, the cross lit, wide from the back aisle (the anchor shot) |
-| Greeters | 50 | Doors opening, handshakes and hugs as hands, coffee being poured |
-| Lobby | 50 | Name tags, the connect table, people talking (backs and hands), the kids check-in area empty |
+| Greeters | 50 | Smiling faces at the door, handshakes and hugs, coffee being poured |
+| Lobby | 50 | Name tags, the connect table, people talking and laughing, the kids check-in area empty |
 | Sanctuary in service | 50 | Raised hands from behind, someone kneeling, the room under the cross, communion plates and hands |
 | Campus | 50 | the sign on Lake Gray Blvd, the building at golden hour, people walking in |
 | Detail | 40 | Bibles open, coffee cups, the kids room toys, a hand on a shoulder, chairs before people arrive |
@@ -246,7 +246,7 @@ Run this on every graphic, slide, card and video before it goes to Adam. Any "no
 **Edit in three stages** (Lightroom):
 1. **Preset first:** apply `assets/photo/preset/Journey 2026.xmp` (it already holds Texture -10, Clarity -20, Dehaze +6 and the +0.70 exposure that undoes the -1.0). Applying a preset after your own edits overwrites them, so preset first, always.
 2. **Fix the photo:** crop and straighten, set white balance (skin looks real, not orange from stage light), then adjust exposure by eye. Highlights down if the stage blows out, shadows up if the room goes black.
-3. **Finish:** check the vignette (-8 in the preset), sharpening (60, masking 85), profile corrections on, Lens Blur or masks only on a consenting face that needs to pop. Look at it once on a phone before export.
+3. **Finish:** check the vignette (-8 in the preset), sharpening (60, masking 85), profile corrections on, Lens Blur or masks only on a face that needs to pop. Look at it once on a phone before export.
 
 **Journey 2026 preset:** built for our brighter, full natural color look. Whites reach true white and blacks lift only a hair. Don't use the Pro Church Tools presets; they cap the whites at 229, 205 or 196 and make our room look gray. Before and after on ten of our photos: `guidelines/photo-preset.html` (a simulation on finished JPEGs; the real preset on RAW files will look a little different, so check one shoot in Lightroom).
 
@@ -313,6 +313,7 @@ Sunday service, September 20, 2026 (2000 px web copies; the full-size originals 
 | 1 Oct 2026 | Shape: corners, shadows, interface patterns |
 | 2 Oct 2026 | New look: Bricolage Grotesque, red not italic, social system, heavy J |
 | 16 Nov 2026 | Gold-standard examples, a template for every size, motion and loop rules, check before handoff |
+| 18 Nov 2026 | Photos: faces are wanted, smiling and happy (Adam); the stage-team-and-staff-only rule is gone, the kid release rule stays |
 | 18 Nov 2026 | Who we are and voice, Communication levels, Social engine and safeguarding filled in from the Pro Church Tools Journey Edition files (they win over older rules); 8-piece sermon week; portrait first; TikTok and Google sizes; photo consent and safeguarding |
 | 17 Nov 2026 | Logo clear space, minimums, misuse, digital files, contact lockups; full color specs and pairings; photo rules, shot list, iPhone setup, three-stage edit, Journey 2026 preset; this section |
 

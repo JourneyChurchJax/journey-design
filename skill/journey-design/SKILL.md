@@ -221,7 +221,7 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
 
 ## Photos
 - Journey's own photos only, and use one whenever you can. No stock photos of people. No AI-generated people. AI-generated landscapes are allowed if you say so.
-- Show hands, posture and the room, not the band. Sunday-folder photos tagged `faces` and any baptism still need a consent check before a promo. Never the same photo twice in one post. Faces only of consenting stage team and staff. No identifiable child without a parent's signed release (Adam, 17 Nov 2026). When unsure, pick a photo shot from behind or of hands.
+- Faces are wanted: people smiling and happy (Adam, 18 Nov 2026). Show the room, not the band. Never the same photo twice in one post. No identifiable child without a parent's signed release; with no release, show kids from behind or as small hands.
 - Full natural color, a touch brighter: saturate 1.05, brightness 1.06, contrast 1.04 (the Journey 2026 preset: Saturation +5, Vibrance +10). The old 85% saturation rule is retired. Never black and white by default, never duotone, color wash, blur or frame.
 - Photographers: shot list, iPhone setup, three-stage edit and the Journey 2026 Lightroom preset are in `brand.md` (Photos) and `assets/photo/preset/`. Never the Pro Church Tools presets.
 
