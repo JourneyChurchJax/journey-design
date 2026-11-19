@@ -73,6 +73,19 @@ The main pieces in DS:
 | `projects/` | Arise & Build and how a project graphic works. |
 | `Graphics/<Name>/` | Finished, approved work. Match these when making something new for the same ministry, series or event. |
 
+### Finished design artifacts on claude.ai (the shared Main folder)
+
+Every artifact in Adam's shared Main artifacts folder is part of Journey Design. Check them before building, and match them when the work is for the same series, event or season:
+
+| Artifact | What it holds | Link |
+|---|---|---|
+| Christmas 2026 | Love Has Come series art: announce square, story, sermon title, Scripture slide, YouTube thumbnail | https://claude.ai/artifact/B1ikXhShKfbbDcueUJB4Ar |
+| Jesus' Church, Jesus' Way | Vision 2027 series art: IG feed, square and story, FB cover and feed, stage screens, YouTube, web banner, Church Center | https://claude.ai/artifact/BabSGQ8L8Doi48EjymYL1V |
+| Social Templates 2026 | House-look social boards: square bands and fields, quote, Scripture, story, carousel, handwriting, cutout | https://claude.ai/artifact/ANG6V44Vj4uH61B5qq3KGd |
+| Journey Church Design System | Tokens, components and guidelines | https://claude.ai/artifact/VzJUFtAbHbS21NwJCyBT8Y |
+
+New finished work for a series, event or season goes in the Main folder too, so the team and the Social Planner (https://claude.ai/artifact/JrGqeykxxxNJbMcDjgQGzi) can find it. To get a finished board into the Social Planner, export it as a PNG from the Design canvas and drop it on the post. Each post in the Planner links back to its artboard.
+
 ## Step 1: ask before you build
 
 1. Is this a **Ministry**, **Series**, **Event** or **Project**? (Skip if the user already said.)
