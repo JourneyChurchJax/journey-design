@@ -63,7 +63,7 @@ The main pieces in DS:
 | `readme.md` | The reasoning behind each rule, and the index of every design card. |
 | `assets/logo/` | The only logo files. PNG. Horizontal, stacked, mark, wordmark, in ember, ink and white. |
 | `assets/photo/` | Journey's own photographs. The only people photos you may use. |
-| `assets/photo/sunday/<date>/` | The photos from each Sunday's photo post, added every Monday. Already posted publicly, so cleared for promotions. List the folders to see which Sundays exist. |
+| `assets/photo/sunday/<YYYY-MM-DD>/` | Each Sunday's photos, one folder per Sunday, JPEG 2048px long side. Copied weekly from OneDrive by a scheduled task. Read only. Consent given, kids included. Newest = latest date folder. |
 | `tokens/` `base/journey.css` `styles.css` | Colors, type, spacing, motion. Link them; don't retype values. |
 | `_ds_bundle.js` | The React components (`ArtFrame`, `Logo`, `ArtText`, `ArtScripture`, `Logistics`, `LowerThird`). Their notes are in `components/graphics/*.prompt.md`. Never edit this file. |
 | `slides/` | Starting templates: story, quote, carousel, carousel cover, lyric slide, lower third. |
@@ -221,7 +221,8 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
 
 ## Photos
 - Journey's own photos only, and use one whenever you can. No stock photos of people. No AI-generated people. AI-generated landscapes are allowed if you say so.
-- Faces are wanted: people smiling and happy (Adam, 18 Nov 2026). Show the room, not the band. Never the same photo twice in one post. No identifiable child without a parent's signed release; with no release, show kids from behind or as small hands.
+- Faces are wanted: people smiling and happy (Adam, 18 Nov 2026). Show the room, not the band. Never the same photo twice in one post. No identifiable child without a parent's signed release; with no release, show kids from behind or as small hands. Sunday photos are the exception (below).
+- **Sunday photos (Adam, 19 Nov 2026):** `assets/photo/sunday/<YYYY-MM-DD>/` in this repo (local copy `~/Documents/Journey Church/Social Media/journey-design`), one folder per Sunday, JPEG, longest side 2048px, ready for designs. Newest Sunday = the folder with the latest date (`ls assets/photo/sunday`). A scheduled task copies them every week from OneDrive (`Photo Assets/<year>/Sunday Services/<YYYY-MM-DD>/`), where the full-size originals live. Read only: never rename, move or delete them. Main branch only, no branches. **Kids:** if a photo is in this folder, consent has been given and it's free to use, kids and adults alike. Smiling faces are what we want regardless of age.
 - Full natural color, a touch brighter: saturate 1.05, brightness 1.06, contrast 1.04 (the Journey 2026 preset: Saturation +5, Vibrance +10). The old 85% saturation rule is retired. Never black and white by default, never duotone, color wash, blur or frame.
 - Photographers: shot list, iPhone setup, three-stage edit and the Journey 2026 Lightroom preset are in `brand.md` (Photos) and `assets/photo/preset/`. Never the Pro Church Tools presets.
 
@@ -235,7 +236,7 @@ Sun story (by 8 AM) · Mon quote post (the only post that shows the speaker) · 
 - **Scoreboard:** posting streak, 10x posts, followers +4% a month, crossover from "How did you hear about Journey?", quarterly one-page report from April 2027.
 
 ## Safeguarding (every post)
-- No identifiable child without a parent's signed release. No name tags, lanyards, check-in stickers, school names or shirts: crop or blur. Never a child's full name with a photo. No location tags on kids or students; never tag students' accounts.
+- No identifiable child without a parent's signed release, except Sunday photos in `assets/photo/sunday/` (consent given, kids included). No name tags, lanyards, check-in stickers, school names or shirts: crop or blur. Never a child's full name with a photo. No location tags on kids or students; never tag students' accounts.
 - Strip GPS from photo files. Never show a home or a school. Baptisms only with the person's yes. A photo comes down the same day it's asked.
 - No prayer request or testimony without a written yes. Nothing private: finances, staff, care, unreleased plans.
 - Five-question check: points to Jesus and who we are? What is it for? OK if a critic found it in 30 years? Could it be clipped or misread? Worst misuse? Any pause: a second staff member, then Adam.
