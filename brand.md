@@ -157,7 +157,7 @@ PNG only (no vector exists yet, so nothing larger than a flier should be printed
 ## Kinds of work
 - **Sermon series** — each series gets its own look (face, palette, imagery). Only the contract holds: the reversed horizontal Journey logo in its corner, and Scripture in Newsreader. Package: 1920 title, square, story, lower third, weekly sermon title and Scripture boards.
 - **Events** — stay in the house look; only big events borrow a custom skin. The logistics block (When / Where / etc.) is set the same every time, directly above the logo.
-- **Projects** — run for months and carry a number (e.g. *Arise & Build*). The progress meter is the device; figures come from a live source.
+- **Projects** — run for months and carry a number (e.g. *Arise & Build*). The progress meter is the device; figures come from a live source. *Arise & Build* has its own key art (Adam, 18 Nov 2026): a blue Jacksonville street map, "arise & build" in white Coolvetica (outlined as `assets/projects/arise-and-build/title.svg`, no font file ships), and "building a legacy for future generations" in a hand script (Nothing You Could Do, standing in for Automobile Contest from the original PSD). Map data © OpenStreetMap contributors.
 - **Ministries** — each ministry has its own logo and look (see catalog). Journey Church's logo still appears on ministry graphics, usually small, centered at the bottom. A ministry's own social account uses its own logo as its profile, not the J. A ministry without a logo uses the J plus the ministry name in Bricolage Grotesque 800. JC Connect has its own logo (see catalog).
 - **Weekly social kit (the sermon week, 8 pieces):** Sun story, Mon quote post, Tue clip 1, Wed recap carousel, Thu clip 2 with keyword reply, Fri full sermon on YouTube (plus thumbnail) and photo post 1, Sat photo post 2, optional blog. Details in Social engine and safeguarding. Use our own photos wherever we can. Only the quote post shows the speaker; recap carousels never name the speaker. No logos or watermarks on Reels. Generated landscapes are OK; generated people are not.
 
@@ -622,8 +622,10 @@ Every design in the system, by group. Each link opens the design at full size.
 - [Standing square](/brand/ministries/journey-youth/square.html) · 1080x1080 — Built once, reposted. Only the logistics change
 
 ### Projects
-- [Arise & Build — screen](/brand/projects/arise-and-build-screen.html) · 1920x1080 — The same meter at 1920, padding 140, logo bottom-right at 360
-- [Arise & Build](/brand/projects/arise-and-build.html) · 1080x1080 — The building campaign. The progress meter is the graphic; both figures from a live source
+- [Arise & Build · square](/brand/projects/arise-and-build/square.html) · 1080x1080 — Feed post. Blue Jacksonville street map, Coolvetica title, hand script line
+- [Arise & Build · portrait](/brand/projects/arise-and-build/portrait.html) · 1080x1350 — 4:5 feed post, the default for Instagram and Facebook
+- [Arise & Build · story](/brand/projects/arise-and-build/story.html) · 1080x1920 — Story and Reel cover. Title sits in the middle, clear of the app chrome
+- [Arise & Build · screen](/brand/projects/arise-and-build/screen.html) · 1920x1080 — Stage side screens and YouTube. Same art at 16:9
 - [What makes it a project](/brand/projects/what-is-a-project.html) · 700x210 — Longer than an event, tracked over time, always with a number attached
 
 ---
