@@ -104,7 +104,7 @@ Eyebrows (website only): 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72r
 | Google Business Profile | 1200 × 900 | 80px |
 | Invite card (print) | 3.5 × 2 in · 1125 × 675 at 300 dpi with 1/8 in bleed | 1/8 in inside the trim. Export CMYK |
 
-The main feed size is portrait 1080 × 1350; build it first and the other sizes follow its decisions. Every size has a template in `slides/`: social-*.html, `thumbnail.html`, `stage-title.html`, `stage-center.html`, `lyric-slide.html`, `lower-third-slide.html`, `print-card.html`. The Journey Church logo sits in its locked corner (or centered at the bottom on ministry slides).
+The main feed size is portrait 1080 × 1350. **Concept stage: 1920 × 1080 first** (Adam, 19 Nov 2026). Before Adam approves a direction, make only ONE 1920 × 1080 board per concept, built as an editable Design artifact he can edit himself (never a static image or locked page). After he picks a direction, build the other sizes (portrait 1080 × 1350 feed, square, story, FB cover, print and so on) in that same editable artifact; they follow the 1920 board's decisions. This saves publish limits, render time and credits on directions that get thrown out. Every size has a template in `slides/`: social-*.html, `thumbnail.html`, `stage-title.html`, `stage-center.html`, `lyric-slide.html`, `lower-third-slide.html`, `print-card.html`. The Journey Church logo sits in its locked corner (or centered at the bottom on ministry slides).
 
 ## Logo — Journey Church
 PNG only (no vector exists yet, so nothing larger than a flier should be printed until one does). Horizontal is the default; stacked for squares; mark alone when the name is already written. The mark is red on cream and on dark; the whole lockup reverses (white) on red and on photos.

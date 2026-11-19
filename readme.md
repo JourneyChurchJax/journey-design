@@ -120,7 +120,7 @@ Graphic type has **floors, not suggestions**: on a 1080 square, eyebrow 26px, he
 ### Spacing and layout
 `--section-y` `clamp(3.5rem,7vw,7rem)` is the vertical rhythm; `--gutter` `clamp(1.25rem,4vw,3rem)` the inline padding; container 84rem centered; reading measure 42rem on the web and 28ch on an artboard. Layout is always flex or grid with `gap` — the stylesheet says so in a comment: *never margin chains.* `.grid2/3/4` are `auto-fit minmax()` tracks; `.split` is `1fr / 1.15fr` collapsing at 820px.
 
-Artboards are fixed pixels scaled to fit: feed 1080 × 1080 (safe 80px), story 1080 × 1920 (safe 250px top and bottom, 80px sides), screen 1920 × 1080 (action-safe 96px, title-safe 120px), 4K wall 3840 × 2160. Artboard padding is 80px on a square, 140px on a 1920 screen. **Build the square first** — the other two follow its decisions.
+Artboards are fixed pixels scaled to fit: feed 1080 × 1080 (safe 80px), story 1080 × 1920 (safe 250px top and bottom, 80px sides), screen 1920 × 1080 (action-safe 96px, title-safe 120px), 4K wall 3840 × 2160. Artboard padding is 80px on a square, 140px on a 1920 screen. **Concept stage: build one 1920 × 1080 board first** as an editable Design artifact; the other sizes come after Adam picks a direction and follow its decisions (Adam, 19 Nov 2026).
 
 The one fixed-position element on the web is the sticky nav (`top:0`, `z-index:50`). In Command, the sidebar is `position:fixed` at 252px and the body carries a matching left pad above 1100px. On artboards, the logo is absolutely positioned in its locked corner and nothing else is.
 

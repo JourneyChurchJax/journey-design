@@ -96,7 +96,7 @@ Then check whether that ministry, series or event already has a folder in DS and
 - **Keep the folder structure.** The templates use relative paths (`../styles.css`, `../_ds_bundle.js`, `../assets/...`). Work in a copy of DS, or put your file at the same depth, so those paths still resolve.
 - **Use the real logo file** from `DS/assets/logo/`. Never redraw or retype it.
 - **Render a PNG** at the exact size when you can (a headless browser such as Playwright, device scale 1). If you can't render, hand back the HTML file and say so.
-- Build the portrait 1080 × 1350 first. The other sizes follow its decisions.
+- **Concept stage: 1920 × 1080 first** (Adam, 19 Nov 2026). Before Adam approves a direction, make only ONE 1920 × 1080 board per concept, built as an editable Design artifact he can edit himself (never a static image or locked page). After he picks a direction, build the other sizes (portrait 1080 × 1350 feed, square, story, FB cover, print and so on) in that same editable artifact; they follow the 1920 board's decisions. This saves publish limits, render time and credits on directions that get thrown out.
 - **Match the gold standard.** The approved examples are in `Graphics/New Look/` (and the Examples group of the claude.ai design system). If yours looks busier, take something out.
 
 ## Step 3: hand it back
