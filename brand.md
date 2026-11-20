@@ -88,7 +88,7 @@ Eyebrows (website only): 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72r
 - Textures: fine dot grain on large dark fields, or fine ink dots on large cream fields — never both, never on a photo.
 - **Ghost device:** one per graphic: a huge word or number taken from the post itself (the day, the date, the verse) in Bricolage Grotesque 800 at 6 to 8% on white or cream, 10% on red, 12 to 16% white on dark or on a photo, bleeding off an edge.
 - **No icon set.** Arrows are typographic (→). Labels ("When," "Where") instead of calendar or clock icons.
-- Photos: Journey's own only, never stock people. Use one whenever you can. Full natural color, a touch brighter: `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026). Never black and white by default, never duotone, color wash, blur or frame. Faces are wanted: people smiling and happy (Adam, 18 Nov 2026). No identifiable child without a parent's signed release, except Sunday photos in `assets/photo/sunday/`, which already have consent (see Photos).
+- Photos: Journey's own are preferred; other real photos, stock included, are fine (Adam, 18 Nov 2026). No AI-generated people. Use a photo whenever you can. Full natural color, a touch brighter: `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026). Never black and white by default, never duotone, color wash, blur or frame. Faces are wanted: people smiling and happy (Adam, 18 Nov 2026). No identifiable child without a parent's signed release, except Sunday photos in `assets/photo/sunday/`, which already have consent (see Photos).
 - Motion: one easing curve cubic-bezier(.2,.7,.2,1), slow and few. Nothing bounces, scales or spins.
 
 ## Graphic sizes
@@ -207,7 +207,7 @@ Run this on every graphic, slide, card and video before it goes to Adam. Any "no
 4. **Banned words.** None of the list in Voice.
 5. **No dashes, no exclamation points, no emoji.** No em or en dashes in copy. Sentence case. No eyebrows on social.
 6. **Confirmed facts.** Every date, time, place, name, number and Scripture reference checked against a live source or confirmed by Adam. Otherwise a visible [to confirm].
-7. **Our own photo,** full color, with consent. No stock or AI people.
+7. **A real photo** (ours preferred, others fine), full color, with consent where kids show. No AI people.
 8. **Rotation.** Not the same layout or band color as the last post.
 9. **Real size.** Exported at the exact pixels for its format, checked at phone-thumbnail size.
 
@@ -323,6 +323,7 @@ Sunday service, September 20, 2026 (2000 px web copies; the full-size originals 
 | 1 Oct 2026 | Shape: corners, shadows, interface patterns |
 | 2 Oct 2026 | New look: Bricolage Grotesque, red not italic, social system, heavy J |
 | 16 Nov 2026 | Gold-standard examples, a template for every size, motion and loop rules, check before handoff |
+| 20 Nov 2026 | Photos: the own-photos-only rule is gone; ours preferred, other real photos fine, still no AI people; kid release rule stays (Adam, 18 Nov) |
 | 19 Nov 2026 | Concept stage = one 1920x1080 editable Design board, other sizes after Adam picks a direction; promos give start times only; Sunday photos folder consented, any age; black event look approved (Healing Room); outside products use their own look (Advent devotional); approved finals added to `Graphics/` (Adam) |
 | 19 Nov 2026 | Sunday photos: `assets/photo/sunday/<date>/`, updated weekly from OneDrive, read only; kids in them have consent and are free to use (Adam) |
 | 18 Nov 2026 | Photos: faces are wanted, smiling and happy (Adam); the stage-team-and-staff-only rule is gone, the kid release rule stays |
@@ -464,7 +465,7 @@ Every design in the system, by group. Each link opens the design at full size.
 - [Motion](/brand/guidelines/brand-motion.html) · 700x170 — One curve. Slow and few. Nothing bounces, scales, or spins
 - [Never](/brand/guidelines/brand-never.html) · 700x200 — The short list of no
 - [Ornaments](/brand/guidelines/brand-ornaments.html) · 700x180 — The entire set. No icon library, no gradients
-- [Photography rules](/brand/guidelines/brand-photo-rules.html) · 700x180 — Our room, our people. No stock photography of people, ever
+- [Photography rules](/brand/guidelines/brand-photo-rules.html) · 700x180 — Our room, our people first. Other real photos are fine (18 Nov 2026); no AI people
 - [Photo treatment](/brand/guidelines/brand-photo.html) · 700x220 · Full natural color, a touch brighter. Never black and white by default, a duotone or a blur
 - [Voice](/brand/guidelines/brand-voice.html) · 700x200 — Like a friend over coffee. Written to one real person
 

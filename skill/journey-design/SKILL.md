@@ -47,7 +47,7 @@ Then, once you know what the request is for, fetch its folders too, for example:
 ```python
 get(["events/baptism/", "Graphics/Baptism/"])            # an event and its finished work
 get(["ministries/good-work/", "Graphics/Good Work/"])     # a ministry
-get(["assets/photo/"])                                    # Journey's own photos (use one whenever you can)
+get(["assets/photo/"])                                    # Journey's own photos (preferred; use one whenever you can)
 get(["assets/photo/sunday/2026-10-25/"])                  # one Sunday's photo post (folders are YYYY-MM-DD)
 ```
 
@@ -62,7 +62,7 @@ The main pieces in DS:
 | `brand.md` | The whole brand in plain text. Read it in full before anything else. It overrides this file wherever they differ. |
 | `readme.md` | The reasoning behind each rule, and the index of every design card. |
 | `assets/logo/` | The only logo files. PNG. Horizontal, stacked, mark, wordmark, in ember, ink and white. |
-| `assets/photo/` | Journey's own photographs. The only people photos you may use. |
+| `assets/photo/` | Journey's own photographs. Preferred; other real photos are fine too (Adam, 18 Nov 2026). |
 | `assets/photo/sunday/<YYYY-MM-DD>/` | Each Sunday's photos, one folder per Sunday, JPEG 2048px long side. Copied weekly from OneDrive by a scheduled task. Read only. Consent given, kids included. Newest = latest date folder. |
 | `tokens/` `base/journey.css` `styles.css` | Colors, type, spacing, motion. Link them; don't retype values. |
 | `_ds_bundle.js` | The React components (`ArtFrame`, `Logo`, `ArtText`, `ArtScripture`, `Logistics`, `LowerThird`). Their notes are in `components/graphics/*.prompt.md`. Never edit this file. |
@@ -114,7 +114,7 @@ Then check whether that ministry, series or event already has a folder in DS and
 
 ## Step 3: hand it back
 
-- **Run the check before handoff** (in `brand.md`): one red thing, type floors, real logo, no banned words, no em or en dashes or exclamation points, every fact confirmed against Planning Center or marked [to confirm], our own photo with consent, safeguarding and the five-question check, one next step in the exact wording, layout rotated, exact export size. Fix any miss before handing back.
+- **Run the check before handoff** (in `brand.md`): one red thing, type floors, real logo, no banned words, no em or en dashes or exclamation points, every fact confirmed against Planning Center or marked [to confirm], a real photo (ours preferred) with consent where kids show, safeguarding and the five-question check, one next step in the exact wording, layout rotated, exact export size. Fix any miss before handing back.
 - List every fact you used and where it came from.
 - Flag every blank you left.
 - Say what you wrote yourself so Adam can read it before it posts.
@@ -235,7 +235,7 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
 - **Project** (like Arise & Build): a progress bar is the device. Every figure must come from a live, confirmed source.
 
 ## Photos
-- Journey's own photos only, and use one whenever you can. No stock photos of people. No AI-generated people. AI-generated landscapes are allowed if you say so.
+- Journey's own photos are preferred, and use one whenever you can. Other real photos, stock included, are fine (Adam, 18 Nov 2026). No AI-generated people. AI-generated landscapes are allowed if you say so.
 - Faces are wanted: people smiling and happy (Adam, 18 Nov 2026). Show the room, not the band. Never the same photo twice in one post. No identifiable child without a parent's signed release; with no release, show kids from behind or as small hands. Sunday photos are the exception (below).
 - **Sunday photos (Adam, 19 Nov 2026):** `assets/photo/sunday/<YYYY-MM-DD>/` in this repo (local copy `~/Documents/Journey Church/Social Media/journey-design`), one folder per Sunday, JPEG, longest side 2048px, ready for designs. Newest Sunday = the folder with the latest date (`ls assets/photo/sunday`). A scheduled task copies them every week from OneDrive (`Photo Assets/<year>/Sunday Services/<YYYY-MM-DD>/`), where the full-size originals live. Read only: never rename, move or delete them. Main branch only, no branches. **Kids:** if a photo is in this folder, consent has been given and it's free to use, kids and adults alike. Smiling faces are what we want regardless of age.
 - Full natural color, a touch brighter: saturate 1.05, brightness 1.06, contrast 1.04 (the Journey 2026 preset: Saturation +5, Vibrance +10). The old 85% saturation rule is retired. Never black and white by default, never duotone, color wash, blur or frame.
