@@ -137,6 +137,7 @@ These are a short copy of `brand.md` as of 18 Nov 2026. If they ever differ, `br
 - Sentence case. Social graphics have no eyebrows. Labels on the website are UPPERCASE and letter-spaced.
 - No exclamation points. No emoji. Ever.
 - No em or en dashes in copy. Rewrite the sentence. The only dash is a plain hyphen in ranges: 10:00 AM-12:00 PM, 1 Peter 1:10-19.
+- Promos give start times only, never an end time or how long it runs (Adam, 19 Nov 2026).
 - Times: `Sundays 9:00 & 11:00 AM`. Graphics: `Sun Oct 12 · 6 PM`. Lists and The Weekly: `Sun Feb 14 · 9:00 AM`. Sentences: "Sunday, October 12."
 - Bible NKJV by default (label NLT or ESV when used), book names in full, quote exactly. Capitalize He, Him, His for God. Lowercase church, kingdom, gospel, heaven.
 - Contact: 6225 Lake Gray Blvd Ste 2, Jacksonville, FL 32244 · (904) 302-5320 · text (904) 503-6772 · `journeychurch.org/planavisit`. Print and lockups carry the address and web only.
@@ -229,7 +230,8 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
   - Journey Women: florals, "JOURNEY" in Montserrat Light wide-spaced, "women" in Style Script. Cream `#F8F1E7`, blush `#E7B3A6`, rust `#A8391A`.
   - Good Living Food Pantry: stacked GOOD / LIVING with an apple for the O. Figtree 800. Green `#2B5E2F`, apple `#6FAE3D`, brown `#9A6B3C`.
 - **Series:** can have its own face, palette and imagery. Keep the white horizontal Journey logo in its corner and set Scripture in Newsreader.
-- **Event:** house look unless it's a big event. The When / Where block is identical every time and sits directly above the logo.
+- **Event:** house look unless it's a big event. The When / Where block is identical every time and sits directly above the logo. Approved black event look (Healing Room, 19 Nov 2026): ink `#0A0A0A` ground, white type, one red word.
+- **Product outside Journey** (like the Advent devotional): use the product's own look, not Bricolage or Journey red (Adam, 19 Nov 2026).
 - **Project** (like Arise & Build): a progress bar is the device. Every figure must come from a live, confirmed source.
 
 ## Photos
