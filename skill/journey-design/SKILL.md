@@ -67,7 +67,7 @@ The main pieces in DS:
 | `tokens/` `base/journey.css` `styles.css` | Colors, type, spacing, motion. Link them; don't retype values. |
 | `_ds_bundle.js` | The React components (`ArtFrame`, `Logo`, `ArtText`, `ArtScripture`, `Logistics`, `LowerThird`). Their notes are in `components/graphics/*.prompt.md`. Never edit this file. |
 | `slides/` | Starting templates: story, quote, carousel, carousel cover, lyric slide, lower third. |
-| `ministries/<slug>/` | Each ministry's own look and cards (Good Work, Journey Women, Good Living Food Pantry, Journey Kids, Journey Youth, Journey Worship, JC Connect). |
+| `ministries/<slug>/` | Each ministry's own look and cards (Good Work, Journey Women, Good Living Food Pantry, Journey Kids, Journey Youth, Journey Worship, JC Connect, Discipleship Groups). |
 | `series/<slug>/` | Each sermon series package. |
 | `events/<slug>/` | Each event's skin and cards. `events/logistics-block.html` is the When / Where block. |
 | `projects/` | Arise & Build and how a project graphic works. |
@@ -229,6 +229,7 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
   - Good Work (job placement): red circle handshake, "Good Work." in Newsreader Italic with a red period.
   - Journey Women: florals, "JOURNEY" in Montserrat Light wide-spaced, "women" in Style Script. Cream `#F8F1E7`, blush `#E7B3A6`, rust `#A8391A`.
   - Good Living Food Pantry: stacked GOOD / LIVING with an apple for the O. Figtree 800. Green `#2B5E2F`, apple `#6FAE3D`, brown `#9A6B3C`.
+  - Discipleship Groups (20 Nov 2026): a dark Jacksonville street, river and coast map around 6225 Lake Gray Blvd (`assets/ministries/discipleship-groups/jax-map-dark.jpg`, `jax-map-dark-tall.jpg`; map data © OpenStreetMap contributors). The real heavy J in a red circle, then DISCIPLESHIP stacked over GROUPS in Schibsted Grotesk 900, DISCIPLESHIP tracked 0.15em to match the width of GROUPS. White DISCIPLESHIP and red GROUPS on the map; on red, a white circle with the ink J and white GROUPS. Ground `#1E1D1B`; teal water `#6FA09C` is [to confirm]. Cards: `ministries/discipleship-groups/logo.html`, `map.html`. Fetch with `get(["ministries/discipleship-groups/", "assets/ministries/discipleship-groups/"])`.
 - **Series:** can have its own face, palette and imagery. Keep the white horizontal Journey logo in its corner and set Scripture in Newsreader.
 - **Event:** house look unless it's a big event. The When / Where block is identical every time and sits directly above the logo. Approved black event look (Healing Room, 19 Nov 2026): ink `#0A0A0A` ground, white type, one red word.
 - **Product outside Journey** (like the Advent devotional): use the product's own look, not Schibsted or Journey red (Adam, 19 Nov 2026).
