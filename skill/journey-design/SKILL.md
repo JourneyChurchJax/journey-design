@@ -157,7 +157,7 @@ These are a short copy of `brand.md` as of 18 Nov 2026. If they ever differ, `br
 - Text pairings (WCAG): Journey Red text on white or cream, and white on red, are big type only (24px+, or 19px bold). Never set text in `#9A948A` on cream or in the border color. Full table: `guidelines/color-pairings.html`; specs with RGB and CMYK: `guidelines/color-specs.html`.
 
 ## Type: four faces, four jobs
-- **Bricolage Grotesque 800**: headlines, titles, numbers. Tracking −0.04em, line-height 0.9. Set it big. The red accent is the same face and weight, not italic. (Inter Tight is retired except inside the Good Work logo.)
+- **Schibsted Grotesk 900** (Adam, 20 Nov 2026, replacing Bricolage Grotesque): headlines, titles, numbers. Tracking −0.04em, line-height 0.9. Set it big. The red accent is the same face and weight, not italic. (Inter Tight is retired except inside the Good Work logo.)
 - **Inter 400**: body, logistics, captions, buttons.
 - **Newsreader**: Scripture and pull-quotes only. Italic marks the beat there instead of red. Never a headline.
 - **Archivo Expanded Black**: sermon series art and stage screens only.
@@ -195,7 +195,7 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
 - Generous space. The frame of a graphic, full-bleed photos and stage screens are square. Rounded cards with soft shadows may appear inside a graphic only when it shows an interface or an information card.
 - No decorative gradients. A dark scrim is allowed only behind type on a photo.
 - No icons. Arrows are typed (→). Write "When" and "Where" instead of calendar or clock icons.
-- One ghost device per graphic, at most: a huge word or number from the post itself in Bricolage Grotesque 800 at 6 to 8% on white or cream, 10% on red, 12 to 16% white on dark or on a photo, bleeding off an edge.
+- One ghost device per graphic, at most: a huge word or number from the post itself in Schibsted Grotesk 900 at 6 to 8% on white or cream, 10% on red, 12 to 16% white on dark or on a photo, bleeding off an edge.
 
 ## Sizes
 - Portrait feed / carousel 1080 × 1350 (80px): the main feed size; build it first
@@ -225,13 +225,13 @@ Avoid: eyebrows on social, glows, decorative gradients, emoji, stock icons, fake
 - Profile photos, favicons and contact lockups are ready in `assets/logo/digital/`. Misuse examples: `guidelines/brand-logo-misuse.html`.
 
 ## By kind of work
-- **Ministry:** use that ministry's own logo and look. The Journey Church logo still appears, usually small and centered at the bottom. A ministry's own social account uses its own logo as its profile. A ministry without a logo uses the J plus its name in Bricolage Grotesque 800.
+- **Ministry:** use that ministry's own logo and look. The Journey Church logo still appears, usually small and centered at the bottom. A ministry's own social account uses its own logo as its profile. A ministry without a logo uses the J plus its name in Schibsted Grotesk 900.
   - Good Work (job placement): red circle handshake, "Good Work." in Newsreader Italic with a red period.
   - Journey Women: florals, "JOURNEY" in Montserrat Light wide-spaced, "women" in Style Script. Cream `#F8F1E7`, blush `#E7B3A6`, rust `#A8391A`.
   - Good Living Food Pantry: stacked GOOD / LIVING with an apple for the O. Figtree 800. Green `#2B5E2F`, apple `#6FAE3D`, brown `#9A6B3C`.
 - **Series:** can have its own face, palette and imagery. Keep the white horizontal Journey logo in its corner and set Scripture in Newsreader.
 - **Event:** house look unless it's a big event. The When / Where block is identical every time and sits directly above the logo. Approved black event look (Healing Room, 19 Nov 2026): ink `#0A0A0A` ground, white type, one red word.
-- **Product outside Journey** (like the Advent devotional): use the product's own look, not Bricolage or Journey red (Adam, 19 Nov 2026).
+- **Product outside Journey** (like the Advent devotional): use the product's own look, not Schibsted or Journey red (Adam, 19 Nov 2026).
 - **Project** (like Arise & Build): a progress bar is the device. Every figure must come from a live, confirmed source.
 
 ## Photos

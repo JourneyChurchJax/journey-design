@@ -1,6 +1,6 @@
 import React from 'react';
 
-/* The church's voice: Bricolage Grotesque 800, tracking -0.04em, line-height 0.9.
+/* The church's voice: Schibsted Grotesk 900, tracking -0.04em, line-height 0.9.
    Every headline gets ONE red word or short phrase (not italic), and it is the emotional beat —
    never "the", "and", or "of". Pass it as `accent`; it is appended to `children`,
    or you can place <em> yourself inside children and leave accent off. */

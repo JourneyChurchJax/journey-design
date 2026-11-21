@@ -1,5 +1,5 @@
 /* Journey Church — social templates (Oct 2026).
-   The look: our own photos in full color, Bricolage Grotesque 800 headlines set big, one red word or phrase,
+   The look: our own photos in full color, Schibsted Grotesk 900 headlines set big, one red word or phrase,
    a faint ghost word, the heavy J. No band when the photo can carry the type; a white, red or black band when it can't.
    Loaded after ../styles.css. Artboards are px. */
 :root{--red:var(--ember);--ink:var(--ink-800);--mute:#6B675F;--cream:var(--ink-50)} /* short names used inside the templates */
@@ -12,12 +12,12 @@
 .band.redbg,.redbg{background:var(--ember);color:#fff}
 .band.dark,.dark{background:var(--ink-800);color:#fff}
 .abs{position:absolute}
-.f{font-family:var(--font-display);font-weight:800;letter-spacing:-.04em;line-height:.88}
+.f{font-family:var(--font-display);font-weight:900;letter-spacing:-.04em;line-height:.88}
 .i{font-family:var(--font-body);line-height:1.25}
 .nr{font-family:var(--font-scripture);font-style:italic}
 .hand{font-family:"Nanum Pen Script",cursive;line-height:.9} /* stand-in until Adam's handwriting is scanned */
 .em{color:var(--ember)}
-.gh{position:absolute;font-family:var(--font-display);font-weight:800;letter-spacing:-.05em;line-height:.8;white-space:nowrap}
+.gh{position:absolute;font-family:var(--font-display);font-weight:900;letter-spacing:-.05em;line-height:.8;white-space:nowrap}
 .gink{color:rgba(10,10,10,.06)}.gwhite{color:rgba(255,255,255,.16)}.gw2{color:rgba(255,255,255,.12)}.gred{color:rgba(10,10,10,.10)}
 .place{font-family:var(--font-body);font-size:26px;font-weight:600;letter-spacing:.02em}
 .J{position:absolute}

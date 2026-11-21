@@ -67,7 +67,7 @@ The brand rule wins over the math: on a red ground, type goes white even though 
 
 ## Type
 Four typefaces, four jobs. All free on Google Fonts.
-- **Bricolage Grotesque 800** (Oct 2026): headlines, titles, numbers. Tracking −0.04em, line-height 0.9. The red accent is the same face and weight, not italic. Set it big: friendly, bright, energetic. It replaced Inter Tight, which now stays only inside the Good Work logo.
+- **Schibsted Grotesk 900** (Adam, 20 Nov 2026): headlines, titles, numbers. Tracking −0.04em, line-height 0.9. The red accent is the same face and weight, not italic. Set it big. It replaced Bricolage Grotesque (Oct 2026), which replaced Inter Tight; Inter Tight stays only inside the Good Work logo. Finished graphics made in Bricolage stay as they are; everything new uses Schibsted.
 - **Inter 400** — body, logistics, captions, buttons. Line-height 1.7.
 - **Newsreader** — Scripture and pull-quotes only (main brand). Italic marks the beat instead of red.
 - **Archivo Expanded Black** (width 125, weight 900) — sermon series art and stage screens only.
@@ -86,7 +86,7 @@ Eyebrows (website only): 0.78rem, 0.22em tracking, 600, uppercase. Labels: 0.72r
 - **On graphics:** rounded cards and soft shadows may appear inside a graphic when it shows an interface or an information card. The frame of the graphic, full-bleed photos and stage screens stay square.
 - **No decorative gradients.** Gradients only as dark scrims to protect type on photos.
 - Textures: fine dot grain on large dark fields, or fine ink dots on large cream fields — never both, never on a photo.
-- **Ghost device:** one per graphic: a huge word or number taken from the post itself (the day, the date, the verse) in Bricolage Grotesque 800 at 6 to 8% on white or cream, 10% on red, 12 to 16% white on dark or on a photo, bleeding off an edge.
+- **Ghost device:** one per graphic: a huge word or number taken from the post itself (the day, the date, the verse) in Schibsted Grotesk 900 at 6 to 8% on white or cream, 10% on red, 12 to 16% white on dark or on a photo, bleeding off an edge.
 - **No icon set.** Arrows are typographic (→). Labels ("When," "Where") instead of calendar or clock icons.
 - Photos: Journey's own are preferred; other real photos, stock included, are fine (Adam, 18 Nov 2026). No AI-generated people. Use a photo whenever you can. Full natural color, a touch brighter: `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026). Never black and white by default, never duotone, color wash, blur or frame. Faces are wanted: people smiling and happy (Adam, 18 Nov 2026). No identifiable child without a parent's signed release, except Sunday photos in `assets/photo/sunday/`, which already have consent (see Photos).
 - Motion: one easing curve cubic-bezier(.2,.7,.2,1), slow and few. Nothing bounces, scales or spins.
@@ -150,7 +150,7 @@ PNG only (no vector exists yet, so nothing larger than a flier should be printed
 
 **Contact lockups** (`assets/logo/digital/contact-horizontal-ink.png`, `contact-stacked-ink.png`): the horizontal logo, a hairline, then `6225 Lake Gray Blvd Ste 2 / Jacksonville, FL 32244 / journeychurch.org` in Inter. For letterhead, email signatures and print footers. Address and website only: no phone number or social handles (Adam, 17 Nov 2026).
 
-**More logo rules (Brand Lessons, Nov 2026):** the logo always runs at 100% opacity, never as a watermark. One-color print uses the ink logo, never a gray tint. Pantone only if a printer asks. On social the heavy J sits in its locked bottom-right corner. Email font fallbacks: Bricolage Grotesque to a heavy system sans, Inter to the system sans, Newsreader to Georgia. Dot grain only on large dark or cream fields, never on a photo. Merch waits for the vector logo (mark on the left chest, art on the back, the J alone on tiny items). People on camera: waist-up framing, captions, `lower-third-slide.html`, releases on file.
+**More logo rules (Brand Lessons, Nov 2026):** the logo always runs at 100% opacity, never as a watermark. One-color print uses the ink logo, never a gray tint. Pantone only if a printer asks. On social the heavy J sits in its locked bottom-right corner. Email font fallbacks: Schibsted Grotesk to a heavy system sans, Inter to the system sans, Newsreader to Georgia. Dot grain only on large dark or cream fields, never on a photo. Merch waits for the vector logo (mark on the left chest, art on the back, the J alone on tiny items). People on camera: waist-up framing, captions, `lower-third-slide.html`, releases on file.
 
 **No vector logo exists yet.** Everything above is PNG. Nothing larger than a flyer goes to print, and no sign, shirt or banner is made, until a designer redraws the logo as a vector.
 
@@ -158,13 +158,13 @@ PNG only (no vector exists yet, so nothing larger than a flier should be printed
 - **Sermon series** — each series gets its own look (face, palette, imagery). Only the contract holds: the reversed horizontal Journey logo in its corner, and Scripture in Newsreader. Package: 1920 title, square, story, lower third, weekly sermon title and Scripture boards.
 - **Events** — stay in the house look; only big events borrow a custom skin. The logistics block (When / Where / etc.) is set the same every time, directly above the logo.
   - **Black event look** (approved 19 Nov 2026, The Healing Room): ink `#0A0A0A` ground, all-white type, one red word, photo panel plus a faint dot texture on the black. Use it for evening and prayer events. Finals in `Graphics/Healing Room/`.
-- **Products outside Journey** (Adam, 19 Nov 2026) — a product with its own identity, like the Advent devotional book, uses the book's own look (its cover type, palette and art), not Bricolage or Journey red. The Journey logo can sit small as the publisher. Family Day Advent promo v2 is the example.
+- **Products outside Journey** (Adam, 19 Nov 2026) — a product with its own identity, like the Advent devotional book, uses the book's own look (its cover type, palette and art), not Schibsted or Journey red. The Journey logo can sit small as the publisher. Family Day Advent promo v2 is the example.
 - **Projects** — run for months and carry a number (e.g. *Arise & Build*). The progress meter is the device; figures come from a live source. *Arise & Build* has its own key art (Adam, 18 Nov 2026): a blue Jacksonville street map, "arise & build" in white Coolvetica (outlined as `assets/projects/arise-and-build/title.svg`, no font file ships), and "building a legacy for future generations" in a hand script (Nothing You Could Do, standing in for Automobile Contest from the original PSD). Map data © OpenStreetMap contributors.
-- **Ministries** — each ministry has its own logo and look (see catalog). Journey Church's logo still appears on ministry graphics, usually small, centered at the bottom. A ministry's own social account uses its own logo as its profile, not the J. A ministry without a logo uses the J plus the ministry name in Bricolage Grotesque 800. JC Connect has its own logo (see catalog).
+- **Ministries** — each ministry has its own logo and look (see catalog). Journey Church's logo still appears on ministry graphics, usually small, centered at the bottom. A ministry's own social account uses its own logo as its profile, not the J. A ministry without a logo uses the J plus the ministry name in Schibsted Grotesk 900. JC Connect has its own logo (see catalog).
 - **Weekly social kit (the sermon week, 8 pieces):** Sun story, Mon quote post, Tue clip 1, Wed recap carousel, Thu clip 2 with keyword reply, Fri full sermon on YouTube (plus thumbnail) and photo post 1, Sat photo post 2, optional blog. Details in Social engine and safeguarding. Use our own photos wherever we can. Only the quote post shows the speaker; recap carousels never name the speaker. No logos or watermarks on Reels. Generated landscapes are OK; generated people are not.
 
 ## Social (Oct 2026)
-The look approved by Adam on Oct 2, 2026. Our photos in full color, Bricolage Grotesque set big, one red phrase, a faint ghost word, the heavy J. Templates in `slides/` (`social.css` holds the shared styles).
+The look approved by Adam on Oct 2, 2026. Our photos in full color, Schibsted Grotesk set big, one red phrase, a faint ghost word, the heavy J. Templates in `slides/` (`social.css` holds the shared styles).
 
 **Pick the layout in this order.**
 1. **No band.** First choice whenever the photo has a calm, darker area for the type (sky, background, shadow). Headline, facts and the J sit right on the photo over a dark scrim. `slides/social-square-photo.html`
@@ -321,6 +321,7 @@ Sunday service, September 20, 2026 (2000 px web copies; the full-size originals 
 |---|---|
 | 19 Sep 2026 | First decisions: one red, cream and ink, voice rules |
 | 1 Oct 2026 | Shape: corners, shadows, interface patterns |
+| 20 Nov 2026 | Title font: Schibsted Grotesk 900 replaces Bricolage Grotesque everywhere (tokens, templates, components, skill, design system) (Adam) |
 | 2 Oct 2026 | New look: Bricolage Grotesque, red not italic, social system, heavy J |
 | 16 Nov 2026 | Gold-standard examples, a template for every size, motion and loop rules, check before handoff |
 | 20 Nov 2026 | Photos: the own-photos-only rule is gone; ours preferred, other real photos fine, still no AI people; kid release rule stays (Adam, 18 Nov) |
@@ -478,7 +479,7 @@ Every design in the system, by group. Each link opens the design at full size.
 
 ### Type
 - [Body — Inter 400](/brand/guidelines/type-body.html) · 700x170 — Plain speech: body, logistics, captions, buttons
-- [Display · Bricolage Grotesque 800](/brand/guidelines/type-display.html) · 700x190 · The church's voice. One red word or phrase per headline
+- [Display · Schibsted Grotesk 900](/brand/guidelines/type-display.html) · 700x190 · The church's voice. One red word or phrase per headline
 - [Eyebrow &amp; label](/brand/guidelines/type-eyebrow.html) · 700x150 — 0.22em tracking on eyebrows, 0.18em on labels
 - [Type floors on graphics](/brand/guidelines/type-floors.html) · 700x200 — Pixel minimums on artboards and on stage. Nothing smaller, ever
 - [Web scale](/brand/guidelines/type-scale.html) · 700x260 — Five fluid steps, from hero down to lead

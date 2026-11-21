@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 /**
- * The church's voice. Bricolage Grotesque 800 with one red accent word or phrase (not italic).
+ * The church's voice. Schibsted Grotesk 900 with one red accent word or phrase (not italic).
  * @startingPoint section="Typography" subtitle="Display headline with one italic red beat" viewport="700x220"
  */
 export interface HeadlineProps extends React.HTMLAttributes<HTMLElement> {

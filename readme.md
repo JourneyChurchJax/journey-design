@@ -108,7 +108,7 @@ Red is a background only for a button, a pull-quote, and on social the red band 
 
 ### Type
 Four faces, four jobs, and the jobs do not overlap.
-- **Bricolage Grotesque 800** — the church's voice. Headlines, titles, numbers. Tracking −0.04em, line-height 0.9. The red accent is the same weight, not italic (Oct 2026, replacing Inter Tight).
+- **Schibsted Grotesk 900** — the church's voice. Headlines, titles, numbers. Tracking −0.04em, line-height 0.9. The red accent is the same weight, not italic (Adam, 20 Nov 2026, replacing Bricolage Grotesque, which replaced Inter Tight in Oct 2026).
 - **Inter 400** — plain speech. Body, logistics, captions, buttons. Line-height 1.7.
 - **Newsreader** — Scripture and pull-quotes **only**. Never a headline, never a title, never the church speaking. Italic marks the beat instead of red.
 - **Archivo Expanded Black** (wdth 125, weight 900) — series art and stage only, where it has to read from row twenty. Never on the website body, never for logistics.
@@ -143,7 +143,7 @@ Cream is the default ground; **dark sections are punctuation, not rhythm** (the 
 Journey's own photographs, cleared for use. Treatment is `saturate(1.05) brightness(1.06) contrast(1.04)` (Oct 2026): full natural color, a touch brighter. Use our photos wherever we can. **Never a duotone, never a color wash, never a blur, never a frame.** Faces are wanted: people smiling and happy (Adam, 18 Nov 2026); real moments, never posed. Our photos are preferred; other real photos, stock included, are fine (Adam, 18 Nov 2026). No AI-generated people. Alt text describes what is happening, not just what is pictured. No identifiable child without a parent's signed release, except Sunday photos in `assets/photo/sunday/<YYYY-MM-DD>/` (copied weekly from OneDrive, read only), which already have consent, kids included (Adam, 19 Nov 2026).
 
 ### The ghost device
-One per graphic: a numeral or a word set in Bricolage Grotesque 800 (or italic 700 for a word) at −0.06em, bleeding off an edge, at **8% opacity on cream and 10% on dark**. Or a progress meter. Never two devices, never on a photo, and the logo is never the device. In series art the ghost is stroked instead of filled — outline over solid is the house move.
+One per graphic: a numeral or a word set in Schibsted Grotesk 900 (or italic 700 for a word) at −0.06em, bleeding off an edge, at **8% opacity on cream and 10% on dark**. Or a progress meter. Never two devices, never on a photo, and the logo is never the device. In series art the ghost is stroked instead of filled — outline over solid is the house move.
 
 ### Transparency and blur
 Transparency is used for hairlines (`rgba(10,10,10,.12)` on cream, `rgba(247,244,240,.16)` on dark), for muted text on colored grounds, for the photo scrims, and for the ghost device. **Blur is used essentially never** — the single instance in the whole source is a deliberately defocused collage behind a lower-third demo. There is no frosted glass, no backdrop-filter, no translucent nav.
@@ -220,7 +220,7 @@ Added 21 Sep 2026 from `uploads/sermon-social.md`, decided in build from a real 
 
 ## Substitutions and open questions
 
-**Fonts are Google-hosted here.** No woff2 binaries were in the handoff, so `tokens/fonts.css` loads Inter, Bricolage Grotesque, Newsreader, and Archivo (wdth 125, wght 900) from Google Fonts. **This is a substitution of delivery, not of typeface** — the families are the real ones. Production journeychurch.org self-hosts Inter and Bricolage Grotesque as **blocking** woff2 from `/fonts`, and the source carries an all-caps warning never to make that load non-blocking: CLS went from 0 to 1.0 the one time it was. **Please send the woff2 binaries** and I will replace the import with `@font-face` rules.
+**Fonts are Google-hosted here.** No woff2 binaries were in the handoff, so `tokens/fonts.css` loads Inter, Schibsted Grotesk, Newsreader, and Archivo (wdth 125, wght 900) from Google Fonts. **This is a substitution of delivery, not of typeface** — the families are the real ones. Production journeychurch.org self-hosts Inter and Bricolage Grotesque as **blocking** woff2 from `/fonts`, and the source carries an all-caps warning never to make that load non-blocking: CLS went from 0 to 1.0 the one time it was. **Please send the woff2 binaries** and I will replace the import with `@font-face` rules.
 
 **Archivo is itself a stand-in.** The brand guide says Archivo Expanded is standing in for a licensed wide grotesque, and that an older stylesheet used Big Shoulders Display. `--font-series` lists Archivo first with Big Shoulders as the fallback. If the series goes to print at size, the office needs to settle the license.
 
