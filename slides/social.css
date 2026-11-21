@@ -12,7 +12,7 @@
 .band.redbg,.redbg{background:var(--ember);color:#fff}
 .band.dark,.dark{background:var(--ink-800);color:#fff}
 .abs{position:absolute}
-.f{font-family:var(--font-display);font-weight:900;letter-spacing:-.04em;line-height:.88}
+.f{font-family:var(--font-display);font-weight:900;letter-spacing:-.045em;line-height:.9}
 .i{font-family:var(--font-body);line-height:1.25}
 .nr{font-family:var(--font-scripture);font-style:italic}
 .hand{font-family:"Nanum Pen Script",cursive;line-height:.9} /* stand-in until Adam's handwriting is scanned */

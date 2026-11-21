@@ -3652,7 +3652,7 @@ function MessagesScreen() {
       color: '#fff',
       cursor: 'pointer',
       fontFamily: 'var(--font-display)',
-      fontWeight: 800,
+      fontWeight: 900,
       fontSize: '1rem',
       letterSpacing: '.02em'
     }

@@ -25,7 +25,7 @@
 .field-alt{background:var(--ink-100);color:var(--ink-800)}
 /* Ghost numeral or ghost word — the graphic element. Inter Tight 800 (or italic 700 for a word),
    bleeds off an edge, 8% ink / 10% cream. */
-.ghost{position:absolute;font-family:var(--font-display);font-weight:800;letter-spacing:-.06em;line-height:.75;color:var(--ink-800);opacity:.08;pointer-events:none;user-select:none;z-index:0}
+.ghost{position:absolute;font-family:var(--font-display);font-weight:900;letter-spacing:-.06em;line-height:.75;color:var(--ink-800);opacity:.08;pointer-events:none;user-select:none;z-index:0}
 .field-ink .ghost,.field-deep .ghost,.on-dark .ghost,.art.dark .ghost,.art.deep .ghost{color:var(--ink-50);opacity:.1}
 /* The logo is never ghosted, cropped, or used as texture. Decided 19 Sep 2026. */
 /* Boxed field on cream — 1px ink-200, square corners, ember on focus. Underline stays on dark. */
@@ -52,7 +52,7 @@
 /* Type at asset scale — px, because the artboard is px */
 .a-eb{font-size:var(--eb,26px);letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin:0;color:var(--ember-small)}
 .dark .a-eb,.deep .a-eb,.on-photo .a-eb,.field-ink .a-eb,.field-deep .a-eb{color:var(--ember)}
-.a-h{font-family:var(--font-display);font-weight:800;letter-spacing:-.04em;line-height:.9;margin:0;font-size:var(--h1,120px);text-wrap:balance}
+.a-h{font-family:var(--font-display);font-weight:900;letter-spacing:-.04em;line-height:.9;margin:0;font-size:var(--h1,120px);text-wrap:balance}
 /* Oct 2026: the red accent is the same weight, not italic. It stays red on dark and on photos; white only on a red ground. */
 .a-h em{font-style:normal;font-weight:800;letter-spacing:-.04em;color:var(--ember)}
 .field-ember .a-h em,.art.ember .a-h em,.on-ember .a-h em{color:#fff}
@@ -73,10 +73,10 @@
 .lower3{position:absolute;left:96px;bottom:96px;display:flex;align-items:stretch;gap:0}
 .lower3 .bar{width:12px;background:var(--ember)}
 .lower3 .txt{background:rgba(10,10,10,.92);color:var(--ink-50);padding:28px 44px 30px 40px;display:flex;flex-direction:column;gap:6px}
-.lower3 .name{font-family:'Schibsted Grotesk',sans-serif;font-weight:800;letter-spacing:-.03em;font-size:52px;line-height:1;margin:0}
+.lower3 .name{font-family:'Schibsted Grotesk',sans-serif;font-weight:900;letter-spacing:-.03em;font-size:52px;line-height:1;margin:0}
 .lower3 .role{font-size:22px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--ink-300);margin:0}
 /* Countdown */
-.count{font-family:'Schibsted Grotesk',sans-serif;font-weight:800;letter-spacing:-.05em;line-height:.85;font-size:520px;font-variant-numeric:tabular-nums;margin:0}
+.count{font-family:'Schibsted Grotesk',sans-serif;font-weight:900;letter-spacing:-.05em;line-height:.85;font-size:520px;font-variant-numeric:tabular-nums;margin:0}
 /* Meter at asset scale */
 .a-meter{height:14px;background:rgba(10,10,10,.1);border-radius:999px;overflow:hidden}
 .dark .a-meter,.deep .a-meter{background:rgba(247,244,240,.14)}

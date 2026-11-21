@@ -22,7 +22,7 @@ function MessagesScreen(){
         <div style={{position:'relative',background:'#000'}}>
           <img src={MSG_A+'/series/series-a-house-built-title-1920x1080.png'} alt="A House Built for His Presence" style={{width:'100%',display:'block',opacity:.9}}/>
           <div style={{position:'absolute',inset:0,display:'flex',alignItems:'center',justifyContent:'center'}}>
-            <button aria-label="Play" style={{width:96,height:96,borderRadius:999,border:0,background:'var(--ember)',color:'#fff',cursor:'pointer',fontFamily:'var(--font-display)',fontWeight:800,fontSize:'1rem',letterSpacing:'.02em'}}>Play</button>
+            <button aria-label="Play" style={{width:96,height:96,borderRadius:999,border:0,background:'var(--ember)',color:'#fff',cursor:'pointer',fontFamily:'var(--font-display)',fontWeight:900,fontSize:'1rem',letterSpacing:'.02em'}}>Play</button>
           </div>
         </div>
         <div className="split" style={{marginTop:'2.5rem'}}>
