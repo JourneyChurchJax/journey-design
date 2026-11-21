@@ -561,10 +561,6 @@ Every design in the system, by group. Each link opens the design at full size.
 - [Story](/brand/events/baptism/story.html) · 1080x1920 — 1080×1920 for Instagram + Facebook Stories. Type kept out of the top 250 and bottom 340 UI zones; face clear in the middle
 - [Title slide](/brand/events/baptism/title.html) · 1920x1080 — Full-bleed photo, stacked outline word cream top-right and red bottom-left, face kept clear
 
-### Event · Discipleship Groups
-- [About](/brand/events/discipleship-groups/about.html) · 700x170 — Sign-ups Jan 4 in the lobby, groups start the week of Jan 18
-- [Square](/brand/events/discipleship-groups/square.html) · 1080x1080 — Launch. Ink field with the key word ghosted — the rename is the message
-
 ### Event · Healing Room
 - [About](/brand/events/healing-room/about.html) · 700x170 — Quarterly, in the Chapel. Anyone can come and be prayed for
 - [Square](/brand/events/healing-room/square.html) · 1080x1080 — Recurring rhythm. Type on cream, paper tooth, ghosted initial
